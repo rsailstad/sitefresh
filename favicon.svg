@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- SiteFresh Favicon — simplified for 16x16/32x32 rendering -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a0b0d"/>
+  <polygon points="32,6 54,18 54,46 32,58 10,46 10,18"
+           fill="none" stroke="#00d97e" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="18" y1="26" x2="46" y2="26" stroke="#00d97e" stroke-width="2" opacity="0.4"/>
+  <line x1="18" y1="32" x2="46" y2="32" stroke="#00d97e" stroke-width="2" opacity="0.7"/>
+  <line x1="18" y1="38" x2="46" y2="38" stroke="#00d97e" stroke-width="2"/>
+  <circle cx="18" cy="32" r="3" fill="#00d97e"/>
+</svg>

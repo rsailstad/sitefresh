@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- SiteFresh Logo — green hexagon with structured data lines -->
+
+  <!-- Background rounded square (for dark/light adaptation) -->
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="#0a0b0d"/>
+
+  <!-- Hexagonal outline — represents structured data / schema -->
+  <polygon points="128,24 216,72 216,184 128,232 40,184 40,72"
+           fill="none" stroke="#00d97e" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Inner structure lines — the "three renderings" concept -->
+  <!-- Line 1: YAML source -->
+  <line x1="70" y1="95" x2="186" y2="95" stroke="#00d97e" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="70" cy="95" r="6" fill="#00d97e" opacity="0.6"/>
+
+  <!-- Line 2: Landing page rendering -->
+  <line x1="70" y1="128" x2="186" y2="128" stroke="#00d97e" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="70" cy="128" r="6" fill="#00d97e" opacity="0.85"/>
+
+  <!-- Line 3: JSON-LD schema rendering -->
+  <line x1="70" y1="161" x2="186" y2="161" stroke="#00d97e" stroke-width="3" stroke-linecap="round" opacity="1"/>
+  <circle cx="70" cy="161" r="6" fill="#00d97e"/>
+
+  <!-- Connection node — the single source branching to three outputs -->
+  <circle cx="70" cy="128" r="10" fill="none" stroke="#00d97e" stroke-width="2.5" opacity="0.5"/>
+  <line x1="80" y1="105" x2="80" y2="151" stroke="#00d97e" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- Right-side accent — the "fresh" leaf tick -->
+  <path d="M186 95 Q196 85 206 95 Q196 105 186 95" fill="#00d97e" opacity="0.3"/>
+</svg>
