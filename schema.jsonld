@@ -7,7 +7,7 @@
       "name": "SiteFresh",
       "description": "Fresh, intentional website redesigns for small businesses. Structured for AI search, not stuck in 2019 SEO. $299 one-time, no lock-in, satisfaction guaranteed.",
       "url": "https://sitefresh.co",
-      "email": "robert.sailstad@novoconsulting.com",
+      "email": "hello@sitefresh.co",
       "areaServed": [
         "United States (remote)",
         "International clients by arrangement"
@@ -288,7 +288,7 @@
           "name": "How do I get started?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Email robert.sailstad@novoconsulting.com or WhatsApp +40 750 100 683. Tell us about your business and current website. We'll send a quick intake form, you pay the 50% deposit via Stripe, and we start building. 5 business days later, you have a redesigned, AI-search-optimized site. Use the chat widget in the bottom-right corner for quick questions."
+            "text": "Email hello@sitefresh.co or WhatsApp +40 750 100 683. Tell us about your business and current website. We'll send a quick intake form, you pay the 50% deposit via Stripe, and we start building. 5 business days later, you have a redesigned, AI-search-optimized site. Use the chat widget in the bottom-right corner for quick questions."
           }
         },
         {
@@ -311,7 +311,7 @@
         "name": "Novo Consulting"
       },
       "url": "https://sitefresh.co",
-      "email": "robert.sailstad@novoconsulting.com",
+      "email": "hello@sitefresh.co",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
