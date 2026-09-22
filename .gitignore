@@ -1,0 +1,7 @@
+# Don't commit these
+output/
+*.pyc
+__pycache__/
+.venv/
+.pytest_cache/
+*.egg-info/
