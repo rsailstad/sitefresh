@@ -375,14 +375,19 @@
 
   /* Hero */
   .hero {
- min-height: 100vh; display: flex; flex-direction: column;
- justify-content: center; align-items: center; text-align: center;
- position: relative; overflow: hidden;
+    min-height: 100vh; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    position: relative; overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&q=80');
+    background-size: cover; background-position: center;
+    width: 100vw;
   }
   .hero::before {
- content: ''; position: absolute; inset: 0;
- background: radial-gradient(ellipse at 50% 40%, rgba(212,154,60,0.08) 0%, transparent 60%),
-   linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 50%, #0a0a0a 100%);
+    content: ''; position: absolute; inset: 0;
+    background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      radial-gradient(ellipse at 50% 40%, rgba(212,154,60,0.08) 0%, transparent 60%);
+    z-index: 0;
   }
   .hero h1 {
  font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 900;
@@ -530,7 +535,6 @@
   <p class="tagline">Your website, rebuilt for AI search.</p>
   <div class="contact-quick">
  <a href="mailto:team@sitefresh.co">✉ Email</a>
- <a href="https://wa.me/40750100683">💬 WhatsApp</a>
  <span>📍 United States · Remote · US EST</span>
   </div>
   <div class="scroll-hint">Scroll to explore</div>
@@ -634,7 +638,6 @@
  <h2>Get Started</h2>
  <p>Email us or use the chat widget. We’ll send an intake form, you pay 50% deposit via Stripe, and your redesigned site is delivered in 5 business days.</p>
  <a href="mailto:team@sitefresh.co" class="btn">✉ Email Us</a>
- <a href="https://wa.me/40750100683" class="btn-alt">💬 WhatsApp</a>
   </section>
  </div>
 

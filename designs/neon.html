@@ -378,8 +378,18 @@
   .container { max-width: 860px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 1; }
 
   /* Hero */
-  .hero { padding: 100px 0 60px; text-align: center; }
-  .hero .glitch-wrap { position: relative; display: inline-block; }
+  .hero {
+    padding: 100px 0 60px; text-align: center;
+    position: relative; overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80');
+    background-size: cover; background-position: center;
+    width: 100vw; margin-left: calc(-50vw + 50%);
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(0,0,0,0.6); z-index: 0;
+  }
+  .hero .glitch-wrap { position: relative; display: inline-block; z-index: 1; }
   .hero h1 {
  font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 700; letter-spacing: -0.02em;
  line-height: 1; margin-bottom: 12px;
@@ -393,10 +403,10 @@
   @keyframes glitch1 { 0%,90%,100% { transform: translate(0); } 92% { transform: translate(-2px,1px); } 94% { transform: translate(2px,-1px); } }
   @keyframes glitch2 { 0%,90%,100% { transform: translate(0); } 92% { transform: translate(2px,-1px); } 94% { transform: translate(-2px,1px); } }
   .hero .tagline {
- font-size: 1.1rem; color: var(--accent2); text-shadow: 0 0 10px rgba(0,255,242,0.4);
- margin-bottom: 32px; letter-spacing: 0.05em;
+    font-size: 1.1rem; color: var(--accent2); text-shadow: 0 0 10px rgba(0,255,242,0.4);
+    margin-bottom: 32px; letter-spacing: 0.05em; position: relative; z-index: 1;
   }
-  .hero .contact-quick { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .hero .contact-quick { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; position: relative; z-index: 1; }
   .hero .contact-quick a, .hero .contact-quick span {
  display: inline-flex; align-items: center; gap: 6px;
  padding: 10px 20px; background: transparent; border: 1px solid var(--accent);
@@ -519,7 +529,6 @@
  <p class="tagline">Your website, rebuilt for AI search.</p>
  <div class="contact-quick">
   <a href="mailto:team@sitefresh.co">[ EMAIL ]</a>
-  <a href="https://wa.me/40750100683">[ WHATSAPP ]</a>
   <span>// US · REMOTE · US EST</span>
  </div>
   </div>
@@ -606,7 +615,6 @@
  <div class="section-title"><span class="num">05</span>Get Started</div>
  <p style="color: var(--muted); margin-bottom: 28px; font-family: var(--font-sans); font-size: 0.9rem;">Email us or use the chat widget. We’ll send an intake form, you pay 50% deposit via Stripe, and your redesigned site is delivered in 5 business days.</p>
  <a href="mailto:team@sitefresh.co" class="btn">[ Email Us ]</a>
- <a href="https://wa.me/40750100683" class="btn-alt">[ WhatsApp ]</a>
   </section>
  </div>
 

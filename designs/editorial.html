@@ -364,20 +364,28 @@
 
   /* Masthead */
   .masthead {
- text-align: center; padding: 60px 40px 40px; border-bottom: 3px double var(--accent);
+    text-align: center; padding: 60px 40px 40px; border-bottom: 3px double var(--accent);
+    position: relative; overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1461958508236-9a742665a0d5?w=1920&q=80');
+    background-size: cover; background-position: center;
+    width: 100vw; margin-left: calc(-50vw + 50%);
+  }
+  .masthead::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(0,0,0,0.55); z-index: 0;
   }
   .masthead .issue {
- font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.3em;
- text-transform: uppercase; color: var(--muted); margin-bottom: 16px;
+    font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 16px; position: relative; z-index: 1;
   }
   .masthead h1 {
- font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; letter-spacing: -0.03em;
- font-family: var(--font-serif); line-height: 1; margin-bottom: 8px;
+    font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; letter-spacing: -0.03em;
+    font-family: var(--font-serif); line-height: 1; margin-bottom: 8px; position: relative; z-index: 1;
   }
   .masthead .tagline {
- font-size: 1.2rem; color: var(--accent); font-style: italic; margin-bottom: 24px;
+    font-size: 1.2rem; color: var(--accent); font-style: italic; margin-bottom: 24px; position: relative; z-index: 1;
   }
-  .masthead .contact-quick { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; font-family: var(--font-sans); }
+  .masthead .contact-quick { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; font-family: var(--font-sans); position: relative; z-index: 1; }
   .masthead .contact-quick a, .masthead .contact-quick span {
  font-size: 0.8rem; color: var(--muted); text-decoration: none;
  letter-spacing: 0.05em;
@@ -520,7 +528,6 @@
   <p class="tagline">Your website, rebuilt for AI search.</p>
   <div class="contact-quick">
  <a href="mailto:team@sitefresh.co">Email</a>
- <a href="https://wa.me/40750100683">WhatsApp</a>
  <span>United States · Remote · US EST</span>
   </div>
  </div>
@@ -615,7 +622,6 @@
   <div class="cta">
  <p style="margin-bottom: 28px; font-size: 1.1rem; color: var(--muted);">Email us or use the chat widget. We’ll send an intake form, you pay 50% deposit via Stripe, and your redesigned site is delivered in 5 business days.</p>
  <a href="mailto:team@sitefresh.co" class="btn">Email Us</a>
- <a href="https://wa.me/40750100683" class="btn-alt">WhatsApp</a>
   </div>
  </div>
 
