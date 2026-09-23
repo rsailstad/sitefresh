@@ -90,4 +90,4 @@ And the partnership — having someone who tracks AI search changes so you don't
 ---
 
 *SiteFresh — We don't design websites. We engineer them for AI search.*
-*robert.sailstad@novoconsulting.com · +40 750 100 683 · sitefresh.io*
+*team@sitefresh.co · · sitefresh.io*

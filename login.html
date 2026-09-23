@@ -1,240 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>Log In — SiteFresh Newsletter</title>
-  <meta name="description" content="Log in to your SiteFresh newsletter subscription.">
-  <style>
-    :root {
-      --bg: #0a0b0d;
-      --bg2: #141518;
-      --fg: #e8e6e3;
-      --muted: #8a8780;
-      --muted-bright: #b8b5a8;
-      --accent: #00d97e;
-      --accent-dim: #00b86e;
-      --border: #252629;
-      --error: #ff5454;
-      --radius: 12px;
-      --mono: "SF Mono", "Fira Code", "JetBrains Mono", "Courier New", monospace;
-      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: var(--sans);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .auth-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 40px;
-      max-width: 440px;
-      width: 100%;
-    }
-    .auth-header {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    .auth-header img {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      margin-bottom: 16px;
-    }
-    .auth-header h1 {
-      font-size: 1.4rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-    .auth-header h1 .green { color: var(--accent); }
-    .auth-header p {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--muted-bright);
-      margin-bottom: 8px;
-    }
-    .form-group input {
-      width: 100%;
-      padding: 12px 16px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--fg);
-      font-size: 1rem;
-      font-family: var(--sans);
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
-    .form-group input:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(0, 217, 126, 0.12);
-    }
-    .btn {
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.12s, box-shadow 0.12s;
-      font-family: var(--sans);
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: #0a0b0d;
-    }
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
-    }
-    .btn-primary:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-    .error-msg {
-      background: rgba(255, 84, 84, 0.1);
-      border: 1px solid rgba(255, 84, 84, 0.3);
-      border-radius: 8px;
-      padding: 12px 16px;
-      color: var(--error);
-      font-size: 0.85rem;
-      margin-bottom: 20px;
-      display: none;
-    }
-    .auth-footer {
-      text-align: center;
-      margin-top: 24px;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .auth-footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .auth-footer a:hover {
-      text-decoration: underline;
-    }
-    .nav-back {
-      position: fixed;
-      top: 24px;
-      left: 24px;
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-    }
-    .nav-back:hover { color: var(--accent); }
-    .user-info {
-      display: none;
-      text-align: center;
-      margin-bottom: 24px;
-    }
-    .user-info .email {
-      color: var(--accent);
-      font-weight: 600;
-    }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+ <title>Log In — SiteFresh Newsletter</title>
+ <meta name="description" content="Log in to your SiteFresh newsletter subscription.">
+ <style>
+  :root {
+   --bg: #0a0b0d;
+   --bg2: #141518;
+   --fg: #e8e6e3;
+   --muted: #8a8780;
+   --muted-bright: #b8b5a8;
+   --accent: #00d97e;
+   --accent-dim: #00b86e;
+   --border: #252629;
+   --error: #ff5454;
+   --radius: 12px;
+   --mono: "SF Mono", "Fira Code", "JetBrains Mono", "Courier New", monospace;
+   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+   background: var(--bg);
+   color: var(--fg);
+   font-family: var(--sans);
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 24px;
+  }
+  .auth-card {
+   background: var(--bg2);
+   border: 1px solid var(--border);
+   border-radius: var(--radius);
+   padding: 40px;
+   max-width: 440px;
+   width: 100%;
+  }
+  .auth-header {
+   text-align: center;
+   margin-bottom: 32px;
+  }
+  .auth-header img {
+   width: 48px;
+   height: 48px;
+   border-radius: 12px;
+   margin-bottom: 16px;
+  }
+  .auth-header h1 {
+   font-size: 1.4rem;
+   font-weight: 800;
+   margin-bottom: 8px;
+  }
+  .auth-header h1 .green { color: var(--accent); }
+  .auth-header p {
+   color: var(--muted);
+   font-size: 0.9rem;
+  }
+  .form-group {
+   margin-bottom: 20px;
+  }
+  .form-group label {
+   display: block;
+   font-size: 0.8rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   color: var(--muted-bright);
+   margin-bottom: 8px;
+  }
+  .form-group input {
+   width: 100%;
+   padding: 12px 16px;
+   background: var(--bg);
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   color: var(--fg);
+   font-size: 1rem;
+   font-family: var(--sans);
+   transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .form-group input:focus {
+   outline: none;
+   border-color: var(--accent);
+   box-shadow: 0 0 0 3px rgba(0, 217, 126, 0.12);
+  }
+  .btn {
+   width: 100%;
+   padding: 14px;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+   font-weight: 700;
+   cursor: pointer;
+   transition: transform 0.12s, box-shadow 0.12s;
+   font-family: var(--sans);
+  }
+  .btn-primary {
+   background: var(--accent);
+   color: #0a0b0d;
+  }
+  .btn-primary:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
+  }
+  .btn-primary:disabled {
+   opacity: 0.6;
+   cursor: not-allowed;
+  }
+  .error-msg {
+   background: rgba(255, 84, 84, 0.1);
+   border: 1px solid rgba(255, 84, 84, 0.3);
+   border-radius: 8px;
+   padding: 12px 16px;
+   color: var(--error);
+   font-size: 0.85rem;
+   margin-bottom: 20px;
+   display: none;
+  }
+  .auth-footer {
+   text-align: center;
+   margin-top: 24px;
+   font-size: 0.85rem;
+   color: var(--muted);
+  }
+  .auth-footer a {
+   color: var(--accent);
+   text-decoration: none;
+  }
+  .auth-footer a:hover {
+   text-decoration: underline;
+  }
+  .nav-back {
+   position: fixed;
+   top: 24px;
+   left: 24px;
+   color: var(--muted);
+   text-decoration: none;
+   font-size: 0.85rem;
+  }
+  .nav-back:hover { color: var(--accent); }
+  .user-info {
+   display: none;
+   text-align: center;
+   margin-bottom: 24px;
+  }
+  .user-info .email {
+   color: var(--accent);
+   font-weight: 600;
+  }
+ </style>
 </head>
 <body>
-  <a href="/" class="nav-back">← Back to SiteFresh</a>
+ <a href="/" class="nav-back">← Back to SiteFresh</a>
 
-  <div class="auth-card">
-    <div class="auth-header">
-      <img src="/logo.svg" alt="SiteFresh">
-      <h1><span style="color:#fff;">Site</span><span class="green">Fresh</span> Newsletter</h1>
-      <p>Log in to read the latest issue</p>
-    </div>
-
-    <div class="error-msg" id="errorMsg"></div>
-    <div class="user-info" id="userInfo">
-      <p>Signed in as <span class="email" id="userEmail"></span></p>
-    </div>
-
-    <form id="loginForm">
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" id="email" required placeholder="you@yourbusiness.com">
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" id="password" required placeholder="Your password">
-      </div>
-      <button type="submit" class="btn btn-primary" id="submitBtn">Log in →</button>
-    </form>
-
-    <div id="loggedInView" style="display:none;">
-      <button class="btn btn-primary" onclick="window.location.href='/newsletter.html'">Read Latest Issue →</button>
-      <button class="btn" style="background:transparent;border:1px solid var(--border);color:var(--muted);margin-top:12px;" id="logoutBtn">Log out</button>
-    </div>
-
-    <div class="auth-footer">
-      Not subscribed yet? <a href="/signup.html">Sign up</a>
-    </div>
+ <div class="auth-card">
+  <div class="auth-header">
+   <img src="/logo.svg" alt="SiteFresh">
+   <h1><span style="color:#fff;">Site</span><span class="green">Fresh</span> Newsletter</h1>
+   <p>Log in to read the latest issue</p>
   </div>
 
-  <script type="module">
-    const form = document.getElementById('loginForm');
-    const errorMsg = document.getElementById('errorMsg');
-    const submitBtn = document.getElementById('submitBtn');
-    const loggedInView = document.getElementById('loggedInView');
-    const userInfo = document.getElementById('userInfo');
-    const logoutBtn = document.getElementById('logoutBtn');
+  <div class="error-msg" id="errorMsg"></div>
+  <div class="user-info" id="userInfo">
+   <p>Signed in as <span class="email" id="userEmail"></span></p>
+  </div>
 
-    // Check if already logged in
-    try {
-      const { getCurrentUser } = await import('/newsletter-config.js');
-      const session = await getCurrentUser();
-      if (session) {
-        form.style.display = 'none';
-        userInfo.style.display = 'block';
-        document.getElementById('userEmail').textContent = session.user.email;
-        loggedInView.style.display = 'block';
-      }
-    } catch (e) {}
+  <form id="loginForm">
+   <div class="form-group">
+    <label>Email</label>
+    <input type="email" id="email" required placeholder="you@yourbusiness.com">
+   </div>
+   <div class="form-group">
+    <label>Password</label>
+    <input type="password" id="password" required placeholder="Your password">
+   </div>
+   <button type="submit" class="btn btn-primary" id="submitBtn">Log in →</button>
+  </form>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      errorMsg.style.display = 'none';
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Logging in...';
+  <div id="loggedInView" style="display:none;">
+   <button class="btn btn-primary" onclick="window.location.href='/newsletter.html'">Read Latest Issue →</button>
+   <button class="btn" style="background:transparent;border:1px solid var(--border);color:var(--muted);margin-top:12px;" id="logoutBtn">Log out</button>
+  </div>
 
-      try {
-        const { signIn } = await import('/newsletter-config.js');
-        await signIn(document.getElementById('email').value, document.getElementById('password').value);
-        window.location.href = '/newsletter.html';
-      } catch (err) {
-        errorMsg.style.display = 'block';
-        errorMsg.textContent = err.message || 'Invalid email or password.';
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Log in →';
-      }
-    });
+  <div class="auth-footer">
+   Not subscribed yet? <a href="/signup.html">Sign up</a>
+  </div>
+ </div>
 
-    logoutBtn?.addEventListener('click', async () => {
-      const { signOut } = await import('/newsletter-config.js');
-      await signOut();
-      window.location.href = '/';
-    });
-  </script>
+ <script type="module">
+  const form = document.getElementById('loginForm');
+  const errorMsg = document.getElementById('errorMsg');
+  const submitBtn = document.getElementById('submitBtn');
+  const loggedInView = document.getElementById('loggedInView');
+  const userInfo = document.getElementById('userInfo');
+  const logoutBtn = document.getElementById('logoutBtn');
+
+  // Check if already logged in
+  try {
+   const { getCurrentUser } = await import('/newsletter-config.js');
+   const session = await getCurrentUser();
+   if (session) {
+    form.style.display = 'none';
+    userInfo.style.display = 'block';
+    document.getElementById('userEmail').textContent = session.user.email;
+    loggedInView.style.display = 'block';
+   }
+  } catch (e) {}
+
+  form.addEventListener('submit', async (e) => {
+   e.preventDefault();
+   errorMsg.style.display = 'none';
+   submitBtn.disabled = true;
+   submitBtn.textContent = 'Logging in...';
+
+   try {
+    const { signIn } = await import('/newsletter-config.js');
+    await signIn(document.getElementById('email').value, document.getElementById('password').value);
+    window.location.href = '/newsletter.html';
+   } catch (err) {
+    errorMsg.style.display = 'block';
+    errorMsg.textContent = err.message || 'Invalid email or password.';
+   } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Log in →';
+   }
+  });
+
+  logoutBtn?.addEventListener('click', async () => {
+   const { signOut } = await import('/newsletter-config.js');
+   await signOut();
+   window.location.href = '/';
+  });
+ </script>
 </body>
 </html>

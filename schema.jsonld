@@ -1,359 +1,359 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@context": "https://schema.org",
+   "@type": "ProfessionalService",
+   "name": "SiteFresh",
+   "description": "Fresh, intentional website redesigns for small businesses. Structured for AI search, not stuck in 2019 SEO. $299 one-time, no lock-in, satisfaction guaranteed.",
+   "url": "https://sitefresh.co",
+   "email": "team@sitefresh.co",
+   "areaServed": [
+    "United States (remote)",
+    "International clients by arrangement"
+   ],
+   "openingHoursSpecification": [
     {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "SiteFresh",
-      "description": "Fresh, intentional website redesigns for small businesses. Structured for AI search, not stuck in 2019 SEO. $299 one-time, no lock-in, satisfaction guaranteed.",
-      "url": "https://sitefresh.co",
-      "email": "team@sitefresh.co",
-      "areaServed": [
-        "United States (remote)",
-        "International clients by arrangement"
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Monday",
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Tuesday",
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Wednesday",
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Thursday",
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Friday",
-          "opens": "09:00",
-          "closes": "17:00"
-        }
-      ],
-      "paymentAccepted": "Stripe (credit card, ACH), 50% deposit to start, 50% on delivery, Full refund if not satisfied",
-      "telephone": "+40 750 100 683",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI-Ready Website Redesign",
-              "description": "One landing page, AI-search-optimized with structured data, FAQ schema, semantic HTML, and Open Graph. Up to 6 services listed with pricing, up to 20 FAQ entries with search tags, local-first chat widget, AI Search Roadmap PDF, and 1 revision round. Delivered in 5 business days. Satisfaction guaranteed \u2014 full refund if not happy."
-            },
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "$299 one-time"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI Search Roadmap",
-              "description": "One-page PDF deliverable: what your current site is missing for AI search, what we fixed, and 90-day action items. Included free with every redesign. Also available standalone."
-            },
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "$149 standalone (included with redesign)"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "FAQ + Schema Refresh",
-              "description": "Update your FAQ entries and JSON-LD schema to match the latest AI search patterns. Refresh answers, add new search tags, and ensure your structured data is current."
-            },
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "$99"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "New Service Page with Schema",
-              "description": "Add a new service page to your existing site with full schema.org structured data. Includes pricing, description, FAQ integration, and semantic HTML."
-            },
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "$79"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Quarterly AI Search Audit",
-              "description": "End-to-end audit of your site's AI search readiness every quarter. Covers Google SGE, ChatGPT search, Perplexity visibility, schema validity, and content recommendations."
-            },
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "$199"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Chat Widget Tuning",
-              "description": "Tune your local-first chat widget with new FAQ entries, updated search tags, and refreshed answers. Zero network calls, zero PII, zero vendor lock-in."
-            },
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "$49"
-            }
-          }
-        ]
-      }
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Monday",
+     "opens": "09:00",
+     "closes": "17:00"
     },
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What exactly do you do?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We redesign small business websites to be AI-search-optimized. That means structured data, FAQ schema, semantic HTML, Open Graph tags, and a local-first chat widget \u2014 all for $299 one-time. You get a single landing page that Google SGE, ChatGPT search, and Perplexity can actually read and cite. No hosting lock-in, no subscription required."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does a website redesign cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "$299 one-time. That includes one landing page, up to 6 services with pricing, up to 20 FAQ entries with search tags, a local-first chat widget, an AI Search Roadmap PDF, and 1 revision round. Delivered in 5 business days. 50% deposit to start, 50% on delivery. Full refund if you're not satisfied."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why is your price so low compared to other agencies?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The $299 redesign is a wedge, not the business. We're after the ongoing relationship \u2014 the $29.99/month AI search newsletter and \u00e0 la carte enhancements as AI evolves. We'd rather earn your trust with a great redesign at a fair price and keep you as a subscriber than charge $5,000 upfront and never hear from you again."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is AI search optimization?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI search optimization means structuring your website so that AI search engines \u2014 Google SGE, ChatGPT search, Perplexity, and others \u2014 can read it, understand it, and cite it as an authoritative source. This includes JSON-LD structured data (FAQ schema, service schema, business schema), semantic HTML, Open Graph tags, and clean content that answers real questions. It's the 2026 version of SEO, designed for how people actually search now."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to switch hosting providers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. You own the files \u2014 take them and host wherever you want. Vercel, Netlify, GitHub Pages, Cloudflare Pages, or any static host. We can recommend a host and help you deploy for free, but there's no hosting lock-in. Your site is a set of static files: HTML, CSS, and JavaScript. It runs anywhere."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if I don't like the design?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You get 1 revision round included with the $299 redesign. If you're still not happy after the revision, you get a full refund \u2014 no questions, no hassle. Satisfaction guaranteed. We'd rather lose $299 than have an unhappy customer."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does the redesign take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "5 business days from the time we receive your deposit and content inputs. We deliver the first draft, you review it, request changes in your 1 revision round, and we deliver the final files. If we're waiting on you for content or feedback, the clock pauses."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's included in the $299?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "One AI-search-optimized landing page with structured data, FAQ schema, semantic HTML, and Open Graph. Up to 6 services listed with pricing. Up to 20 FAQ entries with search tags. A local-first chat widget (zero API calls, PII-free). An AI Search Roadmap PDF (one-page: what your current site is missing, what we fixed, 90-day action items). 1 revision round. Satisfaction guaranteed with full refund. Delivered in 5 business days."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the AI Search Roadmap?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A one-page PDF we deliver with your redesign. It covers three things: what your current site is missing for AI search, what we fixed in the redesign, and 90-day action items for you to stay ahead. It's included free with every redesign, or available standalone for $149."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the $29.99 newsletter required?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The $299 redesign is one-time with no subscription required. The newsletter is $29.99/month and completely optional. It covers what changed in Google SGE, ChatGPT search, and Perplexity that affects small businesses, plus schema updates, one concrete action item, and one before/after case study. Cancel anytime."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are \u00e0 la carte enhancements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "As the AI landscape changes, you may want to update your site without a full redesign. \u00c0 la carte options include: FAQ + Schema Refresh ($99), New Service Page with Schema ($79), Chat Widget Tuning ($49), Quarterly AI Search Audit ($199), and Schema Migration for new schema.org types ($149). Pick what you need, when you need it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you use AI to build the website?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We use AI tools as part of our workflow \u2014 for code generation, content drafting, and schema validation. But the output is hand-reviewed and hand-finished. The chat widget on your site runs 100% locally in the browser with zero network calls \u2014 no API keys, no vendor lock-in, no PII transmitted anywhere. Your visitors' questions stay between them and their browser."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is structured data / schema?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Structured data is code embedded in your website that tells search engines exactly what your content means \u2014 not just what it says. We use JSON-LD (the format Google recommends) to mark up your business info, services, FAQ, and hours. When Google SGE, ChatGPT, or Perplexity crawls your site, they can read this structured data and cite your answers as authoritative sources. It's how you show up in AI search results."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will my site work on mobile?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Every redesign is fully responsive \u2014 it looks and works great on phones, tablets, and desktops. We test on real devices, not just browser dev tools. Mobile-first design isn't an add-on; it's how we build by default."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I update the website myself after?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. You own the files \u2014 HTML, CSS, and JavaScript. If you know basic HTML, you can edit directly. If you want a CMS, we can set up Netlify CMS or a headless option so you can edit content without touching code. The chat widget and search data are in a single YAML file that's easy to update. We can walk you through it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if I already have a website on WordPress, Squarespace, or Wix?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "That's fine. We build a standalone landing page that you can run alongside or instead of your existing site. The $299 redesign produces static files you can host anywhere. If you want to keep WordPress for your blog and use our page as your primary landing page, that works. If you want to migrate off WordPress entirely, we can help with that too."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer ongoing maintenance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not in the traditional sense \u2014 no monthly retainer for security patches or uptime monitoring. What we offer instead is the $29.99/month AI search newsletter (what changed, what to do) and \u00e0 la carte enhancements (FAQ refresh, schema updates, new pages). If you need traditional hosting and maintenance, we recommend Vercel or Netlify's free tiers. We can help you set that up at no charge."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the difference between your redesign and just using an AI website builder?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI website builders (Wix ADI, Framer AI, etc.) generate a site that looks fine but isn't structured for AI search. They don't produce JSON-LD schema, FAQ schema, or semantic HTML that Google SGE and ChatGPT can cite. They also lock you into their platform. We deliver static files you own and host anywhere, with AI-search-optimized structured data baked in. The difference is: they build a pretty page. We build a page that AI search engines can actually read and cite as authoritative."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I get started?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Email team@sitefresh.co or WhatsApp +40 750 100 683. Tell us about your business and current website. We'll send a quick intake form, you pay the 50% deposit via Stripe, and we start building. 5 business days later, you have a redesigned, AI-search-optimized site. Use the chat widget in the bottom-right corner for quick questions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if AI search changes again after my redesign?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It will \u2014 that's the whole point of the newsletter and \u00e0 la carte enhancements. The $29.99/month newsletter tracks what changes in Google SGE, ChatGPT search, and Perplexity, with one concrete action item per month. When something material changes (new schema.org type, new structured data opportunity), we offer \u00e0 la carte updates: FAQ refresh ($99), schema migration ($149), quarterly audit ($199). You're never stuck with a 2026 site in 2027."
-          }
-        }
-      ]
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Tuesday",
+     "opens": "09:00",
+     "closes": "17:00"
     },
     {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Robert Winslow Sailstad",
-      "jobTitle": "Principal",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Novo Consulting"
-      },
-      "url": "https://sitefresh.co",
-      "email": "team@sitefresh.co",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "knowsAbout": [
-        "AI search optimization",
-        "structured data",
-        "JSON-LD schema",
-        "schema.org",
-        "Google SGE",
-        "ChatGPT search",
-        "Perplexity",
-        "small business websites",
-        "semantic HTML",
-        "Open Graph",
-        "local-first chat widgets",
-        "FAQ schema"
-      ]
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Wednesday",
+     "opens": "09:00",
+     "closes": "17:00"
     },
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "SiteFresh",
-          "item": "https://sitefresh.co/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://sitefresh.co/#services"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "FAQ",
-          "item": "https://sitefresh.co/#faq"
-        }
-      ]
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Thursday",
+     "opens": "09:00",
+     "closes": "17:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Friday",
+     "opens": "09:00",
+     "closes": "17:00"
     }
-  ]
+   ],
+   "paymentAccepted": "Stripe (credit card, ACH), 50% deposit to start, 50% on delivery, Full refund if not satisfied",
+   "telephone": "",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "AI-Ready Website Redesign",
+       "description": "One landing page, AI-search-optimized with structured data, FAQ schema, semantic HTML, and Open Graph. Up to 6 services listed with pricing, up to 20 FAQ entries with search tags, local-first chat widget, AI Search Roadmap PDF, and 1 revision round. Delivered in 5 business days. Satisfaction guaranteed \u2014 full refund if not happy."
+      },
+      "priceCurrency": "USD",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": "$299 one-time"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "AI Search Roadmap",
+       "description": "One-page PDF deliverable: what your current site is missing for AI search, what we fixed, and 90-day action items. Included free with every redesign. Also available standalone."
+      },
+      "priceCurrency": "USD",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": "$149 standalone (included with redesign)"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "FAQ + Schema Refresh",
+       "description": "Update your FAQ entries and JSON-LD schema to match the latest AI search patterns. Refresh answers, add new search tags, and ensure your structured data is current."
+      },
+      "priceCurrency": "USD",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": "$99"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "New Service Page with Schema",
+       "description": "Add a new service page to your existing site with full schema.org structured data. Includes pricing, description, FAQ integration, and semantic HTML."
+      },
+      "priceCurrency": "USD",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": "$79"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Quarterly AI Search Audit",
+       "description": "End-to-end audit of your site's AI search readiness every quarter. Covers Google SGE, ChatGPT search, Perplexity visibility, schema validity, and content recommendations."
+      },
+      "priceCurrency": "USD",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": "$199"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Chat Widget Tuning",
+       "description": "Tune your local-first chat widget with new FAQ entries, updated search tags, and refreshed answers. Zero network calls, zero PII, zero vendor lock-in."
+      },
+      "priceCurrency": "USD",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": "$49"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What exactly do you do?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We redesign small business websites to be AI-search-optimized. That means structured data, FAQ schema, semantic HTML, Open Graph tags, and a local-first chat widget \u2014 all for $299 one-time. You get a single landing page that Google SGE, ChatGPT search, and Perplexity can actually read and cite. No hosting lock-in, no subscription required."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does a website redesign cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "$299 one-time. That includes one landing page, up to 6 services with pricing, up to 20 FAQ entries with search tags, a local-first chat widget, an AI Search Roadmap PDF, and 1 revision round. Delivered in 5 business days. 50% deposit to start, 50% on delivery. Full refund if you're not satisfied."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is your price so low compared to other agencies?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The $299 redesign is a wedge, not the business. We're after the ongoing relationship \u2014 the $29.99/month AI search newsletter and \u00e0 la carte enhancements as AI evolves. We'd rather earn your trust with a great redesign at a fair price and keep you as a subscriber than charge $5,000 upfront and never hear from you again."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is AI search optimization?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI search optimization means structuring your website so that AI search engines \u2014 Google SGE, ChatGPT search, Perplexity, and others \u2014 can read it, understand it, and cite it as an authoritative source. This includes JSON-LD structured data (FAQ schema, service schema, business schema), semantic HTML, Open Graph tags, and clean content that answers real questions. It's the 2026 version of SEO, designed for how people actually search now."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to switch hosting providers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You own the files \u2014 take them and host wherever you want. Vercel, Netlify, GitHub Pages, Cloudflare Pages, or any static host. We can recommend a host and help you deploy for free, but there's no hosting lock-in. Your site is a set of static files: HTML, CSS, and JavaScript. It runs anywhere."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if I don't like the design?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You get 1 revision round included with the $299 redesign. If you're still not happy after the revision, you get a full refund \u2014 no questions, no hassle. Satisfaction guaranteed. We'd rather lose $299 than have an unhappy customer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does the redesign take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "5 business days from the time we receive your deposit and content inputs. We deliver the first draft, you review it, request changes in your 1 revision round, and we deliver the final files. If we're waiting on you for content or feedback, the clock pauses."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What's included in the $299?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "One AI-search-optimized landing page with structured data, FAQ schema, semantic HTML, and Open Graph. Up to 6 services listed with pricing. Up to 20 FAQ entries with search tags. A local-first chat widget (zero API calls, PII-free). An AI Search Roadmap PDF (one-page: what your current site is missing, what we fixed, 90-day action items). 1 revision round. Satisfaction guaranteed with full refund. Delivered in 5 business days."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What's the AI Search Roadmap?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A one-page PDF we deliver with your redesign. It covers three things: what your current site is missing for AI search, what we fixed in the redesign, and 90-day action items for you to stay ahead. It's included free with every redesign, or available standalone for $149."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the $29.99 newsletter required?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The $299 redesign is one-time with no subscription required. The newsletter is $29.99/month and completely optional. It covers what changed in Google SGE, ChatGPT search, and Perplexity that affects small businesses, plus schema updates, one concrete action item, and one before/after case study. Cancel anytime."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are \u00e0 la carte enhancements?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As the AI landscape changes, you may want to update your site without a full redesign. \u00c0 la carte options include: FAQ + Schema Refresh ($99), New Service Page with Schema ($79), Chat Widget Tuning ($49), Quarterly AI Search Audit ($199), and Schema Migration for new schema.org types ($149). Pick what you need, when you need it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you use AI to build the website?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We use AI tools as part of our workflow \u2014 for code generation, content drafting, and schema validation. But the output is hand-reviewed and hand-finished. The chat widget on your site runs 100% locally in the browser with zero network calls \u2014 no API keys, no vendor lock-in, no PII transmitted anywhere. Your visitors' questions stay between them and their browser."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is structured data / schema?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Structured data is code embedded in your website that tells search engines exactly what your content means \u2014 not just what it says. We use JSON-LD (the format Google recommends) to mark up your business info, services, FAQ, and hours. When Google SGE, ChatGPT, or Perplexity crawls your site, they can read this structured data and cite your answers as authoritative sources. It's how you show up in AI search results."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will my site work on mobile?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Every redesign is fully responsive \u2014 it looks and works great on phones, tablets, and desktops. We test on real devices, not just browser dev tools. Mobile-first design isn't an add-on; it's how we build by default."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I update the website myself after?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You own the files \u2014 HTML, CSS, and JavaScript. If you know basic HTML, you can edit directly. If you want a CMS, we can set up Netlify CMS or a headless option so you can edit content without touching code. The chat widget and search data are in a single YAML file that's easy to update. We can walk you through it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if I already have a website on WordPress, Squarespace, or Wix?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "That's fine. We build a standalone landing page that you can run alongside or instead of your existing site. The $299 redesign produces static files you can host anywhere. If you want to keep WordPress for your blog and use our page as your primary landing page, that works. If you want to migrate off WordPress entirely, we can help with that too."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you offer ongoing maintenance?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not in the traditional sense \u2014 no monthly retainer for security patches or uptime monitoring. What we offer instead is the $29.99/month AI search newsletter (what changed, what to do) and \u00e0 la carte enhancements (FAQ refresh, schema updates, new pages). If you need traditional hosting and maintenance, we recommend Vercel or Netlify's free tiers. We can help you set that up at no charge."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What's the difference between your redesign and just using an AI website builder?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI website builders (Wix ADI, Framer AI, etc.) generate a site that looks fine but isn't structured for AI search. They don't produce JSON-LD schema, FAQ schema, or semantic HTML that Google SGE and ChatGPT can cite. They also lock you into their platform. We deliver static files you own and host anywhere, with AI-search-optimized structured data baked in. The difference is: they build a pretty page. We build a page that AI search engines can actually read and cite as authoritative."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I get started?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Email team@sitefresh.co or . Tell us about your business and current website. We'll send a quick intake form, you pay the 50% deposit via Stripe, and we start building. 5 business days later, you have a redesigned, AI-search-optimized site. Use the chat widget in the bottom-right corner for quick questions."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if AI search changes again after my redesign?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It will \u2014 that's the whole point of the newsletter and \u00e0 la carte enhancements. The $29.99/month newsletter tracks what changes in Google SGE, ChatGPT search, and Perplexity, with one concrete action item per month. When something material changes (new schema.org type, new structured data opportunity), we offer \u00e0 la carte updates: FAQ refresh ($99), schema migration ($149), quarterly audit ($199). You're never stuck with a 2026 site in 2027."
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "Person",
+   "name": "Robert Winslow Sailstad",
+   "jobTitle": "Principal",
+   "worksFor": {
+    "@type": "Organization",
+    "name": "SiteFresh"
+   },
+   "url": "https://sitefresh.co",
+   "email": "team@sitefresh.co",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+   },
+   "knowsAbout": [
+    "AI search optimization",
+    "structured data",
+    "JSON-LD schema",
+    "schema.org",
+    "Google SGE",
+    "ChatGPT search",
+    "Perplexity",
+    "small business websites",
+    "semantic HTML",
+    "Open Graph",
+    "local-first chat widgets",
+    "FAQ schema"
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "SiteFresh",
+     "item": "https://sitefresh.co/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Services",
+     "item": "https://sitefresh.co/#services"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "FAQ",
+     "item": "https://sitefresh.co/#faq"
+    }
+   ]
+  }
+ ]
 }

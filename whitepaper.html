@@ -11,355 +11,355 @@
 <meta property="og:site_name" content="SiteFresh">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "AI Search: Why Your Website Needs to Change, and How to Stay Ahead",
-  "description": "A SiteFresh White Paper on how AI search is rewriting the rules of web visibility — and what small businesses must do to stay ahead.",
-  "author": {
-    "@type": "Person",
-    "name": "Robert Sailstad",
-    "email": "team@sitefresh.co"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "SiteFresh",
-    "url": "https://sitefresh.co"
-  },
-  "datePublished": "2026-09-22",
-  "dateModified": "2026-09-22",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://sitefresh.co/whitepaper"
-  },
-  "about": ["AI search", "structured data", "JSON-LD", "small business websites", "SEO", "ChatGPT search", "Google SGE", "Perplexity"],
-  "articleSection": "White Paper"
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "AI Search: Why Your Website Needs to Change, and How to Stay Ahead",
+ "description": "A SiteFresh White Paper on how AI search is rewriting the rules of web visibility — and what small businesses must do to stay ahead.",
+ "author": {
+  "@type": "Person",
+  "name": "Robert Sailstad",
+  "email": "team@sitefresh.co"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "SiteFresh",
+  "url": "https://sitefresh.co"
+ },
+ "datePublished": "2026-09-22",
+ "dateModified": "2026-09-22",
+ "mainEntityOfPage": {
+  "@type": "WebPage",
+  "@id": "https://sitefresh.co/whitepaper"
+ },
+ "about": ["AI search", "structured data", "JSON-LD", "small business websites", "SEO", "ChatGPT search", "Google SGE", "Perplexity"],
+ "articleSection": "White Paper"
 }
 </script>
 <style>
-  :root {
-    --bg: #0a0b0d;
-    --accent: #00d97e;
-    --fg: #e8e6e3;
-    --muted: #8a8780;
-    --card-bg: #111315;
-    --border: #1e2024;
-    --accent-dim: rgba(0, 217, 126, 0.15);
-  }
+ :root {
+  --bg: #0a0b0d;
+  --accent: #00d97e;
+  --fg: #e8e6e3;
+  --muted: #8a8780;
+  --card-bg: #111315;
+  --border: #1e2024;
+  --accent-dim: rgba(0, 217, 126, 0.15);
+ }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  html { scroll-behavior: smooth; }
+ html { scroll-behavior: smooth; }
 
-  body {
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.75;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
+ body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+ }
 
-  /* ── Hero ─────────────────────────────────────────────── */
+ /* ── Hero ─────────────────────────────────────────────── */
 
-  .hero {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 5rem 1.5rem 3.5rem;
-  }
+ .hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 3.5rem;
+ }
 
-  .hero-label {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    background: var(--accent-dim);
-    padding: 0.4rem 0.9rem;
-    border-radius: 4px;
-    margin-bottom: 2rem;
-  }
+ .hero-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+ }
 
-  .hero h1 {
-    font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
-    font-size: clamp(2.2rem, 5vw, 3.1rem);
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--fg);
-    margin-bottom: 1.25rem;
-  }
+ .hero h1 {
+  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
+  font-size: clamp(2.2rem, 5vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  margin-bottom: 1.25rem;
+ }
 
-  .hero-sub {
-    font-size: 1.05rem;
-    color: var(--muted);
-    font-weight: 400;
-  }
+ .hero-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 400;
+ }
 
-  .hero-rule {
-    width: 60px;
-    height: 3px;
-    background: var(--accent);
-    border: none;
-    margin: 2.5rem 0 0;
-    border-radius: 2px;
-  }
+ .hero-rule {
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  border: none;
+  margin: 2.5rem 0 0;
+  border-radius: 2px;
+ }
 
-  /* ── Content body ────────────────────────────────────── */
+ /* ── Content body ────────────────────────────────────── */
 
-  .content {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 1.5rem 4rem;
-  }
+ .content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+ }
 
-  .section {
-    margin-top: 4rem;
-  }
+ .section {
+  margin-top: 4rem;
+ }
 
-  .section-header {
-    display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-  }
+ .section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+ }
 
-  .section-number {
-    font-family: Georgia, serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--accent);
-    flex-shrink: 0;
-    line-height: 1;
-  }
+ .section-number {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+  line-height: 1;
+ }
 
-  .section-header h2 {
-    font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
-    font-size: clamp(1.6rem, 3.5vw, 2rem);
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    color: var(--fg);
-  }
+ .section-header h2 {
+  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+ }
 
-  .content p {
-    margin-bottom: 1.4rem;
-    color: var(--fg);
-  }
+ .content p {
+  margin-bottom: 1.4rem;
+  color: var(--fg);
+ }
 
-  .content strong {
-    font-weight: 700;
-    color: #fff;
-  }
+ .content strong {
+  font-weight: 700;
+  color: #fff;
+ }
 
-  .content em {
-    font-style: italic;
-  }
+ .content em {
+  font-style: italic;
+ }
 
-  .content a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 217, 126, 0.3);
-    transition: border-color 0.15s ease;
-  }
+ .content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 217, 126, 0.3);
+  transition: border-color 0.15s ease;
+ }
 
-  .content a:hover {
-    border-bottom-color: var(--accent);
-  }
+ .content a:hover {
+  border-bottom-color: var(--accent);
+ }
 
-  .content ul {
-    list-style: none;
-    margin: 1.4rem 0;
-    padding-left: 0;
-  }
+ .content ul {
+  list-style: none;
+  margin: 1.4rem 0;
+  padding-left: 0;
+ }
 
-  .content ol {
-    margin: 1.4rem 0;
-    padding-left: 1.5rem;
-  }
+ .content ol {
+  margin: 1.4rem 0;
+  padding-left: 1.5rem;
+ }
 
-  .content ol li {
-    margin-bottom: 0.9rem;
-    padding-left: 0.5rem;
-  }
+ .content ol li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.5rem;
+ }
 
-  .content ol li::marker {
-    color: var(--accent);
-    font-weight: 700;
-  }
+ .content ol li::marker {
+  color: var(--accent);
+  font-weight: 700;
+ }
 
-  .content ul li {
-    position: relative;
-    padding-left: 1.4rem;
-    margin-bottom: 0.7rem;
-  }
+ .content ul li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.7rem;
+ }
 
-  .content ul li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: 700;
-  }
+ .content ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+ }
 
-  /* ── Pull quotes ─────────────────────────────────────── */
+ /* ── Pull quotes ─────────────────────────────────────── */
 
-  .pull-quote {
-    border-left: 4px solid var(--accent);
-    margin: 2.5rem 0;
-    padding: 1rem 0 1rem 1.5rem;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.35rem;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: -0.005em;
-  }
+ .pull-quote {
+  border-left: 4px solid var(--accent);
+  margin: 2.5rem 0;
+  padding: 1rem 0 1rem 1.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+ }
 
-  /* ── Bottom line card ────────────────────────────────── */
+ /* ── Bottom line card ────────────────────────────────── */
 
-  .bottom-line-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--accent);
-    border-radius: 10px;
-    padding: 2.5rem 2rem;
-    margin: 2rem 0;
-  }
+ .bottom-line-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  margin: 2rem 0;
+ }
 
-  .bottom-line-card h2 {
-    font-family: Georgia, serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 1.25rem;
-    letter-spacing: -0.01em;
-  }
+ .bottom-line-card h2 {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+ }
 
-  .bottom-line-card p {
-    margin-bottom: 1.2rem;
-  }
+ .bottom-line-card p {
+  margin-bottom: 1.2rem;
+ }
 
-  .bottom-line-card p:last-child {
-    margin-bottom: 0;
-  }
+ .bottom-line-card p:last-child {
+  margin-bottom: 0;
+ }
 
-  /* ── CTA ─────────────────────────────────────────────── */
+ /* ── CTA ─────────────────────────────────────────────── */
 
-  .cta {
-    text-align: center;
-    margin: 4rem 0 2rem;
-    padding: 3rem 1.5rem;
-    background: linear-gradient(135deg, var(--accent-dim) 0%, transparent 100%);
-    border-radius: 12px;
-    border: 1px solid rgba(0, 217, 126, 0.25);
-  }
+ .cta {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent-dim) 0%, transparent 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 217, 126, 0.25);
+ }
 
-  .cta-headline {
-    font-family: Georgia, serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.01em;
-  }
+ .cta-headline {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+ }
 
-  .cta-button {
-    display: inline-block;
-    background: #00d97e;
-    color: #ffffff;
-    font-weight: 800;
-    font-size: 1.1rem;
-    padding: 1rem 2.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    border: 2px solid #00d97e;
-    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
-  }
+ .cta-button {
+  display: inline-block;
+  background: #00d97e;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid #00d97e;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+ }
 
-  .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 217, 126, 0.4);
-    background: #00b86e;
-    border-color: #00b86e;
-  }
+ .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 217, 126, 0.4);
+  background: #00b86e;
+  border-color: #00b86e;
+ }
 
-  /* ── Tagline ──────────────────────────────────────────── */
+ /* ── Tagline ──────────────────────────────────────────── */
 
-  .tagline {
-    text-align: center;
-    margin-top: 3rem;
-    font-family: Georgia, serif;
-    font-size: 1.15rem;
-    font-style: italic;
-    color: var(--muted);
-    line-height: 1.6;
-  }
+ .tagline {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.6;
+ }
 
-  /* ── Footer ───────────────────────────────────────────── */
+ /* ── Footer ───────────────────────────────────────────── */
 
-  footer {
-    border-top: 1px solid var(--border);
-    margin-top: 4rem;
-    padding: 2.5rem 1.5rem 3rem;
-    text-align: center;
-  }
+ footer {
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 2.5rem 1.5rem 3rem;
+  text-align: center;
+ }
 
-  .footer-inner {
-    max-width: 720px;
-    margin: 0 auto;
-  }
+ .footer-inner {
+  max-width: 720px;
+  margin: 0 auto;
+ }
 
-  .footer-brand {
-    font-family: Georgia, serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 1rem;
-  }
+ .footer-brand {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+ }
 
-  .footer-contact {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.8;
-  }
+ .footer-contact {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.8;
+ }
 
-  .footer-contact a {
-    color: var(--muted);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.15s ease, color 0.15s ease;
-  }
+ .footer-contact a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+ }
 
-  .footer-contact a:hover {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-  }
+ .footer-contact a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+ }
 
-  .footer-sep {
-    color: var(--border);
-    margin: 0 0.5rem;
-  }
+ .footer-sep {
+  color: var(--border);
+  margin: 0 0.5rem;
+ }
 
-  .footer-copy {
-    margin-top: 1.5rem;
-    font-size: 0.75rem;
-    color: var(--muted);
-    opacity: 0.7;
-  }
+ .footer-copy {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.7;
+ }
 
-  /* ── Responsive ──────────────────────────────────────── */
+ /* ── Responsive ──────────────────────────────────────── */
 
-  @media (max-width: 480px) {
-    .hero { padding-top: 3.5rem; }
-    .content { font-size: 16px; }
-    .pull-quote { font-size: 1.15rem; }
-    .cta-headline { font-size: 1.4rem; }
-    .bottom-line-card { padding: 2rem 1.5rem; }
-  }
+ @media (max-width: 480px) {
+  .hero { padding-top: 3.5rem; }
+  .content { font-size: 16px; }
+  .pull-quote { font-size: 1.15rem; }
+  .cta-headline { font-size: 1.4rem; }
+  .bottom-line-card { padding: 2rem 1.5rem; }
+ }
 </style>
 </head>
 <body>
@@ -367,126 +367,126 @@
 <!-- ══════════════════════════════════════════════════ HERO ══════════════════════════════════════════════════ -->
 
 <section class="hero">
-  <span class="hero-label">SiteFresh White Paper · September 2026</span>
-  <h1>AI Search: Why Your Website Needs to Change, and How to Stay Ahead</h1>
-  <p class="hero-sub">A white paper on how AI search is rewriting the rules of web visibility — and what small businesses must do to stay ahead.</p>
-  <hr class="hero-rule">
+ <span class="hero-label">SiteFresh White Paper · September 2026</span>
+ <h1>AI Search: Why Your Website Needs to Change, and How to Stay Ahead</h1>
+ <p class="hero-sub">A white paper on how AI search is rewriting the rules of web visibility — and what small businesses must do to stay ahead.</p>
+ <hr class="hero-rule">
 </section>
 
 <!-- ══════════════════════════════════════════════════ BODY ══════════════════════════════════════════════════ -->
 
 <div class="content">
 
-  <!-- ── Section 01 ── -->
-  <section class="section">
-    <header class="section-header">
-      <span class="section-number">01</span>
-      <h2>What AI search actually is</h2>
-    </header>
-    <p>For twenty years, search worked one way: you typed keywords into Google, it matched keywords on pages, it showed you ten blue links. You clicked. You scrolled. You found what you needed — or you didn't.</p>
-    <p>That era is ending.</p>
-    <p><strong>AI search</strong> is what happens when a large language model sits between your customer and the internet. Instead of matching keywords, the AI reads the web, understands context, and <strong>generates an answer</strong>. Google SGE (Search Generative Experience), ChatGPT search, Perplexity, and Microsoft Copilot all do this now. When someone asks <em>"what does a roofing company charge in Duluth?"</em> — the AI doesn't show ten links. It reads the structured data on those ten websites, synthesizes an answer, and cites the sources it trusts.</p>
-    <blockquote class="pull-quote">Your customer never clicks through to your site. They get the answer directly from the AI. Your website either fed that answer — or it didn't.</blockquote>
-  </section>
+ <!-- ── Section 01 ── -->
+ <section class="section">
+  <header class="section-header">
+   <span class="section-number">01</span>
+   <h2>What AI search actually is</h2>
+  </header>
+  <p>For twenty years, search worked one way: you typed keywords into Google, it matched keywords on pages, it showed you ten blue links. You clicked. You scrolled. You found what you needed — or you didn't.</p>
+  <p>That era is ending.</p>
+  <p><strong>AI search</strong> is what happens when a large language model sits between your customer and the internet. Instead of matching keywords, the AI reads the web, understands context, and <strong>generates an answer</strong>. Google SGE (Search Generative Experience), ChatGPT search, Perplexity, and Microsoft Copilot all do this now. When someone asks <em>"what does a roofing company charge in Duluth?"</em> — the AI doesn't show ten links. It reads the structured data on those ten websites, synthesizes an answer, and cites the sources it trusts.</p>
+  <blockquote class="pull-quote">Your customer never clicks through to your site. They get the answer directly from the AI. Your website either fed that answer — or it didn't.</blockquote>
+ </section>
 
-  <!-- ── Section 02 ── -->
-  <section class="section">
-    <header class="section-header">
-      <span class="section-number">02</span>
-      <h2>Why your current website is invisible to AI search</h2>
-    </header>
-    <p>Most small business websites were built between 2018 and 2023. They were optimized for the old internet: visual design, image galleries, SEO keywords, contact forms, badge logos, photo carousels. They look fine to a human visitor.</p>
-    <p>But AI search engines don't see images. They don't scroll carousels. They don't fill out forms. They read <strong>structured data</strong> — machine-readable labels that say "this is a business, here's what it does, here's what it charges, here's where it's located, here are the questions customers ask."</p>
-    <p>Without structured data, your website is a wall of images and paragraphs that AI search can't parse. It's like having a store with no signage, no price tags, and no one at the counter — the customer walks in, can't figure out what you do, and walks out.</p>
-    <p><strong>The five things AI search looks for (that most small business sites don't have):</strong></p>
-    <ol>
-      <li><strong>JSON-LD structured data</strong> — machine-readable labels (LocalBusiness, FAQPage, OpeningHours) that tell AI what your business is</li>
-      <li><strong>FAQ schema</strong> — question-and-answer pairs that AI can cite directly when customers ask those questions</li>
-      <li><strong>Semantic HTML</strong> — proper heading structure, section tags, and accessibility attributes that make your content parseable</li>
-      <li><strong>Open Graph tags</strong> — so your business appears correctly when shared in Slack, Teams, email, or social media</li>
-      <li><strong>Clean, fast-loading pages</strong> — AI crawlers penalize slow, heavy sites (270KB of images and scripts scores lower than a 50KB structured page)</li>
-    </ol>
-    <p>A typical small business website has zero of these. That's why when someone asks an AI "who's the best roofer in Duluth?" — the AI cites Angi, HomeAdvisor, or Yelp, not the roofer's own website. The roofer's site is invisible because it wasn't built for AI to read.</p>
-  </section>
+ <!-- ── Section 02 ── -->
+ <section class="section">
+  <header class="section-header">
+   <span class="section-number">02</span>
+   <h2>Why your current website is invisible to AI search</h2>
+  </header>
+  <p>Most small business websites were built between 2018 and 2023. They were optimized for the old internet: visual design, image galleries, SEO keywords, contact forms, badge logos, photo carousels. They look fine to a human visitor.</p>
+  <p>But AI search engines don't see images. They don't scroll carousels. They don't fill out forms. They read <strong>structured data</strong> — machine-readable labels that say "this is a business, here's what it does, here's what it charges, here's where it's located, here are the questions customers ask."</p>
+  <p>Without structured data, your website is a wall of images and paragraphs that AI search can't parse. It's like having a store with no signage, no price tags, and no one at the counter — the customer walks in, can't figure out what you do, and walks out.</p>
+  <p><strong>The five things AI search looks for (that most small business sites don't have):</strong></p>
+  <ol>
+   <li><strong>JSON-LD structured data</strong> — machine-readable labels (LocalBusiness, FAQPage, OpeningHours) that tell AI what your business is</li>
+   <li><strong>FAQ schema</strong> — question-and-answer pairs that AI can cite directly when customers ask those questions</li>
+   <li><strong>Semantic HTML</strong> — proper heading structure, section tags, and accessibility attributes that make your content parseable</li>
+   <li><strong>Open Graph tags</strong> — so your business appears correctly when shared in Slack, Teams, email, or social media</li>
+   <li><strong>Clean, fast-loading pages</strong> — AI crawlers penalize slow, heavy sites (270KB of images and scripts scores lower than a 50KB structured page)</li>
+  </ol>
+  <p>A typical small business website has zero of these. That's why when someone asks an AI "who's the best roofer in Duluth?" — the AI cites Angi, HomeAdvisor, or Yelp, not the roofer's own website. The roofer's site is invisible because it wasn't built for AI to read.</p>
+ </section>
 
-  <!-- ── Section 03 ── -->
-  <section class="section">
-    <header class="section-header">
-      <span class="section-number">03</span>
-      <h2>How structured AI search gives you a competitive advantage</h2>
-    </header>
-    <p>Here's the opportunity: most of your competitors' websites are equally invisible. They're all stuck in the same 2019 design with the same missing structured data. The first business in your market to get this right doesn't just rank higher — it becomes the <strong>cited source</strong> that AI search engines reference when customers ask questions.</p>
-    <p>When a potential customer asks ChatGPT <em>"what roofing companies in Duluth handle insurance claims?"</em> — the AI reads the FAQ schema on every roofing website in Duluth. The one site with a FAQ entry that says "Yes, we coordinate directly with your insurance company for a smooth claims process" gets cited. The other nine sites — with no FAQ schema — don't.</p>
-    <blockquote class="pull-quote">That's not SEO. That's being the answer.</blockquote>
-    <p><strong>The competitive advantage compounds over time:</strong></p>
-    <ul>
-      <li><strong>Today:</strong> your site gets cited in AI search answers while competitors don't</li>
-      <li><strong>Next quarter:</strong> Google SGE surfaces your business in generative results because your structured data is established and consistent</li>
-      <li><strong>Next year:</strong> as AI search grows (and traditional blue-link search shrinks), you're already positioned while competitors scramble to catch up</li>
-      <li><strong>Ongoing:</strong> every time AI search standards change — a new schema type, a new structured data opportunity, a new way AI reads your site — you have a partner who updates you before your competitors even know it happened</li>
-    </ul>
-  </section>
+ <!-- ── Section 03 ── -->
+ <section class="section">
+  <header class="section-header">
+   <span class="section-number">03</span>
+   <h2>How structured AI search gives you a competitive advantage</h2>
+  </header>
+  <p>Here's the opportunity: most of your competitors' websites are equally invisible. They're all stuck in the same 2019 design with the same missing structured data. The first business in your market to get this right doesn't just rank higher — it becomes the <strong>cited source</strong> that AI search engines reference when customers ask questions.</p>
+  <p>When a potential customer asks ChatGPT <em>"what roofing companies in Duluth handle insurance claims?"</em> — the AI reads the FAQ schema on every roofing website in Duluth. The one site with a FAQ entry that says "Yes, we coordinate directly with your insurance company for a smooth claims process" gets cited. The other nine sites — with no FAQ schema — don't.</p>
+  <blockquote class="pull-quote">That's not SEO. That's being the answer.</blockquote>
+  <p><strong>The competitive advantage compounds over time:</strong></p>
+  <ul>
+   <li><strong>Today:</strong> your site gets cited in AI search answers while competitors don't</li>
+   <li><strong>Next quarter:</strong> Google SGE surfaces your business in generative results because your structured data is established and consistent</li>
+   <li><strong>Next year:</strong> as AI search grows (and traditional blue-link search shrinks), you're already positioned while competitors scramble to catch up</li>
+   <li><strong>Ongoing:</strong> every time AI search standards change — a new schema type, a new structured data opportunity, a new way AI reads your site — you have a partner who updates you before your competitors even know it happened</li>
+  </ul>
+ </section>
 
-  <!-- ── Section 04 ── -->
-  <section class="section">
-    <header class="section-header">
-      <span class="section-number">04</span>
-      <h2>The AI landscape changes at breakneck speed. You shouldn't have to track it.</h2>
-    </header>
-    <p>Google SGE rolls out a new format. ChatGPT adds visual search. Perplexity changes how it cites sources. schema.org releases a new business type. A new AI search engine launches and gains 10 million users in a month.</p>
-    <p>This is the reality of 2026. The AI search landscape shifts every 30-60 days. Keeping up with it is a full-time job — and you already have one.</p>
-    <p><strong>Most businesses handle this one of three ways:</strong></p>
-    <ol>
-      <li><strong>Ignore it.</strong> Hope AI search doesn't matter. (It already does — it's how 40% of searches are answered in 2026.)</li>
-      <li><strong>Do it themselves.</strong> Spend hours reading AI search blogs, testing schema validators, updating JSON-LD by hand, and falling behind every time something changes.</li>
-      <li><strong>Partner with someone who lives this every day.</strong> Get the initial rebuild right, then let a specialist keep you current — for less than the cost of a single ad campaign.</li>
-    </ol>
-    <p><strong>Option 3 is what SiteFresh does.</strong> And we don't call you a "client" or a "customer." We call you a <strong>partner</strong>, because that's how we work:</p>
-    <ul>
-      <li><strong>$299 one-time</strong> gets your site rebuilt for AI search — structured data, FAQ schema, semantic HTML, Open Graph, a local-first chat widget, and an AI Search Roadmap that shows exactly what was fixed and what to watch next. Delivered in 5 business days. Satisfaction guaranteed.</li>
-      <li><strong>$29.99/month</strong> keeps you current. One email per month: what changed in AI search, one concrete action item (or we do it for you), and one case study showing how another business gained an edge. Cancel anytime.</li>
-      <li><strong>À la carte ($49-199)</strong> handles the changes that matter: FAQ refreshes when your customers start asking new questions, schema migrations when schema.org evolves, quarterly audits to track your AI search visibility over time.</li>
-    </ul>
-    <p>You focus on running your business. We focus on making sure AI search can find it, read it, and cite it.</p>
-  </section>
+ <!-- ── Section 04 ── -->
+ <section class="section">
+  <header class="section-header">
+   <span class="section-number">04</span>
+   <h2>The AI landscape changes at breakneck speed. You shouldn't have to track it.</h2>
+  </header>
+  <p>Google SGE rolls out a new format. ChatGPT adds visual search. Perplexity changes how it cites sources. schema.org releases a new business type. A new AI search engine launches and gains 10 million users in a month.</p>
+  <p>This is the reality of 2026. The AI search landscape shifts every 30-60 days. Keeping up with it is a full-time job — and you already have one.</p>
+  <p><strong>Most businesses handle this one of three ways:</strong></p>
+  <ol>
+   <li><strong>Ignore it.</strong> Hope AI search doesn't matter. (It already does — it's how 40% of searches are answered in 2026.)</li>
+   <li><strong>Do it themselves.</strong> Spend hours reading AI search blogs, testing schema validators, updating JSON-LD by hand, and falling behind every time something changes.</li>
+   <li><strong>Partner with someone who lives this every day.</strong> Get the initial rebuild right, then let a specialist keep you current — for less than the cost of a single ad campaign.</li>
+  </ol>
+  <p><strong>Option 3 is what SiteFresh does.</strong> And we don't call you a "client" or a "customer." We call you a <strong>partner</strong>, because that's how we work:</p>
+  <ul>
+   <li><strong>$299 one-time</strong> gets your site rebuilt for AI search — structured data, FAQ schema, semantic HTML, Open Graph, a local-first chat widget, and an AI Search Roadmap that shows exactly what was fixed and what to watch next. Delivered in 5 business days. Satisfaction guaranteed.</li>
+   <li><strong>$29.99/month</strong> keeps you current. One email per month: what changed in AI search, one concrete action item (or we do it for you), and one case study showing how another business gained an edge. Cancel anytime.</li>
+   <li><strong>À la carte ($49-199)</strong> handles the changes that matter: FAQ refreshes when your customers start asking new questions, schema migrations when schema.org evolves, quarterly audits to track your AI search visibility over time.</li>
+  </ul>
+  <p>You focus on running your business. We focus on making sure AI search can find it, read it, and cite it.</p>
+ </section>
 
-  <!-- ── The Bottom Line ── -->
-  <section class="section">
-    <div class="bottom-line-card">
-      <h2>The bottom line</h2>
-      <p>Your website was built for a search engine that no longer works the way it used to. AI search arrived, and it reads the web differently — structured data, not images. FAQ answers, not photo galleries. Clean schema, not keyword-stuffed paragraphs.</p>
-      <p>The businesses that adapt first won't just rank higher. They'll be the <strong>answers</strong> that AI search gives when customers ask. The businesses that don't will be invisible — not because their service is worse, but because their website wasn't built for the tools people actually use to search now.</p>
-      <p><strong>$299. One-time. Five days. No lock-in. Satisfaction guaranteed.</strong></p>
-      <p>That's the cost of catching up. The $29.99/month newsletter is the cost of staying ahead.</p>
-      <p>And the partnership — having someone who tracks AI search changes so you don't have to — that's the cost of peace of mind. It's also, frankly, the cheapest competitive advantage in your market right now.</p>
-    </div>
-  </section>
-
-  <!-- ── CTA ── -->
-  <div class="cta">
-    <p class="cta-headline">$299. One-time. Five days. No lock-in. Satisfaction guaranteed.</p>
-    <a href="/get-started.html" class="cta-button">Get started with SiteFresh →</a>
+ <!-- ── The Bottom Line ── -->
+ <section class="section">
+  <div class="bottom-line-card">
+   <h2>The bottom line</h2>
+   <p>Your website was built for a search engine that no longer works the way it used to. AI search arrived, and it reads the web differently — structured data, not images. FAQ answers, not photo galleries. Clean schema, not keyword-stuffed paragraphs.</p>
+   <p>The businesses that adapt first won't just rank higher. They'll be the <strong>answers</strong> that AI search gives when customers ask. The businesses that don't will be invisible — not because their service is worse, but because their website wasn't built for the tools people actually use to search now.</p>
+   <p><strong>$299. One-time. Five days. No lock-in. Satisfaction guaranteed.</strong></p>
+   <p>That's the cost of catching up. The $29.99/month newsletter is the cost of staying ahead.</p>
+   <p>And the partnership — having someone who tracks AI search changes so you don't have to — that's the cost of peace of mind. It's also, frankly, the cheapest competitive advantage in your market right now.</p>
   </div>
+ </section>
 
-  <!-- ── Tagline ── -->
-  <p class="tagline">SiteFresh — We don't design websites. We engineer them for AI search.</p>
+ <!-- ── CTA ── -->
+ <div class="cta">
+  <p class="cta-headline">$299. One-time. Five days. No lock-in. Satisfaction guaranteed.</p>
+  <a href="/get-started.html" class="cta-button">Get started with SiteFresh →</a>
+ </div>
+
+ <!-- ── Tagline ── -->
+ <p class="tagline">SiteFresh — We don't design websites. We engineer them for AI search.</p>
 
 </div>
 
 <!-- ══════════════════════════════════════════════════ FOOTER ══════════════════════════════════════════════════ -->
 
 <footer>
-  <div class="footer-inner">
-    <div class="footer-brand"><img src="/logo.svg" alt="SiteFresh" style="width:24px;height:24px;vertical-align:middle;margin-right:6px;border-radius:4px;">SiteFresh</div>
-    <div class="footer-contact">
-      <a href="mailto:team@sitefresh.co">team@sitefresh.co</a>
-      <span class="footer-sep">·</span>
-      <a href="mailto:team@sitefresh.co">team@sitefresh.co</a>
-      <span class="footer-sep">·</span>
-      <a href="/">sitefresh.co</a>
-    </div>
-    <div class="footer-copy">© 2026 SiteFresh · A SiteFresh White Paper · September 2026</div>
+ <div class="footer-inner">
+  <div class="footer-brand"><img src="/logo.svg" alt="SiteFresh" style="width:24px;height:24px;vertical-align:middle;margin-right:6px;border-radius:4px;">SiteFresh</div>
+  <div class="footer-contact">
+   <a href="mailto:team@sitefresh.co">team@sitefresh.co</a>
+   <span class="footer-sep">·</span>
+   <a href="mailto:team@sitefresh.co">team@sitefresh.co</a>
+   <span class="footer-sep">·</span>
+   <a href="/">sitefresh.co</a>
   </div>
+  <div class="footer-copy">© 2026 SiteFresh · A SiteFresh White Paper · September 2026</div>
+ </div>
 </footer>
 
 </body>

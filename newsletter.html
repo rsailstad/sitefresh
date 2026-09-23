@@ -1,539 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>AI Search Newsletter — SiteFresh</title>
-  <meta name="description" content="SiteFresh AI search newsletter — industry-specific insights, actionable ideas, and consulting opportunities.">
-  <style>
-    :root {
-      --bg: #0a0b0d;
-      --bg2: #141518;
-      --fg: #e8e6e3;
-      --muted: #8a8780;
-      --muted-bright: #b8b5a8;
-      --accent: #00d97e;
-      --accent-dim: #00b86e;
-      --border: #252629;
-      --radius: 12px;
-      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      --serif: Georgia, "Times New Roman", serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: var(--sans);
-      line-height: 1.7;
-    }
-    .nav {
-      position: sticky;
-      top: 0;
-      background: rgba(10, 11, 13, 0.95);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-    }
-    .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      font-weight: 800;
-      font-size: 1.05rem;
-      text-decoration: none;
-    }
-    .nav-brand img { width: 28px; height: 28px; border-radius: 6px; margin-right: 6px; }
-    .nav-brand .green { color: var(--accent); }
-    .nav-user {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      font-size: 0.85rem;
-    }
-    .nav-user .email { color: var(--muted-bright); }
-    .nav-user button {
-      background: none;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: 6px 14px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.8rem;
-      font-family: var(--sans);
-    }
-    .nav-user button:hover { border-color: var(--accent); color: var(--accent); }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-    .issue-header {
-      margin-bottom: 40px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 32px;
-    }
-    .issue-meta {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-    .issue-badge {
-      background: rgba(0, 217, 126, 0.1);
-      border: 1px solid rgba(0, 217, 126, 0.3);
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 4px 12px;
-      border-radius: 20px;
-    }
-    .issue-date { color: var(--muted); font-size: 0.85rem; }
-    .issue-title {
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 8px;
-    }
-    .issue-subtitle {
-      color: var(--muted-bright);
-      font-size: 1.05rem;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .section h2 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: var(--fg);
-    }
-    .section p {
-      margin-bottom: 16px;
-      color: var(--muted-bright);
-    }
-    .section a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .section a:hover { text-decoration: underline; }
-    .sources {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin: 20px 0;
-    }
-    .sources-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-    .sources a {
-      display: block;
-      font-size: 0.85rem;
-      margin-bottom: 4px;
-    }
-    .ideas-section {
-      background: linear-gradient(135deg, rgba(0, 217, 126, 0.05) 0%, transparent 100%);
-      border: 1px solid rgba(0, 217, 126, 0.2);
-      border-radius: var(--radius);
-      padding: 32px;
-      margin-top: 48px;
-    }
-    .ideas-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-    .ideas-header .industry-icon {
-      font-size: 1.5rem;
-    }
-    .ideas-header h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-    .ideas-header .industry-name {
-      color: var(--accent);
-    }
-    .idea-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 16px;
-    }
-    .idea-card .idea-num {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-    .idea-card h3 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .idea-card p {
-      font-size: 0.9rem;
-      color: var(--muted-bright);
-      margin-bottom: 12px;
-    }
-    .idea-card .consulting-cta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid var(--border);
-    }
-    .idea-card .consulting-cta .label {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    .idea-card .consulting-cta .price {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--accent);
-    }
-    .idea-card .consulting-cta a {
-      margin-left: auto;
-      font-size: 0.8rem;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .idea-card .consulting-cta a:hover { text-decoration: underline; }
-    .login-required {
-      text-align: center;
-      padding: 80px 24px;
-    }
-    .login-required h1 {
-      font-family: var(--serif);
-      font-size: 1.6rem;
-      margin-bottom: 16px;
-    }
-    .login-required p {
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-    .login-required .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: #0a0b0d;
-      padding: 14px 32px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .no-issue {
-      text-align: center;
-      padding: 80px 24px;
-    }
-    .no-issue h1 {
-      font-family: var(--serif);
-      font-size: 1.4rem;
-      margin-bottom: 12px;
-    }
-    .no-issue p { color: var(--muted); }
-    .paywall-overlay {
-      position: relative;
-    }
-    .paywall-overlay .ideas-content {
-      filter: blur(8px);
-      pointer-events: none;
-      user-select: none;
-    }
-    .paywall-card {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: var(--bg2);
-      border: 2px solid var(--accent);
-      border-radius: var(--radius);
-      padding: 32px 40px;
-      text-align: center;
-      z-index: 10;
-      max-width: 360px;
-      box-shadow: 0 12px 48px rgba(0, 217, 126, 0.2);
-    }
-    .paywall-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-    }
-    .paywall-card p {
-      color: var(--muted-bright);
-      font-size: 0.9rem;
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
-    .paywall-card .price-tag {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    .paywall-card .price-tag small {
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 400;
-    }
-    .paywall-card .btn-subscribe {
-      display: inline-block;
-      background: var(--accent);
-      color: #0a0b0d;
-      padding: 14px 32px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1rem;
-      transition: transform 0.12s, box-shadow 0.12s;
-    }
-    .paywall-card .btn-subscribe:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
-    }
-    .subscription-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0;
-      background: rgba(0, 217, 126, 0.1);
-      border: 1px solid rgba(0, 217, 126, 0.3);
-      color: var(--accent);
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-left: 12px;
-    }
-    .subscription-badge.free {
-      background: rgba(138, 135, 128, 0.1);
-      border-color: rgba(138, 135, 128, 0.3);
-      color: var(--muted);
-    }
-    @media (max-width: 600px) { .paywall-card { padding: 24px; max-width: calc(100% - 48px); } }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+ <title>AI Search Newsletter — SiteFresh</title>
+ <meta name="description" content="SiteFresh AI search newsletter — industry-specific insights, actionable ideas, and consulting opportunities.">
+ <style>
+  :root {
+   --bg: #0a0b0d;
+   --bg2: #141518;
+   --fg: #e8e6e3;
+   --muted: #8a8780;
+   --muted-bright: #b8b5a8;
+   --accent: #00d97e;
+   --accent-dim: #00b86e;
+   --border: #252629;
+   --radius: 12px;
+   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   --serif: Georgia, "Times New Roman", serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+   background: var(--bg);
+   color: var(--fg);
+   font-family: var(--sans);
+   line-height: 1.7;
+  }
+  .nav {
+   position: sticky;
+   top: 0;
+   background: rgba(10, 11, 13, 0.95);
+   backdrop-filter: blur(12px);
+   border-bottom: 1px solid var(--border);
+   padding: 16px 24px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+  }
+  .nav-brand {
+   display: flex;
+   align-items: center;
+   gap: 0;
+   font-weight: 800;
+   font-size: 1.05rem;
+   text-decoration: none;
+  }
+  .nav-brand img { width: 28px; height: 28px; border-radius: 6px; margin-right: 6px; }
+  .nav-brand .green { color: var(--accent); }
+  .nav-user {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   font-size: 0.85rem;
+  }
+  .nav-user .email { color: var(--muted-bright); }
+  .nav-user button {
+   background: none;
+   border: 1px solid var(--border);
+   color: var(--muted);
+   padding: 6px 14px;
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 0.8rem;
+   font-family: var(--sans);
+  }
+  .nav-user button:hover { border-color: var(--accent); color: var(--accent); }
+  .container {
+   max-width: 760px;
+   margin: 0 auto;
+   padding: 48px 24px 80px;
+  }
+  .issue-header {
+   margin-bottom: 40px;
+   border-bottom: 1px solid var(--border);
+   padding-bottom: 32px;
+  }
+  .issue-meta {
+   display: flex;
+   gap: 16px;
+   align-items: center;
+   margin-bottom: 12px;
+  }
+  .issue-badge {
+   background: rgba(0, 217, 126, 0.1);
+   border: 1px solid rgba(0, 217, 126, 0.3);
+   color: var(--accent);
+   font-size: 0.7rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+   padding: 4px 12px;
+   border-radius: 20px;
+  }
+  .issue-date { color: var(--muted); font-size: 0.85rem; }
+  .issue-title {
+   font-family: var(--serif);
+   font-size: 1.8rem;
+   font-weight: 700;
+   line-height: 1.3;
+   margin-bottom: 8px;
+  }
+  .issue-subtitle {
+   color: var(--muted-bright);
+   font-size: 1.05rem;
+  }
+  .section {
+   margin-bottom: 40px;
+  }
+  .section h2 {
+   font-size: 1.3rem;
+   font-weight: 700;
+   margin-bottom: 16px;
+   color: var(--fg);
+  }
+  .section p {
+   margin-bottom: 16px;
+   color: var(--muted-bright);
+  }
+  .section a {
+   color: var(--accent);
+   text-decoration: none;
+  }
+  .section a:hover { text-decoration: underline; }
+  .sources {
+   background: var(--bg2);
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   padding: 16px 20px;
+   margin: 20px 0;
+  }
+  .sources-label {
+   font-size: 0.75rem;
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+   color: var(--muted);
+   margin-bottom: 8px;
+  }
+  .sources a {
+   display: block;
+   font-size: 0.85rem;
+   margin-bottom: 4px;
+  }
+  .ideas-section {
+   background: linear-gradient(135deg, rgba(0, 217, 126, 0.05) 0%, transparent 100%);
+   border: 1px solid rgba(0, 217, 126, 0.2);
+   border-radius: var(--radius);
+   padding: 32px;
+   margin-top: 48px;
+  }
+  .ideas-header {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   margin-bottom: 24px;
+  }
+  .ideas-header .industry-icon {
+   font-size: 1.5rem;
+  }
+  .ideas-header h2 {
+   font-size: 1.2rem;
+   font-weight: 700;
+  }
+  .ideas-header .industry-name {
+   color: var(--accent);
+  }
+  .idea-card {
+   background: var(--bg2);
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   padding: 20px;
+   margin-bottom: 16px;
+  }
+  .idea-card .idea-num {
+   font-size: 0.7rem;
+   font-weight: 700;
+   color: var(--accent);
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+   margin-bottom: 8px;
+  }
+  .idea-card h3 {
+   font-size: 1.05rem;
+   font-weight: 600;
+   margin-bottom: 8px;
+  }
+  .idea-card p {
+   font-size: 0.9rem;
+   color: var(--muted-bright);
+   margin-bottom: 12px;
+  }
+  .idea-card .consulting-cta {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   margin-top: 12px;
+   padding-top: 12px;
+   border-top: 1px solid var(--border);
+  }
+  .idea-card .consulting-cta .label {
+   font-size: 0.8rem;
+   color: var(--muted);
+  }
+  .idea-card .consulting-cta .price {
+   font-size: 0.85rem;
+   font-weight: 700;
+   color: var(--accent);
+  }
+  .idea-card .consulting-cta a {
+   margin-left: auto;
+   font-size: 0.8rem;
+   color: var(--accent);
+   text-decoration: none;
+   font-weight: 600;
+  }
+  .idea-card .consulting-cta a:hover { text-decoration: underline; }
+  .login-required {
+   text-align: center;
+   padding: 80px 24px;
+  }
+  .login-required h1 {
+   font-family: var(--serif);
+   font-size: 1.6rem;
+   margin-bottom: 16px;
+  }
+  .login-required p {
+   color: var(--muted);
+   margin-bottom: 24px;
+  }
+  .login-required .btn {
+   display: inline-block;
+   background: var(--accent);
+   color: #0a0b0d;
+   padding: 14px 32px;
+   border-radius: 8px;
+   text-decoration: none;
+   font-weight: 700;
+  }
+  .no-issue {
+   text-align: center;
+   padding: 80px 24px;
+  }
+  .no-issue h1 {
+   font-family: var(--serif);
+   font-size: 1.4rem;
+   margin-bottom: 12px;
+  }
+  .no-issue p { color: var(--muted); }
+  .paywall-overlay {
+   position: relative;
+  }
+  .paywall-overlay .ideas-content {
+   filter: blur(8px);
+   pointer-events: none;
+   user-select: none;
+  }
+  .paywall-card {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: var(--bg2);
+   border: 2px solid var(--accent);
+   border-radius: var(--radius);
+   padding: 32px 40px;
+   text-align: center;
+   z-index: 10;
+   max-width: 360px;
+   box-shadow: 0 12px 48px rgba(0, 217, 126, 0.2);
+  }
+  .paywall-card h3 {
+   font-size: 1.2rem;
+   margin-bottom: 8px;
+  }
+  .paywall-card p {
+   color: var(--muted-bright);
+   font-size: 0.9rem;
+   margin-bottom: 20px;
+   line-height: 1.5;
+  }
+  .paywall-card .price-tag {
+   font-size: 1.6rem;
+   font-weight: 800;
+   color: var(--accent);
+   margin-bottom: 16px;
+  }
+  .paywall-card .price-tag small {
+   font-size: 0.8rem;
+   color: var(--muted);
+   font-weight: 400;
+  }
+  .paywall-card .btn-subscribe {
+   display: inline-block;
+   background: var(--accent);
+   color: #0a0b0d;
+   padding: 14px 32px;
+   border-radius: 8px;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 1rem;
+   transition: transform 0.12s, box-shadow 0.12s;
+  }
+  .paywall-card .btn-subscribe:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
+  }
+  .subscription-badge {
+   display: inline-flex;
+   align-items: center;
+   gap: 0;
+   background: rgba(0, 217, 126, 0.1);
+   border: 1px solid rgba(0, 217, 126, 0.3);
+   color: var(--accent);
+   font-size: 0.75rem;
+   font-weight: 600;
+   padding: 4px 12px;
+   border-radius: 20px;
+   margin-left: 12px;
+  }
+  .subscription-badge.free {
+   background: rgba(138, 135, 128, 0.1);
+   border-color: rgba(138, 135, 128, 0.3);
+   color: var(--muted);
+  }
+  @media (max-width: 600px) { .paywall-card { padding: 24px; max-width: calc(100% - 48px); } }
+ </style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" class="nav-brand">
-      <img src="/logo.svg" alt="SiteFresh">
-      <span style="color:#fff;">Site</span><span class="green">Fresh</span>
-    </a>
-    <div class="nav-user" id="navUser" style="display:none;">
-      <span class="email" id="userEmail"></span>
-      <button id="logoutBtn">Log out</button>
-    </div>
-  </nav>
+ <nav class="nav">
+  <a href="/" class="nav-brand">
+   <img src="/logo.svg" alt="SiteFresh">
+   <span style="color:#fff;">Site</span><span class="green">Fresh</span>
+  </a>
+  <div class="nav-user" id="navUser" style="display:none;">
+   <span class="email" id="userEmail"></span>
+   <button id="logoutBtn">Log out</button>
+  </div>
+ </nav>
 
-  <div id="loginRequired" class="login-required" style="display:none;">
-    <h1>Subscribe to read the newsletter</h1>
-    <p>The SiteFresh AI search newsletter delivers industry-specific insights and 5 actionable ideas every issue.</p>
-    <p style="font-size:0.9rem;">$29.99/month · Cancel anytime · First issue free</p>
-    <a href="/signup.html" class="btn">Subscribe →</a>
+ <div id="loginRequired" class="login-required" style="display:none;">
+  <h1>Subscribe to read the newsletter</h1>
+  <p>The SiteFresh AI search newsletter delivers industry-specific insights and 5 actionable ideas every issue.</p>
+  <p style="font-size:0.9rem;">$29.99/month · Cancel anytime · First issue free</p>
+  <a href="/signup.html" class="btn">Subscribe →</a>
+ </div>
+
+ <div id="noIssue" class="no-issue" style="display:none;">
+  <h1>No issues yet</h1>
+  <p>The first issue launches soon. You'll be notified by email.</p>
+ </div>
+
+ <div id="newsletterContent" class="container" style="display:none;">
+  <div class="issue-header">
+   <div class="issue-meta">
+    <span class="issue-badge" id="issueBadge">Issue #1</span>
+    <span class="issue-date" id="issueDate"></span>
+   </div>
+   <h1 class="issue-title" id="issueTitle"></h1>
+   <p class="issue-subtitle" id="issueSubtitle"></p>
   </div>
 
-  <div id="noIssue" class="no-issue" style="display:none;">
-    <h1>No issues yet</h1>
-    <p>The first issue launches soon. You'll be notified by email.</p>
+  <div id="issueBody"></div>
+
+  <div class="ideas-section" id="ideasSection">
+   <div class="ideas-header">
+    <span class="industry-icon" id="industryIcon"></span>
+    <h2>5 ways this applies to your <span class="industry-name" id="industryName"></span> business</h2>
+   </div>
+   <div id="ideasList"></div>
   </div>
+ </div>
 
-  <div id="newsletterContent" class="container" style="display:none;">
-    <div class="issue-header">
-      <div class="issue-meta">
-        <span class="issue-badge" id="issueBadge">Issue #1</span>
-        <span class="issue-date" id="issueDate"></span>
-      </div>
-      <h1 class="issue-title" id="issueTitle"></h1>
-      <p class="issue-subtitle" id="issueSubtitle"></p>
-    </div>
+ <script type="module">
+  const { getCurrentUser, getLatestIssue, getIndustryIdeas } = await import('/newsletter-config.js');
 
-    <div id="issueBody"></div>
+  try {
+   const session = await getCurrentUser();
+   if (!session) {
+    document.getElementById('loginRequired').style.display = 'block';
+   } else {
+    document.getElementById('navUser').style.display = 'flex';
+    document.getElementById('userEmail').textContent = session.user.email;
 
-    <div class="ideas-section" id="ideasSection">
-      <div class="ideas-header">
-        <span class="industry-icon" id="industryIcon"></span>
-        <h2>5 ways this applies to your <span class="industry-name" id="industryName"></span> business</h2>
-      </div>
-      <div id="ideasList"></div>
-    </div>
-  </div>
+    // Logout
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+     const { signOut } = await import('/newsletter-config.js');
+     await signOut();
+     window.location.href = '/';
+    });
 
-  <script type="module">
-    const { getCurrentUser, getLatestIssue, getIndustryIdeas } = await import('/newsletter-config.js');
+    // Check subscription tier
+    const isPaid = session.profile?.subscription_tier === 'paid';
+    
+    // Show subscription badge in nav
+    const badge = document.createElement('span');
+    badge.className = 'subscription-badge' + (isPaid ? '' : ' free');
+    badge.textContent = isPaid ? '✓ Paid' : 'Free';
+    document.querySelector('.nav-user').insertBefore(badge, document.querySelector('.nav-user').firstChild);
 
-    try {
-      const session = await getCurrentUser();
-      if (!session) {
-        document.getElementById('loginRequired').style.display = 'block';
-      } else {
-        document.getElementById('navUser').style.display = 'flex';
-        document.getElementById('userEmail').textContent = session.user.email;
+    const issue = await getLatestIssue();
+    if (!issue) {
+     document.getElementById('noIssue').style.display = 'block';
+    } else {
+     document.getElementById('newsletterContent').style.display = 'block';
+     document.getElementById('issueBadge').textContent = `Issue #${issue.issue_number}`;
+     document.getElementById('issueDate').textContent = new Date(issue.published_date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+     document.getElementById('issueTitle').textContent = issue.title;
+     document.getElementById('issueSubtitle').textContent = issue.subtitle || '';
 
-        // Logout
-        document.getElementById('logoutBtn').addEventListener('click', async () => {
-          const { signOut } = await import('/newsletter-config.js');
-          await signOut();
-          window.location.href = '/';
-        });
-
-        // Check subscription tier
-        const isPaid = session.profile?.subscription_tier === 'paid';
-        
-        // Show subscription badge in nav
-        const badge = document.createElement('span');
-        badge.className = 'subscription-badge' + (isPaid ? '' : ' free');
-        badge.textContent = isPaid ? '✓ Paid' : 'Free';
-        document.querySelector('.nav-user').insertBefore(badge, document.querySelector('.nav-user').firstChild);
-
-        const issue = await getLatestIssue();
-        if (!issue) {
-          document.getElementById('noIssue').style.display = 'block';
-        } else {
-          document.getElementById('newsletterContent').style.display = 'block';
-          document.getElementById('issueBadge').textContent = `Issue #${issue.issue_number}`;
-          document.getElementById('issueDate').textContent = new Date(issue.published_date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-          document.getElementById('issueTitle').textContent = issue.title;
-          document.getElementById('issueSubtitle').textContent = issue.subtitle || '';
-
-          // Render sections
-          const body = document.getElementById('issueBody');
-          if (issue.content && issue.content.sections) {
-            for (const sec of issue.content.sections) {
-              const div = document.createElement('div');
-              div.className = 'section';
-              div.innerHTML = `<h2>${sec.heading}</h2><p>${sec.body}</p>`;
-              if (sec.sources && sec.sources.length) {
-                let sourcesHtml = '<div class="sources"><div class="sources-label">Sources</div>';
-                for (const src of sec.sources) {
-                  sourcesHtml += `<a href="${src.url}" target="_blank" rel="noopener">${src.title}</a>`;
-                }
-                sourcesHtml += '</div>';
-                div.innerHTML += sourcesHtml;
-              }
-              body.appendChild(div);
-            }
-            if (issue.content.intro) {
-              const intro = document.createElement('div');
-              intro.className = 'section';
-              intro.innerHTML = `<p style="font-size:1.05rem;color:var(--fg);">${issue.content.intro}</p>`;
-              body.insertBefore(intro, body.firstChild);
-            }
-          }
-
-          // Render industry ideas
-          const industry = session.profile?.industry || 'general';
-          const industryLabels = {
-            roofing: 'Roofing', dental: 'Dental', realestate: 'Real Estate',
-            restaurant: 'Restaurant', legal: 'Legal', automotive: 'Automotive',
-            fitness: 'Fitness', landscaping: 'Landscaping', plumbing: 'Plumbing',
-            healthcare: 'Healthcare', beauty: 'Beauty', general: 'General Business'
-          };
-          const industryIcons = {
-            roofing: '🏠', dental: '🦷', realestate: '🏡', restaurant: '🍽️',
-            legal: '⚖️', automotive: '🚗', fitness: '💪', landscaping: '🌿',
-            plumbing: '🔧', healthcare: '🏥', beauty: '💅', general: '🏢'
-          };
-          document.getElementById('industryIcon').textContent = industryIcons[industry] || '🏢';
-          document.getElementById('industryName').textContent = industryLabels[industry] || 'General Business';
-
-          const ideas = await getIndustryIdeas(issue.id, industry);
-          const ideasList = document.getElementById('ideasList');
-          const ideasSection = document.getElementById('ideasSection');
-
-          if (isPaid) {
-            // Paid subscriber — show full content
-            if (ideas && ideas.length) {
-              ideas.forEach((idea, i) => {
-                const card = document.createElement('div');
-                card.className = 'idea-card';
-                card.innerHTML = `
-                  <div class="idea-num">Idea ${i + 1}</div>
-                  <h3>${idea.idea_title}</h3>
-                  <p>${idea.idea_body}</p>
-                  <div class="consulting-cta">
-                    <span class="label">${idea.consulting_service}</span>
-                    ${idea.consulting_price ? `<span class="price">$${idea.consulting_price}</span>` : '<span class="price">Custom quote</span>'}
-                    <a href="mailto:team@sitefresh.co?subject=Consulting: ${encodeURIComponent(idea.consulting_service)}">Get help →</a>
-                  </div>
-                `;
-                ideasList.appendChild(card);
-              });
-            } else {
-              ideasList.innerHTML = '<p style="color:var(--muted);">Industry-specific ideas for this issue are being prepared. Check back soon.</p>';
-            }
-          } else {
-            // Free subscriber — show paywall
-            if (ideas && ideas.length) {
-              // Show blurred preview
-              const content = document.createElement('div');
-              content.className = 'ideas-content';
-              ideas.forEach((idea, i) => {
-                const card = document.createElement('div');
-                card.className = 'idea-card';
-                card.innerHTML = `
-                  <div class="idea-num">Idea ${i + 1}</div>
-                  <h3>${idea.idea_title}</h3>
-                  <p>${idea.idea_body}</p>
-                  <div class="consulting-cta">
-                    <span class="label">${idea.consulting_service}</span>
-                    ${idea.consulting_price ? `<span class="price">$${idea.consulting_price}</span>` : '<span class="price">Custom quote</span>'}
-                    <a href="mailto:team@sitefresh.co?subject=Consulting: ${encodeURIComponent(idea.consulting_service)}">Get help →</a>
-                  </div>
-                `;
-                content.appendChild(card);
-              });
-              ideasList.appendChild(content);
-
-              // Add paywall overlay
-              const overlay = document.createElement('div');
-              overlay.className = 'paywall-overlay';
-              overlay.style.position = 'absolute';
-              overlay.style.top = '0';
-              overlay.style.left = '0';
-              overlay.style.right = '0';
-              overlay.style.bottom = '0';
-              overlay.innerHTML = `
-                <div class="paywall-card">
-                  <h3>Unlock Industry Insights</h3>
-                  <p>Get 5 actionable ideas for your ${industryLabels[industry] || 'business'} every issue — each with a consulting path to implement.</p>
-                  <div class="price-tag">$29.99<small>/month</small></div>
-                  <a href="#" class="btn-subscribe" id="subscribeBtn">Subscribe →</a>
-                </div>
-              `;
-              ideasSection.style.position = 'relative';
-              ideasSection.appendChild(overlay);
-
-              // Wire up subscribe button
-              const subBtn = overlay.querySelector('#subscribeBtn');
-              subBtn.addEventListener('click', async (e) => {
-                e.preventDefault();
-                const { startSubscription } = await import('/stripe-client.js');
-                await startSubscription(session.user.email);
-              });
-            } else {
-              ideasList.innerHTML = '<p style="color:var(--muted);">Industry-specific ideas for this issue are being prepared. Check back soon.</p>';
-            }
-          }
+     // Render sections
+     const body = document.getElementById('issueBody');
+     if (issue.content && issue.content.sections) {
+      for (const sec of issue.content.sections) {
+       const div = document.createElement('div');
+       div.className = 'section';
+       div.innerHTML = `<h2>${sec.heading}</h2><p>${sec.body}</p>`;
+       if (sec.sources && sec.sources.length) {
+        let sourcesHtml = '<div class="sources"><div class="sources-label">Sources</div>';
+        for (const src of sec.sources) {
+         sourcesHtml += `<a href="${src.url}" target="_blank" rel="noopener">${src.title}</a>`;
         }
+        sourcesHtml += '</div>';
+        div.innerHTML += sourcesHtml;
+       }
+       body.appendChild(div);
       }
-    } catch (err) {
-      console.error('Newsletter error:', err);
-      document.getElementById('loginRequired').style.display = 'block';
+      if (issue.content.intro) {
+       const intro = document.createElement('div');
+       intro.className = 'section';
+       intro.innerHTML = `<p style="font-size:1.05rem;color:var(--fg);">${issue.content.intro}</p>`;
+       body.insertBefore(intro, body.firstChild);
+      }
+     }
+
+     // Render industry ideas
+     const industry = session.profile?.industry || 'general';
+     const industryLabels = {
+      roofing: 'Roofing', dental: 'Dental', realestate: 'Real Estate',
+      restaurant: 'Restaurant', legal: 'Legal', automotive: 'Automotive',
+      fitness: 'Fitness', landscaping: 'Landscaping', plumbing: 'Plumbing',
+      healthcare: 'Healthcare', beauty: 'Beauty', general: 'General Business'
+     };
+     const industryIcons = {
+      roofing: '🏠', dental: '🦷', realestate: '🏡', restaurant: '🍽️',
+      legal: '⚖️', automotive: '🚗', fitness: '💪', landscaping: '🌿',
+      plumbing: '🔧', healthcare: '🏥', beauty: '💅', general: '🏢'
+     };
+     document.getElementById('industryIcon').textContent = industryIcons[industry] || '🏢';
+     document.getElementById('industryName').textContent = industryLabels[industry] || 'General Business';
+
+     const ideas = await getIndustryIdeas(issue.id, industry);
+     const ideasList = document.getElementById('ideasList');
+     const ideasSection = document.getElementById('ideasSection');
+
+     if (isPaid) {
+      // Paid subscriber — show full content
+      if (ideas && ideas.length) {
+       ideas.forEach((idea, i) => {
+        const card = document.createElement('div');
+        card.className = 'idea-card';
+        card.innerHTML = `
+         <div class="idea-num">Idea ${i + 1}</div>
+         <h3>${idea.idea_title}</h3>
+         <p>${idea.idea_body}</p>
+         <div class="consulting-cta">
+          <span class="label">${idea.consulting_service}</span>
+          ${idea.consulting_price ? `<span class="price">$${idea.consulting_price}</span>` : '<span class="price">Custom quote</span>'}
+          <a href="mailto:team@sitefresh.co?subject=Consulting: ${encodeURIComponent(idea.consulting_service)}">Get help →</a>
+         </div>
+        `;
+        ideasList.appendChild(card);
+       });
+      } else {
+       ideasList.innerHTML = '<p style="color:var(--muted);">Industry-specific ideas for this issue are being prepared. Check back soon.</p>';
+      }
+     } else {
+      // Free subscriber — show paywall
+      if (ideas && ideas.length) {
+       // Show blurred preview
+       const content = document.createElement('div');
+       content.className = 'ideas-content';
+       ideas.forEach((idea, i) => {
+        const card = document.createElement('div');
+        card.className = 'idea-card';
+        card.innerHTML = `
+         <div class="idea-num">Idea ${i + 1}</div>
+         <h3>${idea.idea_title}</h3>
+         <p>${idea.idea_body}</p>
+         <div class="consulting-cta">
+          <span class="label">${idea.consulting_service}</span>
+          ${idea.consulting_price ? `<span class="price">$${idea.consulting_price}</span>` : '<span class="price">Custom quote</span>'}
+          <a href="mailto:team@sitefresh.co?subject=Consulting: ${encodeURIComponent(idea.consulting_service)}">Get help →</a>
+         </div>
+        `;
+        content.appendChild(card);
+       });
+       ideasList.appendChild(content);
+
+       // Add paywall overlay
+       const overlay = document.createElement('div');
+       overlay.className = 'paywall-overlay';
+       overlay.style.position = 'absolute';
+       overlay.style.top = '0';
+       overlay.style.left = '0';
+       overlay.style.right = '0';
+       overlay.style.bottom = '0';
+       overlay.innerHTML = `
+        <div class="paywall-card">
+         <h3>Unlock Industry Insights</h3>
+         <p>Get 5 actionable ideas for your ${industryLabels[industry] || 'business'} every issue — each with a consulting path to implement.</p>
+         <div class="price-tag">$29.99<small>/month</small></div>
+         <a href="#" class="btn-subscribe" id="subscribeBtn">Subscribe →</a>
+        </div>
+       `;
+       ideasSection.style.position = 'relative';
+       ideasSection.appendChild(overlay);
+
+       // Wire up subscribe button
+       const subBtn = overlay.querySelector('#subscribeBtn');
+       subBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const { startSubscription } = await import('/stripe-client.js');
+        await startSubscription(session.user.email);
+       });
+      } else {
+       ideasList.innerHTML = '<p style="color:var(--muted);">Industry-specific ideas for this issue are being prepared. Check back soon.</p>';
+      }
+     }
     }
-  </script>
+   }
+  } catch (err) {
+   console.error('Newsletter error:', err);
+   document.getElementById('loginRequired').style.display = 'block';
+  }
+ </script>
 </body>
 </html>
