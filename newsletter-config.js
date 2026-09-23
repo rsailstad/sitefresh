@@ -27,11 +27,11 @@ export async function signUp(email, password, industry) {
     email,
     password,
     options: {
-      data: { industry }
+      data: { industry },
+      emailRedirectTo: 'https://sitefresh.co/login.html'
     }
   });
   if (error) throw error;
-  // Profile row auto-created via DB trigger
   return data;
 }
 
