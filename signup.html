@@ -4,204 +4,204 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
- <title>Sign Up — SiteFresh Newsletter</title>
+ <title>Sign Up - SiteFresh Newsletter</title>
  <meta name="description" content="Subscribe to the SiteFresh AI search newsletter. $29.99/month for industry-specific insights and actionable ideas.">
  <style>
   :root {
-   --bg: #0a0b0d;
-   --bg2: #141518;
-   --fg: #e8e6e3;
-   --muted: #8a8780;
-   --muted-bright: #b8b5a8;
-   --accent: #00d97e;
-   --accent-dim: #00b86e;
-   --border: #252629;
-   --error: #ff5454;
-   --radius: 12px;
-   --mono: "SF Mono", "Fira Code", "JetBrains Mono", "Courier New", monospace;
-   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ --bg: #0a0b0d;
+ --bg2: #141518;
+ --fg: #e8e6e3;
+ --muted: #8a8780;
+ --muted-bright: #b8b5a8;
+ --accent: #00d97e;
+ --accent-dim: #00b86e;
+ --border: #252629;
+ --error: #ff5454;
+ --radius: 12px;
+ --mono: "SF Mono", "Fira Code", "JetBrains Mono", "Courier New", monospace;
+ --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-   background: var(--bg);
-   color: var(--fg);
-   font-family: var(--sans);
-   min-height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 24px;
+ background: var(--bg);
+ color: var(--fg);
+ font-family: var(--sans);
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 24px;
   }
   .auth-card {
-   background: var(--bg2);
-   border: 1px solid var(--border);
-   border-radius: var(--radius);
-   padding: 40px;
-   max-width: 440px;
-   width: 100%;
+ background: var(--bg2);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 40px;
+ max-width: 440px;
+ width: 100%;
   }
   .auth-header {
-   text-align: center;
-   margin-bottom: 32px;
+ text-align: center;
+ margin-bottom: 32px;
   }
   .auth-header img {
-   width: 48px;
-   height: 48px;
-   border-radius: 12px;
-   margin-bottom: 16px;
+ width: 48px;
+ height: 48px;
+ border-radius: 12px;
+ margin-bottom: 16px;
   }
   .auth-header h1 {
-   font-size: 1.4rem;
-   font-weight: 800;
-   margin-bottom: 8px;
+ font-size: 1.4rem;
+ font-weight: 800;
+ margin-bottom: 8px;
   }
   .auth-header h1 .green { color: var(--accent); }
   .auth-header p {
-   color: var(--muted);
-   font-size: 0.9rem;
-   line-height: 1.5;
+ color: var(--muted);
+ font-size: 0.9rem;
+ line-height: 1.5;
   }
   .form-group {
-   margin-bottom: 20px;
+ margin-bottom: 20px;
   }
   .form-group label {
-   display: block;
-   font-size: 0.8rem;
-   font-weight: 600;
-   text-transform: uppercase;
-   letter-spacing: 0.05em;
-   color: var(--muted-bright);
-   margin-bottom: 8px;
+ display: block;
+ font-size: 0.8rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ color: var(--muted-bright);
+ margin-bottom: 8px;
   }
   .form-group input,
   .form-group select {
-   width: 100%;
-   padding: 12px 16px;
-   background: var(--bg);
-   border: 1px solid var(--border);
-   border-radius: 8px;
-   color: var(--fg);
-   font-size: 1rem;
-   font-family: var(--sans);
-   transition: border-color 0.15s, box-shadow 0.15s;
+ width: 100%;
+ padding: 12px 16px;
+ background: var(--bg);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ color: var(--fg);
+ font-size: 1rem;
+ font-family: var(--sans);
+ transition: border-color 0.15s, box-shadow 0.15s;
   }
   .form-group input:focus,
   .form-group select:focus {
-   outline: none;
-   border-color: var(--accent);
-   box-shadow: 0 0 0 3px rgba(0, 217, 126, 0.12);
+ outline: none;
+ border-color: var(--accent);
+ box-shadow: 0 0 0 3px rgba(0, 217, 126, 0.12);
   }
   .form-group select {
-   cursor: pointer;
-   appearance: none;
-   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238a8780' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-   background-repeat: no-repeat;
-   background-position: right 16px center;
-   padding-right: 40px;
+ cursor: pointer;
+ appearance: none;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238a8780' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+ background-repeat: no-repeat;
+ background-position: right 16px center;
+ padding-right: 40px;
   }
   .btn {
-   width: 100%;
-   padding: 14px;
-   border: none;
-   border-radius: 8px;
-   font-size: 1rem;
-   font-weight: 700;
-   cursor: pointer;
-   transition: transform 0.12s, box-shadow 0.12s;
-   font-family: var(--sans);
+ width: 100%;
+ padding: 14px;
+ border: none;
+ border-radius: 8px;
+ font-size: 1rem;
+ font-weight: 700;
+ cursor: pointer;
+ transition: transform 0.12s, box-shadow 0.12s;
+ font-family: var(--sans);
   }
   .btn-primary {
-   background: var(--accent);
-   color: #0a0b0d;
+ background: var(--accent);
+ color: #0a0b0d;
   }
   .btn-primary:hover {
-   transform: translateY(-1px);
-   box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
+ transform: translateY(-1px);
+ box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
   }
   .btn-primary:disabled {
-   opacity: 0.6;
-   cursor: not-allowed;
-   transform: none;
+ opacity: 0.6;
+ cursor: not-allowed;
+ transform: none;
   }
   .error-msg {
-   background: rgba(255, 84, 84, 0.1);
-   border: 1px solid rgba(255, 84, 84, 0.3);
-   border-radius: 8px;
-   padding: 12px 16px;
-   color: var(--error);
-   font-size: 0.85rem;
-   margin-bottom: 20px;
-   display: none;
+ background: rgba(255, 84, 84, 0.1);
+ border: 1px solid rgba(255, 84, 84, 0.3);
+ border-radius: 8px;
+ padding: 12px 16px;
+ color: var(--error);
+ font-size: 0.85rem;
+ margin-bottom: 20px;
+ display: none;
   }
   .success-msg {
-   background: rgba(0, 217, 126, 0.1);
-   border: 1px solid rgba(0, 217, 126, 0.3);
-   border-radius: 8px;
-   padding: 16px;
-   color: var(--accent);
-   font-size: 0.9rem;
-   margin-bottom: 20px;
-   display: none;
-   line-height: 1.5;
+ background: rgba(0, 217, 126, 0.1);
+ border: 1px solid rgba(0, 217, 126, 0.3);
+ border-radius: 8px;
+ padding: 16px;
+ color: var(--accent);
+ font-size: 0.9rem;
+ margin-bottom: 20px;
+ display: none;
+ line-height: 1.5;
   }
   .auth-footer {
-   text-align: center;
-   margin-top: 24px;
-   font-size: 0.85rem;
-   color: var(--muted);
+ text-align: center;
+ margin-top: 24px;
+ font-size: 0.85rem;
+ color: var(--muted);
   }
   .auth-footer a {
-   color: var(--accent);
-   text-decoration: none;
+ color: var(--accent);
+ text-decoration: none;
   }
   .auth-footer a:hover {
-   text-decoration: underline;
+ text-decoration: underline;
   }
   .pricing-badge {
-   display: inline-block;
-   background: rgba(0, 217, 126, 0.1);
-   border: 1px solid rgba(0, 217, 126, 0.3);
-   color: var(--accent);
-   font-size: 0.75rem;
-   font-weight: 700;
-   padding: 4px 12px;
-   border-radius: 20px;
-   margin-bottom: 16px;
+ display: inline-block;
+ background: rgba(0, 217, 126, 0.1);
+ border: 1px solid rgba(0, 217, 126, 0.3);
+ color: var(--accent);
+ font-size: 0.75rem;
+ font-weight: 700;
+ padding: 4px 12px;
+ border-radius: 20px;
+ margin-bottom: 16px;
   }
   .nav-back {
-   position: fixed;
-   top: 24px;
-   left: 24px;
-   color: var(--muted);
-   text-decoration: none;
-   font-size: 0.85rem;
+ position: fixed;
+ top: 24px;
+ left: 24px;
+ color: var(--muted);
+ text-decoration: none;
+ font-size: 0.85rem;
   }
   .nav-back:hover { color: var(--accent); }
   .industries-grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 0;
-   margin-top: 8px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 0;
+ margin-top: 8px;
   }
   .industry-chip {
-   padding: 10px 12px;
-   background: var(--bg);
-   border: 1px solid var(--border);
-   border-radius: 8px;
-   cursor: pointer;
-   font-size: 0.8rem;
-   text-align: center;
-   transition: all 0.15s;
-   color: var(--muted-bright);
+ padding: 10px 12px;
+ background: var(--bg);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ cursor: pointer;
+ font-size: 0.8rem;
+ text-align: center;
+ transition: all 0.15s;
+ color: var(--muted-bright);
   }
   .industry-chip:hover {
-   border-color: var(--accent);
-   color: var(--fg);
+ border-color: var(--accent);
+ color: var(--fg);
   }
   .industry-chip.selected {
-   background: rgba(0, 217, 126, 0.1);
-   border-color: var(--accent);
-   color: var(--accent);
+ background: rgba(0, 217, 126, 0.1);
+ border-color: var(--accent);
+ color: var(--accent);
   }
   .industry-chip .icon { font-size: 1.2rem; display: block; margin-bottom: 4px; }
  </style>
@@ -211,49 +211,49 @@
 
  <div class="auth-card">
   <div class="auth-header">
-   <img src="/logo.svg" alt="SiteFresh">
-   <h1><span style="color:#fff;">Site</span><span class="green">Fresh</span> Newsletter</h1>
-   <p>AI search insights for your business. Industry-specific. Actionable. $29.99/month.</p>
+ <img src="/logo.svg" alt="SiteFresh">
+ <h1><span style="color:#fff;">Site</span><span class="green">Fresh</span> Newsletter</h1>
+ <p>AI search insights for your business. Industry-specific. Actionable. $29.99/month.</p>
   </div>
 
   <div class="error-msg" id="errorMsg"></div>
   <div class="success-msg" id="successMsg"></div>
 
   <form id="signupForm">
-   <div class="form-group">
-    <label>Email</label>
-    <input type="email" id="email" required placeholder="you@yourbusiness.com">
-   </div>
+ <div class="form-group">
+  <label>Email</label>
+  <input type="email" id="email" required placeholder="you@yourbusiness.com">
+ </div>
 
-   <div class="form-group">
-    <label>Password</label>
-    <input type="password" id="password" required minlength="8" placeholder="Min 8 characters">
-   </div>
+ <div class="form-group">
+  <label>Password</label>
+  <input type="password" id="password" required minlength="8" placeholder="Min 8 characters">
+ </div>
 
-   <div class="form-group">
-    <label>Your Industry</label>
-    <div class="industries-grid" id="industriesGrid">
-     <div class="industry-chip" data-id="roofing"><span class="icon">🏠</span>Roofing</div>
-     <div class="industry-chip" data-id="dental"><span class="icon">🦷</span>Dental</div>
-     <div class="industry-chip" data-id="realestate"><span class="icon">🏡</span>Real Estate</div>
-     <div class="industry-chip" data-id="restaurant"><span class="icon">🍽️</span>Restaurant</div>
-     <div class="industry-chip" data-id="legal"><span class="icon">⚖️</span>Legal</div>
-     <div class="industry-chip" data-id="automotive"><span class="icon">🚗</span>Automotive</div>
-     <div class="industry-chip" data-id="fitness"><span class="icon">💪</span>Fitness</div>
-     <div class="industry-chip" data-id="landscaping"><span class="icon">🌿</span>Landscaping</div>
-     <div class="industry-chip" data-id="plumbing"><span class="icon">🔧</span>Plumbing</div>
-     <div class="industry-chip" data-id="healthcare"><span class="icon">🏥</span>Healthcare</div>
-     <div class="industry-chip" data-id="beauty"><span class="icon">💅</span>Beauty</div>
-     <div class="industry-chip" data-id="general"><span class="icon">🏢</span>Other</div>
-    </div>
-    <input type="hidden" id="industry" value="general">
-   </div>
+ <div class="form-group">
+  <label>Your Industry</label>
+  <div class="industries-grid" id="industriesGrid">
+   <div class="industry-chip" data-id="roofing"><span class="icon">🏠</span>Roofing</div>
+   <div class="industry-chip" data-id="dental"><span class="icon">🦷</span>Dental</div>
+   <div class="industry-chip" data-id="realestate"><span class="icon">🏡</span>Real Estate</div>
+   <div class="industry-chip" data-id="restaurant"><span class="icon">🍽️</span>Restaurant</div>
+   <div class="industry-chip" data-id="legal"><span class="icon">⚖️</span>Legal</div>
+   <div class="industry-chip" data-id="automotive"><span class="icon">🚗</span>Automotive</div>
+   <div class="industry-chip" data-id="fitness"><span class="icon">💪</span>Fitness</div>
+   <div class="industry-chip" data-id="landscaping"><span class="icon">🌿</span>Landscaping</div>
+   <div class="industry-chip" data-id="plumbing"><span class="icon">🔧</span>Plumbing</div>
+   <div class="industry-chip" data-id="healthcare"><span class="icon">🏥</span>Healthcare</div>
+   <div class="industry-chip" data-id="beauty"><span class="icon">💅</span>Beauty</div>
+   <div class="industry-chip" data-id="general"><span class="icon">🏢</span>Other</div>
+  </div>
+  <input type="hidden" id="industry" value="general">
+ </div>
 
-   <button type="submit" class="btn btn-primary" id="submitBtn">Subscribe →</button>
+ <button type="submit" class="btn btn-primary" id="submitBtn">Subscribe →</button>
   </form>
 
   <div class="auth-footer">
-   Already subscribed? <a href="/login.html">Log in</a>
+ Already subscribed? <a href="/login.html">Log in</a>
   </div>
  </div>
 
@@ -262,11 +262,11 @@
   const grid = document.getElementById('industriesGrid');
   const industryInput = document.getElementById('industry');
   grid.querySelectorAll('.industry-chip').forEach(chip => {
-   chip.addEventListener('click', () => {
-    grid.querySelectorAll('.industry-chip').forEach(c => c.classList.remove('selected'));
-    chip.classList.add('selected');
-    industryInput.value = chip.dataset.id;
-   });
+ chip.addEventListener('click', () => {
+  grid.querySelectorAll('.industry-chip').forEach(c => c.classList.remove('selected'));
+  chip.classList.add('selected');
+  industryInput.value = chip.dataset.id;
+ });
   });
   // Default select 'general'
   document.querySelector('.industry-chip[data-id="general"]').classList.add('selected');
@@ -278,30 +278,30 @@
   const submitBtn = document.getElementById('submitBtn');
 
   form.addEventListener('submit', async (e) => {
-   e.preventDefault();
-   errorMsg.style.display = 'none';
-   successMsg.style.display = 'none';
-   submitBtn.disabled = true;
-   submitBtn.textContent = 'Subscribing...';
+ e.preventDefault();
+ errorMsg.style.display = 'none';
+ successMsg.style.display = 'none';
+ submitBtn.disabled = true;
+ submitBtn.textContent = 'Subscribing...';
 
-   const email = document.getElementById('email').value;
-   const password = document.getElementById('password').value;
-   const industry = document.getElementById('industry').value;
+ const email = document.getElementById('email').value;
+ const password = document.getElementById('password').value;
+ const industry = document.getElementById('industry').value;
 
-   try {
-    const { signUp } = await import('/newsletter-config.js');
-    await signUp(email, password, industry);
-    
-    successMsg.style.display = 'block';
-    successMsg.innerHTML = '✅ Check your email for a confirmation link. Once confirmed, <a href="/login.html" style="color:var(--accent);">log in</a> to read the latest issue.';
-    form.style.display = 'none';
-   } catch (err) {
-    errorMsg.style.display = 'block';
-    errorMsg.textContent = err.message || 'Something went wrong. Please try again.';
-   } finally {
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Subscribe →';
-   }
+ try {
+  const { signUp } = await import('/newsletter-config.js');
+  await signUp(email, password, industry);
+  
+  successMsg.style.display = 'block';
+  successMsg.innerHTML = '✅ Check your email for a confirmation link. Once confirmed, <a href="/login.html" style="color:var(--accent);">log in</a> to read the latest issue.';
+  form.style.display = 'none';
+ } catch (err) {
+  errorMsg.style.display = 'block';
+  errorMsg.textContent = err.message || 'Something went wrong. Please try again.';
+ } finally {
+  submitBtn.disabled = false;
+  submitBtn.textContent = 'Subscribe →';
+ }
   });
  </script>
 </body>

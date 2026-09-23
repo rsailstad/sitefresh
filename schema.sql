@@ -2,7 +2,7 @@
 -- Run this in Supabase SQL Editor after creating the project
 
 -- ============================================================
--- SUBSCRIBERS — extends Supabase auth.users with profile data
+-- SUBSCRIBERS - extends Supabase auth.users with profile data
 -- ============================================================
 CREATE TABLE public.subscribers (
   id UUID REFERENCES auth.users(id) ON DELETE CASCADE PRIMARY KEY,
@@ -26,7 +26,7 @@ CREATE POLICY "Subscribers can insert own profile" ON public.subscribers
   FOR INSERT WITH CHECK (auth.uid() = id);
 
 -- ============================================================
--- NEWSLETTER ISSUES — each issue's content
+-- NEWSLETTER ISSUES - each issue's content
 -- ============================================================
 CREATE TABLE public.newsletter_issues (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -38,10 +38,10 @@ CREATE TABLE public.newsletter_issues (
   content JSONB NOT NULL DEFAULT '{}'::jsonb,
   -- content structure:
   -- {
-  --   "intro": "markdown text",
-  --   "sections": [
-  --     { "heading": "...", "body": "...", "sources": [{"title": "...", "url": "..."}] }
-  --   ]
+  -- "intro": "markdown text",
+  -- "sections": [
+  --   { "heading": "...", "body": "...", "sources": [{"title": "...", "url": "..."}] }
+  -- ]
   -- }
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
@@ -53,7 +53,7 @@ CREATE POLICY "Anyone can read published issues" ON public.newsletter_issues
   FOR SELECT USING (is_published = true);
 
 -- ============================================================
--- INDUSTRY IDEAS — 5 personalized ideas per industry per issue
+-- INDUSTRY IDEAS - 5 personalized ideas per industry per issue
 -- ============================================================
 CREATE TABLE public.industry_ideas (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -71,14 +71,14 @@ CREATE TABLE public.industry_ideas (
 ALTER TABLE public.industry_ideas ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Authenticated users can read published ideas" ON public.industry_ideas
   FOR SELECT USING (
-    EXISTS (
-      SELECT 1 FROM public.newsletter_issues
-      WHERE id = industry_ideas.issue_id AND is_published = true
-    )
+  EXISTS (
+  SELECT 1 FROM public.newsletter_issues
+  WHERE id = industry_ideas.issue_id AND is_published = true
+  )
   );
 
 -- ============================================================
--- INDUSTRIES — lookup table for signup dropdown
+-- INDUSTRIES - lookup table for signup dropdown
 -- ============================================================
 CREATE TABLE public.industries (
   id TEXT PRIMARY KEY, -- 'roofing', 'dental', 'restaurant', etc.

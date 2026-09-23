@@ -8,10 +8,10 @@ export const STRIPE_PAYMENT_LINK_URL = 'https://buy.stripe.com/cNi6oA2H61UzfYC13
 // Create this in Stripe Dashboard → Products → Create Product → Recurring → $29.99/month
 export const STRIPE_PRICE_ID = 'price_YOUR_PRICE_ID';
 
-// Webhook secret — get from Stripe Dashboard → Developers → Webhooks → create endpoint
+// Webhook secret - get from Stripe Dashboard → Developers → Webhooks → create endpoint
 // Endpoint URL: https://sitefresh.co/api/stripe-webhook
 export const STRIPE_WEBHOOK_SECRET = ''; // Set as Vercel env var: STRIPE_WEBHOOK_SECRET
 
-// Supabase service role key — get from Supabase Dashboard → Settings → API → service_role
+// Supabase service role key - get from Supabase Dashboard → Settings → API → service_role
 // This is used ONLY server-side in the webhook to update subscriber status
 export const SUPABASE_SERVICE_KEY = ''; // Set as Vercel env var: SUPABASE_SERVICE_KEY

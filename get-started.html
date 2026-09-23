@@ -4,424 +4,424 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
- <title>Get Started — SiteFresh</title>
+ <title>Get Started - SiteFresh</title>
  <meta name="description" content="Choose your SiteFresh plan: $299 AI-search-optimized website redesign, $29.99/month newsletter subscription, or à la carte AI enhancements.">
  <style>
   :root {
-   --bg: #0a0b0d;
-   --bg2: #141518;
-   --bg3: #1c1d20;
-   --fg: #e8e6e3;
-   --muted: #8a8780;
-   --muted-bright: #b8b5a8;
-   --accent: #00d97e;
-   --accent-dim: #00b86e;
-   --border: #252629;
-   --radius: 12px;
-   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-   --serif: Georgia, "Times New Roman", serif;
+ --bg: #0a0b0d;
+ --bg2: #141518;
+ --bg3: #1c1d20;
+ --fg: #e8e6e3;
+ --muted: #8a8780;
+ --muted-bright: #b8b5a8;
+ --accent: #00d97e;
+ --accent-dim: #00b86e;
+ --border: #252629;
+ --radius: 12px;
+ --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ --serif: Georgia, "Times New Roman", serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-   background: var(--bg);
-   color: var(--fg);
-   font-family: var(--sans);
-   line-height: 1.7;
+ background: var(--bg);
+ color: var(--fg);
+ font-family: var(--sans);
+ line-height: 1.7;
   }
   .nav {
-   position: sticky;
-   top: 0;
-   background: rgba(10, 11, 13, 0.95);
-   backdrop-filter: blur(12px);
-   border-bottom: 1px solid var(--border);
-   padding: 16px 24px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   z-index: 1000;
+ position: sticky;
+ top: 0;
+ background: rgba(10, 11, 13, 0.95);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border);
+ padding: 16px 24px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 1000;
   }
   .nav-brand {
-   display: flex;
-   align-items: center;
-   gap: 0;
-   font-weight: 800;
-   font-size: 1.05rem;
-   text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 0;
+ font-weight: 800;
+ font-size: 1.05rem;
+ text-decoration: none;
   }
   .nav-brand img { width: 28px; height: 28px; border-radius: 6px; margin-right: 6px; }
   .nav-back {
-   color: var(--muted);
-   text-decoration: none;
-   font-size: 0.85rem;
+ color: var(--muted);
+ text-decoration: none;
+ font-size: 0.85rem;
   }
   .nav-back:hover { color: var(--accent); }
   .container {
-   max-width: 860px;
-   margin: 0 auto;
-   padding: 48px 24px 80px;
+ max-width: 860px;
+ margin: 0 auto;
+ padding: 48px 24px 80px;
   }
   .page-header {
-   text-align: center;
-   margin-bottom: 56px;
+ text-align: center;
+ margin-bottom: 56px;
   }
   .page-header h1 {
-   font-family: var(--serif);
-   font-size: 2rem;
-   font-weight: 700;
-   line-height: 1.3;
-   margin-bottom: 12px;
+ font-family: var(--serif);
+ font-size: 2rem;
+ font-weight: 700;
+ line-height: 1.3;
+ margin-bottom: 12px;
   }
   .page-header p {
-   color: var(--muted-bright);
-   font-size: 1.05rem;
-   max-width: 540px;
-   margin: 0 auto;
+ color: var(--muted-bright);
+ font-size: 1.05rem;
+ max-width: 540px;
+ margin: 0 auto;
   }
   .plan-card {
-   background: var(--bg2);
-   border: 1px solid var(--border);
-   border-radius: var(--radius);
-   padding: 40px;
-   margin-bottom: 32px;
-   position: relative;
+ background: var(--bg2);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 40px;
+ margin-bottom: 32px;
+ position: relative;
   }
   .plan-card.featured {
-   border-color: var(--accent);
-   box-shadow: 0 0 40px rgba(0, 217, 126, 0.08);
+ border-color: var(--accent);
+ box-shadow: 0 0 40px rgba(0, 217, 126, 0.08);
   }
   .plan-badge {
-   position: absolute;
-   top: -12px;
-   left: 32px;
-   background: var(--accent);
-   color: #0a0b0d;
-   font-size: 0.7rem;
-   font-weight: 800;
-   text-transform: uppercase;
-   letter-spacing: 0.08em;
-   padding: 4px 14px;
-   border-radius: 20px;
+ position: absolute;
+ top: -12px;
+ left: 32px;
+ background: var(--accent);
+ color: #0a0b0d;
+ font-size: 0.7rem;
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ padding: 4px 14px;
+ border-radius: 20px;
   }
   .plan-header {
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
-   margin-bottom: 24px;
-   flex-wrap: wrap;
-   gap: 16px;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ margin-bottom: 24px;
+ flex-wrap: wrap;
+ gap: 16px;
   }
   .plan-title {
-   font-size: 1.4rem;
-   font-weight: 700;
-   margin-bottom: 4px;
+ font-size: 1.4rem;
+ font-weight: 700;
+ margin-bottom: 4px;
   }
   .plan-tagline {
-   color: var(--muted);
-   font-size: 0.9rem;
+ color: var(--muted);
+ font-size: 0.9rem;
   }
   .plan-price {
-   text-align: right;
+ text-align: right;
   }
   .plan-price .amount {
-   font-size: 2.2rem;
-   font-weight: 800;
-   color: var(--accent);
-   line-height: 1;
+ font-size: 2.2rem;
+ font-weight: 800;
+ color: var(--accent);
+ line-height: 1;
   }
   .plan-price .period {
-   font-size: 0.85rem;
-   color: var(--muted);
+ font-size: 0.85rem;
+ color: var(--muted);
   }
   .plan-description {
-   color: var(--muted-bright);
-   font-size: 0.95rem;
-   margin-bottom: 28px;
-   line-height: 1.6;
+ color: var(--muted-bright);
+ font-size: 0.95rem;
+ margin-bottom: 28px;
+ line-height: 1.6;
   }
   .plan-includes {
-   list-style: none;
-   margin-bottom: 28px;
+ list-style: none;
+ margin-bottom: 28px;
   }
   .plan-includes li {
-   padding: 10px 0;
-   padding-left: 28px;
-   position: relative;
-   color: var(--muted-bright);
-   font-size: 0.9rem;
-   border-bottom: 1px solid var(--border);
+ padding: 10px 0;
+ padding-left: 28px;
+ position: relative;
+ color: var(--muted-bright);
+ font-size: 0.9rem;
+ border-bottom: 1px solid var(--border);
   }
   .plan-includes li:last-child { border-bottom: none; }
   .plan-includes li::before {
-   content: "✓";
-   position: absolute;
-   left: 0;
-   top: 10px;
-   color: var(--accent);
-   font-weight: 700;
+ content: "✓";
+ position: absolute;
+ left: 0;
+ top: 10px;
+ color: var(--accent);
+ font-weight: 700;
   }
   .plan-includes li .detail {
-   display: block;
-   font-size: 0.8rem;
-   color: var(--muted);
-   margin-top: 2px;
+ display: block;
+ font-size: 0.8rem;
+ color: var(--muted);
+ margin-top: 2px;
   }
   .plan-cta {
-   display: flex;
-   gap: 12px;
-   flex-wrap: wrap;
+ display: flex;
+ gap: 12px;
+ flex-wrap: wrap;
   }
   .btn {
-   display: inline-block;
-   padding: 14px 28px;
-   border-radius: 8px;
-   font-weight: 700;
-   font-size: 0.95rem;
-   text-decoration: none;
-   border: none;
-   cursor: pointer;
-   font-family: var(--sans);
-   transition: transform 0.12s, box-shadow 0.12s;
-   flex: 1;
-   min-width: 200px;
-   text-align: center;
+ display: inline-block;
+ padding: 14px 28px;
+ border-radius: 8px;
+ font-weight: 700;
+ font-size: 0.95rem;
+ text-decoration: none;
+ border: none;
+ cursor: pointer;
+ font-family: var(--sans);
+ transition: transform 0.12s, box-shadow 0.12s;
+ flex: 1;
+ min-width: 200px;
+ text-align: center;
   }
   .btn-primary {
-   background: var(--accent);
-   color: #0a0b0d;
+ background: var(--accent);
+ color: #0a0b0d;
   }
   .btn-primary:hover {
-   transform: translateY(-1px);
-   box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
+ transform: translateY(-1px);
+ box-shadow: 0 8px 24px rgba(0, 217, 126, 0.3);
   }
   .btn-secondary {
-   background: transparent;
-   border: 1px solid var(--border);
-   color: var(--muted-bright);
+ background: transparent;
+ border: 1px solid var(--border);
+ color: var(--muted-bright);
   }
   .btn-secondary:hover {
-   border-color: var(--accent);
-   color: var(--accent);
+ border-color: var(--accent);
+ color: var(--accent);
   }
   .deposit-info {
-   background: var(--bg3);
-   border: 1px solid var(--border);
-   border-radius: 8px;
-   padding: 16px 20px;
-   margin-top: 16px;
-   font-size: 0.85rem;
-   color: var(--muted-bright);
-   line-height: 1.5;
+ background: var(--bg3);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 16px 20px;
+ margin-top: 16px;
+ font-size: 0.85rem;
+ color: var(--muted-bright);
+ line-height: 1.5;
   }
   .deposit-info strong { color: var(--fg); }
   .deposit-info .price-breakdown {
-   display: flex;
-   gap: 24px;
-   margin-top: 8px;
-   flex-wrap: wrap;
+ display: flex;
+ gap: 24px;
+ margin-top: 8px;
+ flex-wrap: wrap;
   }
   .deposit-info .price-item {
-   display: flex;
-   flex-direction: column;
+ display: flex;
+ flex-direction: column;
   }
   .deposit-info .price-item .label {
-   font-size: 0.75rem;
-   color: var(--muted);
-   text-transform: uppercase;
-   letter-spacing: 0.05em;
+ font-size: 0.75rem;
+ color: var(--muted);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
   }
   .deposit-info .price-item .value {
-   font-size: 1.1rem;
-   font-weight: 700;
-   color: var(--accent);
+ font-size: 1.1rem;
+ font-weight: 700;
+ color: var(--accent);
   }
   .whitepaper-link {
-   display: flex;
-   align-items: center;
-   gap: 12px;
-   padding: 16px 20px;
-   background: linear-gradient(135deg, rgba(0, 217, 126, 0.06) 0%, transparent 100%);
-   border: 1px solid rgba(0, 217, 126, 0.2);
-   border-radius: 8px;
-   margin-top: 20px;
-   text-decoration: none;
-   transition: border-color 0.15s, box-shadow 0.15s;
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ padding: 16px 20px;
+ background: linear-gradient(135deg, rgba(0, 217, 126, 0.06) 0%, transparent 100%);
+ border: 1px solid rgba(0, 217, 126, 0.2);
+ border-radius: 8px;
+ margin-top: 20px;
+ text-decoration: none;
+ transition: border-color 0.15s, box-shadow 0.15s;
   }
   .whitepaper-link:hover {
-   border-color: var(--accent);
-   box-shadow: 0 0 20px rgba(0, 217, 126, 0.1);
+ border-color: var(--accent);
+ box-shadow: 0 0 20px rgba(0, 217, 126, 0.1);
   }
   .whitepaper-link .wp-icon { font-size: 1.3rem; }
   .whitepaper-link .wp-text {
-   flex: 1;
+ flex: 1;
   }
   .whitepaper-link .wp-text .wp-title {
-   font-size: 0.9rem;
-   font-weight: 600;
-   color: var(--fg);
+ font-size: 0.9rem;
+ font-weight: 600;
+ color: var(--fg);
   }
   .whitepaper-link .wp-text .wp-sub {
-   font-size: 0.8rem;
-   color: var(--muted);
+ font-size: 0.8rem;
+ color: var(--muted);
   }
   .whitepaper-link .wp-arrow {
-   color: var(--accent);
-   font-size: 1.1rem;
+ color: var(--accent);
+ font-size: 1.1rem;
   }
   .alacarte-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-   gap: 16px;
-   margin-top: 20px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ gap: 16px;
+ margin-top: 20px;
   }
   .alacarte-item {
-   background: var(--bg3);
-   border: 1px solid var(--border);
-   border-radius: 8px;
-   padding: 20px;
-   transition: border-color 0.15s;
+ background: var(--bg3);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 20px;
+ transition: border-color 0.15s;
   }
   .alacarte-item:hover {
-   border-color: rgba(0, 217, 126, 0.3);
+ border-color: rgba(0, 217, 126, 0.3);
   }
   .alacarte-item .name {
-   font-size: 0.95rem;
-   font-weight: 600;
-   margin-bottom: 6px;
+ font-size: 0.95rem;
+ font-weight: 600;
+ margin-bottom: 6px;
   }
   .alacarte-item .desc {
-   font-size: 0.8rem;
-   color: var(--muted);
-   margin-bottom: 10px;
-   line-height: 1.5;
+ font-size: 0.8rem;
+ color: var(--muted);
+ margin-bottom: 10px;
+ line-height: 1.5;
   }
   .alacarte-item .price {
-   font-size: 1.1rem;
-   font-weight: 700;
-   color: var(--accent);
+ font-size: 1.1rem;
+ font-weight: 700;
+ color: var(--accent);
   }
   .alacarte-note {
-   font-size: 0.85rem;
-   color: var(--muted);
-   margin-top: 20px;
-   padding: 16px;
-   background: var(--bg3);
-   border-radius: 8px;
-   border: 1px solid var(--border);
-   line-height: 1.6;
+ font-size: 0.85rem;
+ color: var(--muted);
+ margin-top: 20px;
+ padding: 16px;
+ background: var(--bg3);
+ border-radius: 8px;
+ border: 1px solid var(--border);
+ line-height: 1.6;
   }
   .alacarte-note a { color: var(--accent); text-decoration: none; font-weight: 600; }
   .alacarte-note a:hover { text-decoration: underline; }
   .section-divider {
-   text-align: center;
-   margin: 48px 0 32px;
-   position: relative;
+ text-align: center;
+ margin: 48px 0 32px;
+ position: relative;
   }
   .section-divider::before {
-   content: "";
-   position: absolute;
-   top: 50%;
-   left: 0;
-   right: 0;
-   height: 1px;
-   background: var(--border);
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: 0;
+ right: 0;
+ height: 1px;
+ background: var(--border);
   }
   .section-divider span {
-   position: relative;
-   background: var(--bg);
-   padding: 0 20px;
-   font-size: 0.8rem;
-   text-transform: uppercase;
-   letter-spacing: 0.1em;
-   color: var(--muted);
+ position: relative;
+ background: var(--bg);
+ padding: 0 20px;
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--muted);
   }
   .faq-link {
-   text-align: center;
-   margin-top: 40px;
-   font-size: 0.9rem;
-   color: var(--muted);
+ text-align: center;
+ margin-top: 40px;
+ font-size: 0.9rem;
+ color: var(--muted);
   }
   .faq-link a { color: var(--accent); text-decoration: none; }
   .faq-link a:hover { text-decoration: underline; }
   @media (max-width: 600px) {
-   .container { padding: 24px 16px 60px; }
-   .page-header h1 { font-size: 1.5rem; }
-   .plan-card { padding: 24px; }
-   .plan-header { flex-direction: column; }
-   .plan-price { text-align: left; }
-   .btn { min-width: 100%; }
-   .alacarte-grid { grid-template-columns: 1fr; }
+ .container { padding: 24px 16px 60px; }
+ .page-header h1 { font-size: 1.5rem; }
+ .plan-card { padding: 24px; }
+ .plan-header { flex-direction: column; }
+ .plan-price { text-align: left; }
+ .btn { min-width: 100%; }
+ .alacarte-grid { grid-template-columns: 1fr; }
   }
  </style>
 </head>
 <body>
  <nav class="nav">
   <a href="/" class="nav-brand">
-   <img src="/logo.svg" alt="SiteFresh">
-   <span style="color:#fff;">Site</span><span style="color:var(--accent);">Fresh</span>
+ <img src="/logo.svg" alt="SiteFresh">
+ <span style="color:#fff;">Site</span><span style="color:var(--accent);">Fresh</span>
   </a>
   <a href="/" class="nav-back">← Back to home</a>
  </nav>
 
  <div class="container">
   <div class="page-header">
-   <h1>Get Started with SiteFresh</h1>
-   <p>Three ways to make your website visible to AI search. Pick what fits your business — no lock-in, no long-term contracts, satisfaction guaranteed.</p>
+ <h1>Get Started with SiteFresh</h1>
+ <p>Three ways to make your website visible to AI search. Pick what fits your business - no lock-in, no long-term contracts, satisfaction guaranteed.</p>
   </div>
 
   <!-- ===================================================== -->
   <!-- PLAN 1: $299 WEBSITE REDESIGN -->
   <!-- ===================================================== -->
   <div class="plan-card featured">
-   <div class="plan-badge">Most Popular</div>
-   <div class="plan-header">
-    <div>
-     <div class="plan-title">$299 AI-Search-Ready Website Redesign</div>
-     <div class="plan-tagline">One-time · 5-day delivery · Satisfaction guaranteed</div>
-    </div>
-    <div class="plan-price">
-     <div class="amount">$299</div>
-     <div class="period">one-time</div>
-    </div>
-   </div>
+ <div class="plan-badge">Most Popular</div>
+ <div class="plan-header">
+  <div>
+   <div class="plan-title">$299 AI-Search-Ready Website Redesign</div>
+   <div class="plan-tagline">One-time · 5-day delivery · Satisfaction guaranteed</div>
+  </div>
+  <div class="plan-price">
+   <div class="amount">$299</div>
+   <div class="period">one-time</div>
+  </div>
+ </div>
 
-   <p class="plan-description">
-    We engineer a fresh, AI-search-optimized website for your business. Structured data, FAQ schema, a local-first chat widget, and semantic HTML — everything AI search engines look for when generating answers about your business. Delivered in 5 business days. You own the files. Host them anywhere, or host with us and we'll match your current price and beat it by 10% for the first year.
-   </p>
+ <p class="plan-description">
+  We engineer a fresh, AI-search-optimized website for your business. Structured data, FAQ schema, a local-first chat widget, and semantic HTML - everything AI search engines look for when generating answers about your business. Delivered in 5 business days. You own the files. Host them anywhere, or host with us and we'll match your current price and beat it by 10% for the first year.
+ </p>
 
-   <ul class="plan-includes">
-    <li>AI Search Audit of your current site <span class="detail">7-category score, before and after</span></li>
-    <li>1 landing page, engineered for AI search <span class="detail">Structured data, FAQ schema, semantic HTML, Open Graph tags</span></li>
-    <li>Custom visual design <span class="detail">Examples include cinematic, glass, editorial, neon, organic, architect — but we tailor the design to your brand</span></li>
-    <li>Local-first chat widget <span class="detail">Zero API calls, works offline, token-overlap FAQ search</span></li>
-    <li>JSON-LD structured data <span class="detail">Organization, LocalBusiness, FAQPage, BreadcrumbList schema</span></li>
-    <li>AI Roadmap PDF <span class="detail">What to do next quarter, next year — prioritized by impact</span></li>
-    <li>1 revision round <span class="detail">Not happy? We fix it. Still not happy? Full refund.</span></li>
-    <li>5 business day delivery <span class="detail">From intake form to deployed site</span></li>
-    <li>No hosting lock-in <span class="detail">Take the files and host wherever you want. Or host with us — match your current price + 10% off year 1.</span></li>
-   </ul>
+ <ul class="plan-includes">
+  <li>AI Search Audit of your current site <span class="detail">7-category score, before and after</span></li>
+  <li>1 landing page, engineered for AI search <span class="detail">Structured data, FAQ schema, semantic HTML, Open Graph tags</span></li>
+  <li>Custom visual design <span class="detail">Examples include cinematic, glass, editorial, neon, organic, architect - but we tailor the design to your brand</span></li>
+  <li>Local-first chat widget <span class="detail">Zero API calls, works offline, token-overlap FAQ search</span></li>
+  <li>JSON-LD structured data <span class="detail">Organization, LocalBusiness, FAQPage, BreadcrumbList schema</span></li>
+  <li>AI Roadmap PDF <span class="detail">What to do next quarter, next year - prioritized by impact</span></li>
+  <li>1 revision round <span class="detail">Not happy? We fix it. Still not happy? Full refund.</span></li>
+  <li>5 business day delivery <span class="detail">From intake form to deployed site</span></li>
+  <li>No hosting lock-in <span class="detail">Take the files and host wherever you want. Or host with us - match your current price + 10% off year 1.</span></li>
+ </ul>
 
-   <div class="plan-cta">
-    <a href="https://buy.stripe.com/aFaaEQ0yY9n17s627v7AI01" class="btn btn-primary" id="depositBtn">Pay 50% deposit ($149.50) →</a>
-    <a href="mailto:team@sitefresh.co?subject=$299 Website Redesign — Intake" class="btn btn-secondary">Email to start →</a>
-   </div>
+ <div class="plan-cta">
+  <a href="https://buy.stripe.com/aFaaEQ0yY9n17s627v7AI01" class="btn btn-primary" id="depositBtn">Pay 50% deposit ($149.50) →</a>
+  <a href="mailto:team@sitefresh.co?subject=$299 Website Redesign - Intake" class="btn btn-secondary">Email to start →</a>
+ </div>
 
-   <div class="deposit-info">
-    <strong>How it works:</strong> Pay a 50% deposit ($149.50) to secure your slot. We send an intake form within 24 hours, engineer your site in 5 business days, and the remaining $149.50 is due on delivery — but only if you're satisfied. Not satisfied? You owe nothing more and we refund the deposit. <strong>Satisfaction guaranteed.</strong>
-    <div class="price-breakdown">
-     <div class="price-item"><span class="label">Deposit</span><span class="value">$149.50</span></div>
-     <div class="price-item"><span class="label">On delivery</span><span class="value">$149.50</span></div>
-     <div class="price-item"><span class="label">Total</span><span class="value">$299</span></div>
-    </div>
-   </div>
+ <div class="deposit-info">
+  <strong>How it works:</strong> Pay a 50% deposit ($149.50) to secure your slot. We send an intake form within 24 hours, engineer your site in 5 business days, and the remaining $149.50 is due on delivery - but only if you're satisfied. Not satisfied? You owe nothing more and we refund the deposit. <strong>Satisfaction guaranteed.</strong>
+  <div class="price-breakdown">
+   <div class="price-item"><span class="label">Deposit</span><span class="value">$149.50</span></div>
+   <div class="price-item"><span class="label">On delivery</span><span class="value">$149.50</span></div>
+   <div class="price-item"><span class="label">Total</span><span class="value">$299</span></div>
+  </div>
+ </div>
 
-   <a href="/whitepaper.html" class="whitepaper-link">
-    <span class="wp-icon">📄</span>
-    <span class="wp-text">
-     <div class="wp-title">Read the white paper: "AI Search: Why Your Website Needs to Change"</div>
-     <div class="wp-sub">Understand why your current site is invisible to AI search — and exactly what we fix</div>
-    </span>
-    <span class="wp-arrow">→</span>
-   </a>
+ <a href="/whitepaper.html" class="whitepaper-link">
+  <span class="wp-icon">📄</span>
+  <span class="wp-text">
+   <div class="wp-title">Read the white paper: "AI Search: Why Your Website Needs to Change"</div>
+   <div class="wp-sub">Understand why your current site is invisible to AI search - and exactly what we fix</div>
+  </span>
+  <span class="wp-arrow">→</span>
+ </a>
   </div>
 
   <div class="section-divider"><span>or</span></div>
@@ -430,35 +430,35 @@
   <!-- PLAN 2: $29.99/MO NEWSLETTER -->
   <!-- ===================================================== -->
   <div class="plan-card">
-   <div class="plan-header">
-    <div>
-     <div class="plan-title">$29.99/month AI Search Newsletter</div>
-     <div class="plan-tagline">Monthly subscription · Cancel anytime · Industry-specific</div>
-    </div>
-    <div class="plan-price">
-     <div class="amount">$29.99</div>
-     <div class="period">/month</div>
-    </div>
-   </div>
+ <div class="plan-header">
+  <div>
+   <div class="plan-title">$29.99/month AI Search Newsletter</div>
+   <div class="plan-tagline">Monthly subscription · Cancel anytime · Industry-specific</div>
+  </div>
+  <div class="plan-price">
+   <div class="amount">$29.99</div>
+   <div class="period">/month</div>
+  </div>
+ </div>
 
-   <p class="plan-description">
-    The AI search landscape changes monthly. Google SGE, ChatGPT search, Perplexity, Copilot — each one updates how they read and rank websites. The newsletter keeps you ahead. Every issue is personalized to your industry and includes 5 actionable ideas, each with a consulting path to implement.
-   </p>
+ <p class="plan-description">
+  The AI search landscape changes monthly. Google SGE, ChatGPT search, Perplexity, Copilot - each one updates how they read and rank websites. The newsletter keeps you ahead. Every issue is personalized to your industry and includes 5 actionable ideas, each with a consulting path to implement.
+ </p>
 
-   <ul class="plan-includes">
-    <li>Monthly AI search insights <span class="detail">What changed this month and what it means for your business</span></li>
-    <li>Industry-specific content <span class="detail">Choose your industry — we tailor every issue to roofing, dental, real estate, and more</span></li>
-    <li>5 actionable ideas per issue <span class="detail">Each idea mapped to a SiteFresh consulting service with a clear price</span></li>
-    <li>Source links <span class="detail">Every claim cited — click through to Google, OpenAI, and industry sources</span></li>
-    <li>Web-based, not PDF <span class="detail">Readable on any device, indexable by AI search, no email attachments</span></li>
-    <li>Archive access <span class="detail">Every past issue, always available</span></li>
-    <li>Cancel anytime <span class="detail">No long-term contract. Cancel from your account.</span></li>
-   </ul>
+ <ul class="plan-includes">
+  <li>Monthly AI search insights <span class="detail">What changed this month and what it means for your business</span></li>
+  <li>Industry-specific content <span class="detail">Choose your industry - we tailor every issue to roofing, dental, real estate, and more</span></li>
+  <li>5 actionable ideas per issue <span class="detail">Each idea mapped to a SiteFresh consulting service with a clear price</span></li>
+  <li>Source links <span class="detail">Every claim cited - click through to Google, OpenAI, and industry sources</span></li>
+  <li>Web-based, not PDF <span class="detail">Readable on any device, indexable by AI search, no email attachments</span></li>
+  <li>Archive access <span class="detail">Every past issue, always available</span></li>
+  <li>Cancel anytime <span class="detail">No long-term contract. Cancel from your account.</span></li>
+ </ul>
 
-   <div class="plan-cta">
-    <a href="/signup.html" class="btn btn-primary">Subscribe →</a>
-    <a href="/newsletter.html" class="btn btn-secondary">Preview an issue →</a>
-   </div>
+ <div class="plan-cta">
+  <a href="/signup.html" class="btn btn-primary">Subscribe →</a>
+  <a href="/newsletter.html" class="btn btn-secondary">Preview an issue →</a>
+ </div>
   </div>
 
   <div class="section-divider"><span>or</span></div>
@@ -467,75 +467,75 @@
   <!-- PLAN 3: À LA CARTE -->
   <!-- ===================================================== -->
   <div class="plan-card">
-   <div class="plan-header">
-    <div>
-     <div class="plan-title">À La Carte AI Enhancements</div>
-     <div class="plan-tagline">Pick what you need · Examples below · Custom quotes available</div>
-    </div>
-    <div class="plan-price">
-     <div class="amount">$49+</div>
-     <div class="period">per project</div>
-    </div>
-   </div>
+ <div class="plan-header">
+  <div>
+   <div class="plan-title">À La Carte AI Enhancements</div>
+   <div class="plan-tagline">Pick what you need · Examples below · Custom quotes available</div>
+  </div>
+  <div class="plan-price">
+   <div class="amount">$49+</div>
+   <div class="period">per project</div>
+  </div>
+ </div>
 
-   <p class="plan-description">
-    Already have a site but need specific AI search improvements? Pick from the menu below, or email us for a custom quote. These are examples — if you need something that's not listed, just ask.
-   </p>
+ <p class="plan-description">
+  Already have a site but need specific AI search improvements? Pick from the menu below, or email us for a custom quote. These are examples - if you need something that's not listed, just ask.
+ </p>
 
-   <div class="alacarte-grid">
-    <div class="alacarte-item">
-     <div class="name">FAQ Schema Refresh</div>
-     <div class="desc">Add or update FAQ schema on your existing service pages so AI search can cite you in generated answers.</div>
-     <div class="price">$49</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">New Service Page</div>
-     <div class="desc">Engineer a new service page with full structured data, semantic HTML, and AI search optimization.</div>
-     <div class="price">$99</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">Chat Widget Implementation</div>
-     <div class="desc">Add a local-first chat widget to your existing site. Zero API calls, works offline, FAQ-powered.</div>
-     <div class="price">$99</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">Chat Widget Tuning</div>
-     <div class="desc">Update your chat widget's knowledge base with new FAQs, services, or business information.</div>
-     <div class="price">$49</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">Quarterly AI Search Audit</div>
-     <div class="desc">Full 7-category audit of your site's AI search visibility. Track changes quarter over quarter.</div>
-     <div class="price">$49</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">Schema Migration</div>
-     <div class="desc">Migrate from old schema.org markup to JSON-LD structured data that AI search engines prefer.</div>
-     <div class="price">$199</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">Mobile Performance Optimization</div>
-     <div class="desc">Compress images, eliminate render-blocking scripts, and get your mobile load time under 3 seconds.</div>
-     <div class="price">$199</div>
-    </div>
-    <div class="alacarte-item">
-     <div class="name">AI Roadmap Consultation</div>
-     <div class="desc">30-minute call to review your AI search strategy and prioritize next steps. Includes written summary.</div>
-     <div class="price">$149</div>
-    </div>
-   </div>
+ <div class="alacarte-grid">
+  <div class="alacarte-item">
+   <div class="name">FAQ Schema Refresh</div>
+   <div class="desc">Add or update FAQ schema on your existing service pages so AI search can cite you in generated answers.</div>
+   <div class="price">$49</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">New Service Page</div>
+   <div class="desc">Engineer a new service page with full structured data, semantic HTML, and AI search optimization.</div>
+   <div class="price">$99</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">Chat Widget Implementation</div>
+   <div class="desc">Add a local-first chat widget to your existing site. Zero API calls, works offline, FAQ-powered.</div>
+   <div class="price">$99</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">Chat Widget Tuning</div>
+   <div class="desc">Update your chat widget's knowledge base with new FAQs, services, or business information.</div>
+   <div class="price">$49</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">Quarterly AI Search Audit</div>
+   <div class="desc">Full 7-category audit of your site's AI search visibility. Track changes quarter over quarter.</div>
+   <div class="price">$49</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">Schema Migration</div>
+   <div class="desc">Migrate from old schema.org markup to JSON-LD structured data that AI search engines prefer.</div>
+   <div class="price">$199</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">Mobile Performance Optimization</div>
+   <div class="desc">Compress images, eliminate render-blocking scripts, and get your mobile load time under 3 seconds.</div>
+   <div class="price">$199</div>
+  </div>
+  <div class="alacarte-item">
+   <div class="name">AI Roadmap Consultation</div>
+   <div class="desc">30-minute call to review your AI search strategy and prioritize next steps. Includes written summary.</div>
+   <div class="price">$149</div>
+  </div>
+ </div>
 
-   <div class="alacarte-note">
-    These are examples — every business is different. Need something that's not listed? <a href="mailto:team@sitefresh.co?subject=À la carte AI enhancement inquiry">Email us</a> with what you need and we'll send a custom quote within 24 hours.
-   </div>
+ <div class="alacarte-note">
+  These are examples - every business is different. Need something that's not listed? <a href="mailto:team@sitefresh.co?subject=À la carte AI enhancement inquiry">Email us</a> with what you need and we'll send a custom quote within 24 hours.
+ </div>
 
-   <div class="plan-cta" style="margin-top:20px;">
-    <a href="mailto:team@sitefresh.co?subject=À la carte AI enhancement inquiry" class="btn btn-primary">Email for a quote →</a>
-   </div>
+ <div class="plan-cta" style="margin-top:20px;">
+  <a href="mailto:team@sitefresh.co?subject=À la carte AI enhancement inquiry" class="btn btn-primary">Email for a quote →</a>
+ </div>
   </div>
 
   <div class="faq-link">
-   Questions? <a href="/#faq">Read the FAQ</a> or <a href="mailto:team@sitefresh.co">email us</a>.
+ Questions? <a href="/#faq">Read the FAQ</a> or <a href="mailto:team@sitefresh.co">email us</a>.
   </div>
  </div>
 </body>
