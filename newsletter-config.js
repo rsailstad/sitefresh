@@ -2,8 +2,8 @@
 // Replace these with your Supabase project values
 // Get them from: Supabase Dashboard → Settings → API
 
-export const SUPABASE_URL = 'https://YOUR-PROJECT-REF.supabase.co';
-export const SUPABASE_ANON_KEY = 'YOUR-ANON-KEY';
+export const SUPABASE_URL = 'https://xesrcsbwenjqiukjvllk.supabase.co';
+export const SUPABASE_ANON_KEY = 'sb_publishable_6oBfSqzwkNDRy7dLF_Aa0Q_Kan7yER3';
 
 // ============================================================
 // Supabase client initialization (lazy-loaded)
