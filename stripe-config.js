@@ -2,7 +2,7 @@
 // Get these from your Stripe Dashboard → Developers → API Keys
 
 export const STRIPE_PUBLISHABLE_KEY = 'pk_test_YOUR_KEY';
-export const STRIPE_PAYMENT_LINK_URL = 'https://buy.stripe.com/YOUR_PAYMENT_LINK';
+export const STRIPE_PAYMENT_LINK_URL = 'https://buy.stripe.com/cNi6oA2H61UzfYC13r7AI00';
 
 // Stripe Price ID for the $29.99/month newsletter subscription
 // Create this in Stripe Dashboard → Products → Create Product → Recurring → $29.99/month
