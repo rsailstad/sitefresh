@@ -753,6 +753,14 @@
       color: #000;
       box-shadow: 0 0 32px rgba(0, 217, 126, 0.25);
     }
+    .avatar-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 32px rgba(0, 217, 126, 0.25);
+      border: 2px solid var(--accent);
+    }
     .story-bio p {
       margin-bottom: 16px;
       color: var(--muted-bright);
@@ -825,6 +833,7 @@
     @media (max-width: 640px) {
       .story-grid { grid-template-columns: 1fr; gap: 24px; }
       .avatar { width: 80px; height: 80px; font-size: 1.6rem; }
+      .avatar-img { width: 100px; height: 100px; }
     }
 
     /* === HOW IT WORKS === */
@@ -1416,7 +1425,7 @@
       <h2 class="section-heading">An engineering company, not a design agency that discovered AI.</h2>
 
       <div class="story-grid">
-        <div class="avatar">SF</div>
+        <img class="avatar-img" src="/profile.jpg" alt="Robert Sailstad — SiteFresh">
         <div class="story-bio">
           <p class="story-headline">SiteFresh isn't a web design service that added "AI" to its pitch. It's an AI search engineering company that delivers websites.</p>
           <p>For 25+ years, our team has built data-intensive applications, managed enterprise software implementations, and consulted on HCM deployments for US enterprise clients. We work remote-first on US EST hours — the same hours as your team.</p>
