@@ -363,7 +363,7 @@
 
   /* Hero */
   .hero {
-    padding: 120px 0 80px; border-bottom: 1px solid var(--border-dark);
+    padding: 120px 48px 80px; border-bottom: 1px solid var(--border-dark);
     position: relative; overflow: hidden;
     background-image: url('https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=1920&q=80');
     background-size: cover; background-position: center;
@@ -376,16 +376,19 @@
   .hero .label {
     font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 24px; font-weight: 500; position: relative; z-index: 1;
+    max-width: 900px; margin-left: auto; margin-right: auto;
   }
   .hero h1 {
     font-size: clamp(2.5rem, 7vw, 4.5rem); font-weight: 700; letter-spacing: -0.04em;
     line-height: 0.95; margin-bottom: 16px; position: relative; z-index: 1;
+    max-width: 900px; margin-left: auto; margin-right: auto;
   }
   .hero .tagline {
     font-size: 1.1rem; color: var(--accent); font-weight: 400;
     letter-spacing: -0.01em; margin-bottom: 40px; position: relative; z-index: 1;
+    max-width: 900px; margin-left: auto; margin-right: auto;
   }
-  .hero .contact-quick { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--border-dark); position: relative; z-index: 1; }
+  .hero .contact-quick { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--border-dark); position: relative; z-index: 1; max-width: 900px; margin-left: auto; margin-right: auto; }
   .hero .contact-quick a, .hero .contact-quick span {
  display: inline-flex; align-items: center; gap: 6px;
  padding: 12px 24px; border: none; border-right: 1px solid var(--border-dark);
