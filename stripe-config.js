@@ -10,8 +10,8 @@ export const STRIPE_PRICE_ID = 'price_YOUR_PRICE_ID';
 
 // Webhook secret — get from Stripe Dashboard → Developers → Webhooks → create endpoint
 // Endpoint URL: https://sitefresh.co/api/stripe-webhook
-export const STRIPE_WEBHOOK_SECRET = 'whsec_YOUR_WEBHOOK_SECRET';
+export const STRIPE_WEBHOOK_SECRET = ''; // Set as Vercel env var: STRIPE_WEBHOOK_SECRET
 
 // Supabase service role key — get from Supabase Dashboard → Settings → API → service_role
 // This is used ONLY server-side in the webhook to update subscriber status
-export const SUPABASE_SERVICE_KEY = 'YOUR_SERVICE_ROLE_KEY';
+export const SUPABASE_SERVICE_KEY = ''; // Set as Vercel env var: SUPABASE_SERVICE_KEY
