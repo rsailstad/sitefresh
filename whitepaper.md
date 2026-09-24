@@ -59,6 +59,41 @@ Google AI Overviews rolls out a new format. ChatGPT adds visual search. Perplexi
 
 This is the reality of 2026. The AI search landscape shifts every 30-60 days. Keeping up with it is a full-time job - and you already have one.
 
+---
+
+## Where AI actually gets its answers (and why it matters)
+
+Here's something most businesses haven't realized yet: **YouTube is now the single most cited source in Google's own AI answers.** It passed Reddit last year. Almost 30% of Google AI answers include a YouTube video.
+
+Why? Because a website is just words that you wrote and published. Nobody verified any of it. But a YouTube video lives on a platform you don't control - one of the biggest websites in the world - and that alone gives it more weight. The AI trusts it more.
+
+This means your AI search strategy can't stop at your website. **Your website feeds the AI the structured data. Your video content feeds it the expertise, the proof, and the personality.** The businesses that show up in AI answers are the ones who have both.
+
+And here's the part that levels the playing field: **whether a video gets cited in AI answers has virtually no relationship to its view count, its likes, or how big the channel is.** The AI reads your video the day you post it. It doesn't care if it has 20 views or 2 million. A 6,000-subscriber therapy practice in Austin has a video with 300,000 views because it answered one question well. A small gym in California did over a million dollars last year because when someone watches even one of his videos before booking a call, he closes about 70% of them.
+
+The businesses winning at AI search are the ones answering the questions their customers actually ask - on video - and structuring the answers on their website so the AI can cite both.
+
+**This is where SiteFresh comes in.** We handle the website half - the structured data, the schema, the AI-readable architecture. And we help you plan the content half - the 10-20 questions your customers ask before hiring you, mapped to video topics and FAQ schema so both your site and your videos feed the AI the same answers.
+
+---
+
+## What your website still does (and what it doesn't anymore)
+
+Your website used to be your first impression. Now it's closer to the last step in the sales process. The discovery happens on AI search. The confidence-building happens on video. Your website's job now is to **not get in the way of the deal closing.**
+
+That means your site can be smaller. Most businesses with a proper video strategy could go from a 30-page mega-site down to a single landing page - because the trust was already built before they arrived. Your site just needs to:
+
+- Make it easy to book, schedule, or contact you
+- Load fast and look good (especially now that AI makes every competitor's site look good too)
+- Have the structured data that feeds AI search the facts it needs
+- Not block the conversion with friction, pop-ups, or confusing navigation
+
+**The confidence already got built somewhere else. Your site's job is to close.**
+
+---
+
+## What "structured AI search" gives you as a competitive advantage
+
 **Most businesses handle this one of three ways:**
 
 1. **Ignore it.** Hope AI search doesn't matter. (It already does - it's how 40% of searches are answered in 2026.)
@@ -89,5 +124,5 @@ And the partnership - having someone who tracks AI search changes so you don't h
 
 ---
 
-*SiteFresh - We don't design websites. We engineer them for AI search.*
+*SiteFresh - We engineer your website for AI search. We map your content for AI discovery.*
 *team@sitefresh.co · · sitefresh.io*
