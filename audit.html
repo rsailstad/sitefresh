@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>AI Search Audit — SiteFresh</title>
-<meta name="description" content="Free AI Search Audit — score your website across 7 categories and find out if AI search engines can find you.">
-<meta property="og:title" content="Free AI Search Audit — SiteFresh">
+<title>AI Search Audit - SiteFresh</title>
+<meta name="description" content="Free AI Search Audit - score your website across 7 categories and find out if AI search engines can find you.">
+<meta property="og:title" content="Free AI Search Audit - SiteFresh">
 <meta property="og:description" content="Is your website visible to AI search? Get an instant readiness score.">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
@@ -87,6 +87,8 @@ input[type=url]:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3p
 .whitepaper-link .wp-arrow{color:var(--green);font-size:1.1rem}
 .error-box{background:rgba(255,84,84,0.08);border:1px solid rgba(255,84,84,0.3);border-radius:8px;padding:20px;color:#ff5454;font-size:0.9rem}
 </style>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <nav class="nav">
@@ -125,7 +127,7 @@ input[type=url]:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3p
 
 <script>
 // ================================================================
-// SiteFresh AI Search Audit — client-side (runs in browser)
+// SiteFresh AI Search Audit - client-side (runs in browser)
 // ================================================================
 
 function getGrade(score) {
@@ -147,17 +149,23 @@ async function runAudit() {
   area.innerHTML = '<div class="loading"><span class="spinner"></span>Fetching and analyzing ' + url + '...</div>';
 
   try {
-    // Fetch the page via a CORS proxy (allorigins)
-    const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
-    const resp = await fetch(proxyUrl);
-    if (!resp.ok) throw new Error('Could not fetch ' + url + ' (HTTP ' + resp.status + ')');
-    const html = await resp.text();
+    // Fetch via our own serverless fetcher; fall back to a public CORS proxy
+    let html;
+    try {
+      const resp = await fetch('/api/fetch?url=' + encodeURIComponent(url));
+      if (!resp.ok) throw new Error((await resp.text()) || ('HTTP ' + resp.status));
+      html = await resp.text();
+    } catch (primaryErr) {
+      const resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url));
+      if (!resp.ok) throw new Error(primaryErr.message);
+      html = await resp.text();
+    }
 
     // Run the audit
     const result = auditSite(html, url);
     renderResult(result, url);
   } catch(e) {
-    area.innerHTML = '<div class="error-box">Could not audit ' + url + '. The site may be blocking access or is offline. Error: ' + e.message + '</div>';
+    area.innerHTML = '<div class="error-box">Could not audit ' + esc(url) + '. The site may be blocking automated access or is offline. Error: ' + esc(e.message) + '<br><br><a style="color:var(--green)" href="mailto:team@sitefresh.co?subject=' + encodeURIComponent('Manual audit request: ' + url) + '">Email us and we will run the audit manually →</a></div>';
   } finally {
     btn.disabled = false; btn.textContent = 'Audit Now →';
   }
@@ -184,9 +192,9 @@ function auditSite(html, url) {
       });
     } catch(e) {}
   });
-  if (hasLocalBusiness) sd += 10; else gaps.push('No LocalBusiness schema — critical for AI search and local SEO');
-  if (hasFAQPage) sd += 8; else gaps.push('No FAQPage schema — add Q&A structured data for AI search visibility');
-  if (hasBreadcrumb) sd += 4; else gaps.push('No BreadcrumbList schema — helps AI search understand site structure');
+  if (hasLocalBusiness) sd += 10; else gaps.push('No LocalBusiness schema - critical for AI search and local SEO');
+  if (hasFAQPage) sd += 8; else gaps.push('No FAQPage schema - add Q&A structured data for AI search visibility');
+  if (hasBreadcrumb) sd += 4; else gaps.push('No BreadcrumbList schema - helps AI search understand site structure');
   if (hasOrg) sd += 3; else gaps.push('No Organization/ProfessionalService schema');
   scores['structuredData'] = {score: sd, max: 25, label: 'Structured Data'};
 
@@ -197,23 +205,23 @@ function auditSite(html, url) {
   if (faqText >= 10) faq = 20;
   else if (faqText >= 5) faq = 15;
   else if (faqText >= 1) faq = 10;
-  else { faq = 0; gaps.push('No FAQ content — add an FAQ section answering common questions'); gaps.push('Consider adding 10+ FAQ entries for AI search engines'); }
+  else { faq = 0; gaps.push('No FAQ content - add an FAQ section answering common questions'); gaps.push('Consider adding 10+ FAQ entries for AI search engines'); }
   scores['faq'] = {score: faq, max: 20, label: 'FAQ Content'};
 
   // 3. Mobile Ready (15 pts)
   let mobile = 0;
   const viewport = doc.querySelector('meta[name="viewport"]');
-  if (viewport) mobile += 10; else gaps.push('Missing viewport meta tag — site not mobile-ready');
+  if (viewport) mobile += 10; else gaps.push('Missing viewport meta tag - site not mobile-ready');
   const hasMediaQueries = html.includes('@media') || html.includes('@media');
   if (hasMediaQueries) mobile += 5; else gaps.push('No responsive CSS media queries detected');
   scores['mobile'] = {score: mobile, max: 15, label: 'Mobile Ready'};
 
   // 4. Meta Tags (15 pts)
   let meta = 0;
-  if (doc.querySelector('meta[property="og:title"]') || doc.querySelector('meta[property="og:title"]')) meta += 5; else gaps.push('Missing og:title — social sharing shows no title');
-  if (doc.querySelector('meta[property="og:description"]') || doc.querySelector('meta[property="og:description"]')) meta += 3; else gaps.push('Missing og:description — social sharing shows no description');
+  if (doc.querySelector('meta[property="og:title"]') || doc.querySelector('meta[property="og:title"]')) meta += 5; else gaps.push('Missing og:title - social sharing shows no title');
+  if (doc.querySelector('meta[property="og:description"]') || doc.querySelector('meta[property="og:description"]')) meta += 3; else gaps.push('Missing og:description - social sharing shows no description');
   if (doc.querySelector('meta[name="twitter:card"]')) meta += 3; else gaps.push('Missing Twitter Card meta tag');
-  if (doc.querySelector('link[rel="canonical"]')) meta += 4; else gaps.push('Missing canonical URL — AI search may see duplicate content');
+  if (doc.querySelector('link[rel="canonical"]')) meta += 4; else gaps.push('Missing canonical URL - AI search may see duplicate content');
   scores['meta'] = {score: meta, max: 15, label: 'Meta Tags'};
 
   // 5. Semantic HTML (10 pts)
@@ -222,17 +230,17 @@ function auditSite(html, url) {
   else gaps.push('No semantic HTML5 elements (header, nav, main, article, section)');
   if (doc.querySelector('h1')) sem += 3; else gaps.push('No h1 heading found');
   const headings = doc.querySelectorAll('h1,h2,h3,h4,h5,h6').length;
-  if (headings >= 5) sem += 3; else gaps.push('Few heading elements — AI search needs structured content');
+  if (headings >= 5) sem += 3; else gaps.push('Few heading elements - AI search needs structured content');
   scores['semantic'] = {score: sem, max: 10, label: 'Semantic HTML'};
 
   // 6. Page Speed (10 pts)
   let speed = 0;
   const htmlSize = new Blob([html]).size;
-  if (htmlSize < 50000) speed += 4; else if (htmlSize < 100000) speed += 2; else gaps.push('Page HTML is ' + Math.round(htmlSize/1024) + ' KB — reduce for faster crawling');
+  if (htmlSize < 50000) speed += 4; else if (htmlSize < 100000) speed += 2; else gaps.push('Page HTML is ' + Math.round(htmlSize/1024) + ' KB - reduce for faster crawling');
   const externalResources = (html.match(/src=["'](https?:)/g) || []).length + (html.match(/href=["'](https?:)/g) || []).length;
-  if (externalResources < 30) speed += 3; else if (externalResources < 60) speed += 1; else gaps.push(externalResources + ' external resources — reduce for faster loading');
+  if (externalResources < 30) speed += 3; else if (externalResources < 60) speed += 1; else gaps.push(externalResources + ' external resources - reduce for faster loading');
   const renderBlocking = (html.match(/<script[^>]*src=/g) || []).length;
-  if (renderBlocking < 5) speed += 3; else if (renderBlocking < 10) speed += 1; else gaps.push(renderBlocking + ' render-blocking scripts — use defer or async');
+  if (renderBlocking < 5) speed += 3; else if (renderBlocking < 10) speed += 1; else gaps.push(renderBlocking + ' render-blocking scripts - use defer or async');
   scores['speed'] = {score: speed, max: 10, label: 'Page Speed'};
 
   // 7. Chat Widget (5 pts)
@@ -240,13 +248,15 @@ function auditSite(html, url) {
   if (html.includes('chat') || html.includes('widget') || html.includes('live-chat') || html.includes('intercom') || html.includes('drift') || html.includes('tidio')) {
     chat = 5;
   } else {
-    gaps.push('No chat widget — visitors can\'t get instant answers');
+    gaps.push('No chat widget - visitors can\'t get instant answers');
   }
   scores['chat'] = {score: chat, max: 5, label: 'Chat Widget'};
 
   const total = Object.values(scores).reduce((a, s) => a + s.score, 0);
   return {total, scores, gaps, url};
 }
+
+function esc(t){return String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
 function renderResult(result, url) {
   const area = document.getElementById('result-area');
@@ -282,6 +292,8 @@ function renderResult(result, url) {
   html += '<h2>Fix it all for $299</h2>';
   html += '<p>We fix every gap the audit finds and make your site fully AI-search-ready in 5 business days. Flat fee, no recurring charges, money-back guarantee.</p>';
   html += '<a class="cta-btn" href="/get-started.html">Get Your $299 AI-Ready Redesign →</a>';
+  const mailBody = 'Hi SiteFresh,\n\nI ran your audit on ' + url + ' and scored ' + result.total + '/100 (' + g.grade + ').\nPlease send me a free fix plan for my site.\n\nBusiness name:\nBest time to reach me:\n';
+  html += '<p style="margin-top:14px;font-size:0.9rem"><a style="color:var(--green)" href="mailto:team@sitefresh.co?subject=' + encodeURIComponent('Free fix plan: ' + url) + '&body=' + encodeURIComponent(mailBody) + '">Not ready to buy? Email us for a free, no-obligation fix plan →</a></p>';
   html += '</div>';
 
   html += '</div>';

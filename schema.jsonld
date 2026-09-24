@@ -111,7 +111,7 @@
   "itemOffered": {
    "@type": "Service",
    "name": "Quarterly AI Search Audit",
-   "description": "End-to-end audit of your site's AI search readiness every quarter. Covers Google SGE, ChatGPT search, Perplexity visibility, schema validity, and content recommendations."
+   "description": "End-to-end audit of your site's AI search readiness every quarter. Covers Google AI Overviews, ChatGPT search, Perplexity visibility, schema validity, and content recommendations."
   },
   "priceCurrency": "USD",
   "priceSpecification": {
@@ -144,7 +144,7 @@
    "name": "What exactly do you do?",
    "acceptedAnswer": {
   "@type": "Answer",
-  "text": "We redesign small business websites to be AI-search-optimized. That means structured data, FAQ schema, semantic HTML, Open Graph tags, and a local-first chat widget - all for $299 one-time. You get a single landing page that Google SGE, ChatGPT search, and Perplexity can actually read and cite. No hosting lock-in, no subscription required."
+  "text": "We redesign small business websites to be AI-search-optimized. That means structured data, FAQ schema, semantic HTML, Open Graph tags, and a local-first chat widget - all for $299 one-time. You get a single landing page that Google AI Overviews, ChatGPT search, and Perplexity can actually read and cite. No hosting lock-in, no subscription required."
    }
   },
   {
@@ -168,7 +168,7 @@
    "name": "What is AI search optimization?",
    "acceptedAnswer": {
   "@type": "Answer",
-  "text": "AI search optimization means structuring your website so that AI search engines - Google SGE, ChatGPT search, Perplexity, and others - can read it, understand it, and cite it as an authoritative source. This includes JSON-LD structured data (FAQ schema, service schema, business schema), semantic HTML, Open Graph tags, and clean content that answers real questions. It's the 2026 version of SEO, designed for how people actually search now."
+  "text": "AI search optimization means structuring your website so that AI search engines - Google AI Overviews, ChatGPT search, Perplexity, and others - can read it, understand it, and cite it as an authoritative source. This includes JSON-LD structured data (FAQ schema, service schema, business schema), semantic HTML, Open Graph tags, and clean content that answers real questions. It's the 2026 version of SEO, designed for how people actually search now."
    }
   },
   {
@@ -216,7 +216,7 @@
    "name": "Is the $29.99 newsletter required?",
    "acceptedAnswer": {
   "@type": "Answer",
-  "text": "No. The $299 redesign is one-time with no subscription required. The newsletter is $29.99/month and completely optional. It covers what changed in Google SGE, ChatGPT search, and Perplexity that affects small businesses, plus schema updates, one concrete action item, and one before/after case study. Cancel anytime."
+  "text": "No. The $299 redesign is one-time with no subscription required. The newsletter is $29.99/month and completely optional. It covers what changed in Google AI Overviews, ChatGPT search, and Perplexity that affects small businesses, plus schema updates, one concrete action item, and one before/after case study. Cancel anytime."
    }
   },
   {
@@ -240,7 +240,7 @@
    "name": "What is structured data / schema?",
    "acceptedAnswer": {
   "@type": "Answer",
-  "text": "Structured data is code embedded in your website that tells search engines exactly what your content means - not just what it says. We use JSON-LD (the format Google recommends) to mark up your business info, services, FAQ, and hours. When Google SGE, ChatGPT, or Perplexity crawls your site, they can read this structured data and cite your answers as authoritative sources. It's how you show up in AI search results."
+  "text": "Structured data is code embedded in your website that tells search engines exactly what your content means - not just what it says. We use JSON-LD (the format Google recommends) to mark up your business info, services, FAQ, and hours. When Google AI Overviews, ChatGPT, or Perplexity crawls your site, they can read this structured data and cite your answers as authoritative sources. It's how you show up in AI search results."
    }
   },
   {
@@ -280,7 +280,7 @@
    "name": "What's the difference between your redesign and just using an AI website builder?",
    "acceptedAnswer": {
   "@type": "Answer",
-  "text": "AI website builders (Wix ADI, Framer AI, etc.) generate a site that looks fine but isn't structured for AI search. They don't produce JSON-LD schema, FAQ schema, or semantic HTML that Google SGE and ChatGPT can cite. They also lock you into their platform. We deliver static files you own and host anywhere, with AI-search-optimized structured data baked in. The difference is: they build a pretty page. We build a page that AI search engines can actually read and cite as authoritative."
+  "text": "AI website builders (Wix ADI, Framer AI, etc.) generate a site that looks fine but isn't structured for AI search. They don't produce JSON-LD schema, FAQ schema, or semantic HTML that Google AI Overviews and ChatGPT can cite. They also lock you into their platform. We deliver static files you own and host anywhere, with AI-search-optimized structured data baked in. The difference is: they build a pretty page. We build a page that AI search engines can actually read and cite as authoritative."
    }
   },
   {
@@ -296,7 +296,7 @@
    "name": "What if AI search changes again after my redesign?",
    "acceptedAnswer": {
   "@type": "Answer",
-  "text": "It will - that's the whole point of the newsletter and \u00e0 la carte enhancements. The $29.99/month newsletter tracks what changes in Google SGE, ChatGPT search, and Perplexity, with one concrete action item per month. When something material changes (new schema.org type, new structured data opportunity), we offer \u00e0 la carte updates: FAQ refresh ($99), schema migration ($149), quarterly audit ($199). You're never stuck with a 2026 site in 2027."
+  "text": "It will - that's the whole point of the newsletter and \u00e0 la carte enhancements. The $29.99/month newsletter tracks what changes in Google AI Overviews, ChatGPT search, and Perplexity, with one concrete action item per month. When something material changes (new schema.org type, new structured data opportunity), we offer \u00e0 la carte updates: FAQ refresh ($99), schema migration ($149), quarterly audit ($199). You're never stuck with a 2026 site in 2027."
    }
   }
  ]
@@ -321,7 +321,7 @@
   "structured data",
   "JSON-LD schema",
   "schema.org",
-  "Google SGE",
+  "Google AI Overviews",
   "ChatGPT search",
   "Perplexity",
   "small business websites",

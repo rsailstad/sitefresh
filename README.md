@@ -18,7 +18,7 @@ AI search engineering service that delivers AI-search-optimized websites for sma
 One YAML file → three renderings:
 1. **Landing page** - the human-facing surface
 2. **Chat widget** - local-first FAQ search (zero network calls, token-overlap matching)
-3. **JSON-LD schema** - the AI-search-facing surface (Google SGE, ChatGPT search, Perplexity)
+3. **JSON-LD schema** - the AI-search-facing surface (Google AI Overviews, ChatGPT search, Perplexity)
 
 ## Deploy
 

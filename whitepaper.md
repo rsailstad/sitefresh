@@ -10,7 +10,7 @@ For twenty years, search worked one way: you typed keywords into Google, it matc
 
 That era is ending.
 
-**AI search** is what happens when a large language model sits between your customer and the internet. Instead of matching keywords, the AI reads the web, understands context, and **generates an answer**. Google SGE (Search Generative Experience), ChatGPT search, Perplexity, and Microsoft Copilot all do this now. When someone asks *"what does a roofing company charge in Duluth?"* - the AI doesn't show ten links. It reads the structured data on those ten websites, synthesizes an answer, and cites the sources it trusts.
+**AI search** is what happens when a large language model sits between your customer and the internet. Instead of matching keywords, the AI reads the web, understands context, and **generates an answer**. Google AI Overviews (Search Generative Experience), ChatGPT search, Perplexity, and Microsoft Copilot all do this now. When someone asks *"what does a roofing company charge in Duluth?"* - the AI doesn't show ten links. It reads the structured data on those ten websites, synthesizes an answer, and cites the sources it trusts.
 
 **Your customer never clicks through to your site.** They get the answer directly from the AI. Your website either fed that answer - or it didn't.
 
@@ -47,7 +47,7 @@ When a potential customer asks ChatGPT *"what roofing companies in Duluth handle
 The competitive advantage compounds over time:
 
 - **Today:** your site gets cited in AI search answers while competitors don't
-- **Next quarter:** Google SGE surfaces your business in generative results because your structured data is established and consistent
+- **Next quarter:** Google AI Overviews surfaces your business in generative results because your structured data is established and consistent
 - **Next year:** as AI search grows (and traditional blue-link search shrinks), you're already positioned while competitors scramble to catch up
 - **Ongoing:** every time AI search standards change - a new schema type, a new structured data opportunity, a new way AI reads your site - you have a partner who updates you before your competitors even know it happened
 
@@ -55,7 +55,7 @@ The competitive advantage compounds over time:
 
 ## The AI landscape changes at breakneck speed. You shouldn't have to track it.
 
-Google SGE rolls out a new format. ChatGPT adds visual search. Perplexity changes how it cites sources. schema.org releases a new business type. A new AI search engine launches and gains 10 million users in a month.
+Google AI Overviews rolls out a new format. ChatGPT adds visual search. Perplexity changes how it cites sources. schema.org releases a new business type. A new AI search engine launches and gains 10 million users in a month.
 
 This is the reality of 2026. The AI search landscape shifts every 30-60 days. Keeping up with it is a full-time job - and you already have one.
 
