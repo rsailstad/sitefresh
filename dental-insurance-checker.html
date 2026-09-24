@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Dental Insurance Checker - SiteFresh</title>
+<meta name="description" content="Interactive insurance checker widget for dental practices. Patients check insurance coverage instantly without calling.">
+<meta property="og:title" content="Dental Insurance Checker Widget - SiteFresh">
+<meta property="og:description" content="Patients check insurance coverage instantly. No phone calls needed. Zero API calls, local-first.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sitefresh.co/dental-insurance-checker.html">
+<meta property="og:image" content="https://sitefresh.co/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dental Insurance Checker Widget - SiteFresh">
+<meta name="twitter:description" content="Patients check insurance coverage instantly. No phone calls needed.">
+<link rel="canonical" href="https://sitefresh.co/dental-insurance-checker.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Dental Insurance Checker Widget",
+  "description": "Interactive insurance checker widget for dental practices. Patients check insurance coverage instantly without calling.",
+  "url": "https://sitefresh.co/dental-insurance-checker.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "SiteFresh",
+    "url": "https://sitefresh.co"
+  }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0b0d;
+  --bg2: #141518;
+  --bg3: #1c1d20;
+  --fg: #e8e6e3;
+  --muted: #8a8780;
+  --muted2: #b8b5a8;
+  --accent: #00d97e;
+  --border: #252629;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.6; }
+
+/* Nav */
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px; border-bottom: 1px solid var(--border);
+}
+.nav-brand { display: flex; align-items: center; gap: 0; font-weight: 800; font-size: 1.05rem; text-decoration: none; }
+.nav-brand img { width: 28px; height: 28px; border-radius: 6px; margin-right: 6px; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: var(--muted2); text-decoration: none; font-size: 0.9rem; transition: color 0.15s; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta {
+  background: var(--accent); color: #0a0b0d; padding: 8px 20px;
+  border-radius: 8px; font-weight: 700; font-size: 0.9rem; text-decoration: none;
+  transition: transform 0.12s;
+}
+.nav-cta:hover { transform: translateY(-1px); }
+
+/* Hero */
+.hero {
+  text-align: center; padding: 64px 24px 32px;
+}
+.hero h1 {
+  font-size: 2.2rem; font-weight: 800; max-width: 640px; margin: 0 auto 16px;
+  letter-spacing: -0.02em;
+}
+.hero h1 .green { color: var(--accent); }
+.hero p {
+  color: var(--muted); font-size: 1.05rem; max-width: 520px; margin: 0 auto;
+}
+.badge {
+  display: inline-block; background: rgba(0, 217, 126, 0.08);
+  border: 1px solid rgba(0, 217, 126, 0.3); color: var(--accent);
+  font-size: 0.8rem; font-weight: 700; padding: 6px 16px;
+  border-radius: 20px; margin-bottom: 20px; text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Live demo section */
+.demo-section { padding: 32px 24px 48px; }
+.demo-label {
+  text-align: center; color: var(--muted); font-size: 0.85rem;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 24px;
+}
+
+/* Features */
+.features {
+  max-width: 900px; margin: 0 auto; padding: 48px 24px;
+  border-top: 1px solid var(--border);
+}
+.features h2 {
+  text-align: center; font-size: 1.6rem; margin-bottom: 32px; font-weight: 700;
+}
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.feature-card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
+  padding: 24px;
+}
+.feature-card h3 {
+  font-size: 1.05rem; margin-bottom: 8px; color: var(--accent);
+}
+.feature-card p { color: var(--muted2); font-size: 0.9rem; line-height: 1.5; }
+
+/* Why dental */
+.why-dental {
+  max-width: 760px; margin: 0 auto; padding: 48px 24px;
+  border-top: 1px solid var(--border);
+}
+.why-dental h2 {
+  text-align: center; font-size: 1.6rem; margin-bottom: 24px; font-weight: 700;
+}
+.why-dental ul {
+  list-style: none; padding: 0; max-width: 600px; margin: 0 auto;
+}
+.why-dental li {
+  padding: 12px 0; border-bottom: 1px solid var(--border);
+  color: var(--muted2); font-size: 0.95rem;
+  padding-left: 28px; position: relative;
+}
+.why-dental li::before {
+  content: "→"; color: var(--accent); position: absolute; left: 0; font-weight: 700;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center; padding: 64px 24px; border-top: 1px solid var(--border);
+}
+.cta-section h2 { font-size: 1.8rem; margin-bottom: 16px; font-weight: 700; }
+.cta-section p { color: var(--muted); margin-bottom: 24px; }
+.cta-btn {
+  display: inline-block; background: var(--accent); color: #0a0b0d;
+  padding: 14px 32px; border-radius: 10px; font-weight: 700;
+  text-decoration: none; font-size: 1rem; transition: transform 0.12s, box-shadow 0.12s;
+}
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0, 217, 126, 0.3); }
+
+/* Footer */
+.footer {
+  padding: 32px 24px; border-top: 1px solid var(--border);
+  text-align: center; color: var(--muted); font-size: 0.85rem;
+}
+.footer img { width: 24px; height: 24px; border-radius: 4px; vertical-align: middle; margin-right: 6px; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.6rem; }
+  .nav-links a { display: none; }
+  .nav-links a.nav-cta { display: inline-block; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-brand">
+    <img src="/logo.svg" alt="SiteFresh">
+    <span style="color:var(--fg);">Site</span><span style="color:var(--accent);">Fresh</span>
+  </a>
+  <div class="nav-links">
+    <a href="/whitepaper.html">White Paper</a>
+    <a href="/audit.html">Free Audit</a>
+    <a href="/get-started.html" class="nav-cta">Get started →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <span class="badge">Dental Industry Widget</span>
+  <h1>The <span class="green">#1 question</span> your patients call about - answered on your website</h1>
+  <p>Every dental office fields 20-50 calls per week just asking "do you take my insurance?" This widget answers it instantly, captures leads, and works with zero API calls.</p>
+</div>
+
+<div class="demo-section">
+  <div class="demo-label">Live Demo - Try It</div>
+  <div id="sf-insurance-checker"></div>
+</div>
+
+<div class="features">
+  <h2>What it does</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Instant insurance lookup</h3>
+      <p>Patients type their provider and instantly see if the practice accepts it. No phone call, no waiting on hold, no friction.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Lead capture built in</h3>
+      <p>If the insurance isn't in the list, the widget asks for their email and opens a pre-filled email to the practice. Every unknown insurance becomes a lead.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Zero API calls</h3>
+      <p>The insurance list is a local JSON file. No external services, no monthly fees, no vendor lock-in. Works offline. GDPR-safe by design.</p>
+    </div>
+    <div class="feature-card">
+      <h3>AI search friendly</h3>
+      <p>Uses the same insuranceAccepted property that AI search engines look for in Dentist and LocalBusiness schema. When patients ask "does Dr. X take Delta Dental?", your site is the answer.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Customizable</h3>
+      <p>Every practice has a different insurance list. We configure the widget with your accepted providers at build time. Cash-only practices get a different variant.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Book appointment CTA</h3>
+      <p>When insurance is accepted, the widget shows a "Book appointment" button that opens a pre-filled email to schedule. Frictionless conversion.</p>
+    </div>
+  </div>
+</div>
+
+<div class="why-dental">
+  <h2>Why dental practices need this</h2>
+  <ul>
+    <li>20-50 calls per week per practice are just "do you take my insurance?" - that's 15+ hours of staff time wasted</li>
+    <li>Patients who search "dentist that accepts [insurance] near me" get AI answers from aggregators like Zocdoc and Aspen Dental - not your website</li>
+    <li>88% of health-related queries trigger AI Overviews (Google) - your insurance data needs to be in structured data, not a phone number</li>
+    <li>Patient lifetime value is $3K-8K+ - losing one patient to "I couldn't find if you take my insurance" costs more than the entire $299 redesign</li>
+    <li>Cash-only and out-of-network practices can use the "cash pricing" variant to show transparent pricing instead</li>
+    <li>Works alongside the optional components (testimonial carousel, map, gallery, review summary) for a complete dental website</li>
+  </ul>
+</div>
+
+<div class="cta-section">
+  <h2>Get the insurance checker with your $299 redesign</h2>
+  <p>Included at no extra cost for every dental practice redesign. We configure it with your insurance list and brand.</p>
+  <a href="/get-started.html" class="cta-btn">Get started →</a>
+</div>
+
+<footer class="footer">
+  <img src="/logo.svg" alt="SiteFresh"> Remote - US EST hours - &copy; 2026 SiteFresh
+</footer>
+
+<script src="/components/insurance-checker.js"></script>
+<script>
+SiteFreshInsuranceChecker.init('#sf-insurance-checker', {
+  practiceName: 'Powell Village Dental',
+  practiceEmail: 'team@sitefresh.co',
+  insurances: [
+    'Delta Dental', 'Cigna', 'Aetna', 'MetLife', 'Guardian',
+    'United Concordia', 'UnitedHealthcare', 'Humana',
+    'Blue Cross Blue Shield', 'Medicare', 'Medicaid', 'CareCredit',
+    'Assurant', 'Renaissance Dental', 'GEHA', 'Tricare'
+  ],
+  cashOnly: false
+});
+</script>
+
+</body>
+</html>
