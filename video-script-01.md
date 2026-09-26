@@ -83,7 +83,9 @@ Because we're building volume. We want to be the first name AI search recommends
 
 Also, we're not doing what a $3,000 web designer does. We're not spending 6 weeks on custom design mockups and revision rounds and stakeholder meetings. We're engineering a structured, fast, AI-readable site. The value isn't in the design hours. It's in the architecture. One YAML file, three renderings - a landing page, a chat widget, and JSON-LD schema. That's the system.
 
-And honestly? The real money is in the ongoing relationship. The $29.99 per month care plan. The à la carte updates. The YouTube strategy. The $299 gets you in the door. The relationship keeps you ahead.
+And honestly? AI has made building a website so easy now that pretty much every business is months away from a level playing field. You can have Claude write amazing copy and design the whole thing in an afternoon. So can every one of your competitors. So having a great-looking website stops being the differentiator. Being AI-search-readable is the new differentiator. That's what we sell.
+
+And the real money is in the ongoing relationship. The $29.99 per month care plan. The à la carte updates. The YouTube strategy. The $299 gets you in the door. The relationship keeps you ahead.
 
 ---
 

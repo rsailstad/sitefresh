@@ -89,7 +89,7 @@ Short answer: yes. But prioritize based on where your customers are.
 
 If your customers still find you through traditional Google search - typing "roofing contractor Duluth" and clicking the first result - then keep investing in traditional SEO. It's working.
 
-But if your customers are starting to ask ChatGPT or use Google's AI Overviews - and they are, increasingly - then you need AI search optimization too. And the trend is moving fast. Forty-three percent of people have used AI to research a purchase. One in four say AI is their main source for recommendations.
+But if your customers are starting to ask ChatGPT or use Google's AI Overviews - and they are, increasingly - then you need AI search optimization too. And the trend is moving fast. Forty-three percent of people have used AI to research a purchase. One in four say AI is their main source for recommendations. Eighty-five percent still go double-check what the AI told them by finding an actual expert talking it through - usually on YouTube.
 
 The businesses that invest in AI search now have a twelve-month head start. Think of it like investing. Someone who starts at 25 retires richer than someone who starts at 45. Not because they're smarter. The results just had more time to compound.
 

@@ -61,6 +61,10 @@ There are exceptions. Some designers understand AI search. But they're rare, and
 
 Option three: us. $299 one-time. Here's what we do differently.
 
+And here's the honest truth about why this matters now. AI has made building a website so easy that pretty much every business is months away from a level playing field. You can have Claude write amazing sales copy and design the whole thing in an afternoon. So can every one of your competitors. So having a great-looking website stops being the reason someone picks you.
+
+The new differentiator isn't design. It's AI-search readability. Can the AI read your site? Can it cite you in its answer? Does your structured data tell the AI what you do, where you are, and what questions you answer?
+
 We don't start with design. We start with structured data. The first thing we build is the JSON-LD schema - LocalBusiness, FAQPage, Organization. Then we build the page around it.
 
 One YAML file describes your business - name, services, location, FAQ, pricing, hours. That one file generates three things: the HTML landing page, the JSON-LD structured data, and the chat widget's knowledge base. Change the YAML, all three update.

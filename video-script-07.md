@@ -66,15 +66,17 @@ So here's the strategy. You want to be cited from as many trusted sources as pos
 
 Let me go deeper on YouTube because this is the one most businesses miss.
 
-When I said YouTube is the most cited source in AI answers - I mean that literally. Google's own AI answers cite YouTube more than any other source. More than Reddit, more than Wikipedia, more than Yelp.
+When I said YouTube is the most cited source in AI answers - I mean that literally. Google's own AI answers cite YouTube more than any other source. More than Reddit, more than Wikipedia, more than Yelp. Almost thirty percent of Google AI answers include a YouTube video.
 
-And here's the part that levels the playing field. Whether a video gets cited in AI answers has virtually no relationship to its view count, its likes, or how big the channel is. The AI reads your video the day you post it.
+And here's the part that levels the playing field. Whether a video gets cited in AI answers has virtually no relationship to its view count, its likes, or how big the channel is. The AI reads your video the day you post it. It doesn't care if it has twenty views or two million.
 
-I'll say that again. The AI reads your video the day you post it. It doesn't care if it has twenty views or two million. If you answer a question that someone later asks the AI, your video gets cited.
+There's a gutter installation guy in Tennessee named Jonathan. Almost all of his business comes through AI search now. How? He made gutter comparison videos, installation tutorials, and test videos. Some people found those videos and hired him directly. But the AI models also watched those videos. They know what he specializes in. They know what area he works in. So when someone in Tennessee asks ChatGPT or Gemini who should install their gutter guards, his name comes up. All those recommendations trace back to the videos.
 
-There's a gutter installation guy in Tennessee named Jonathan. Almost all of his business comes through AI search. How? He made gutter comparison videos, installation tutorials, and test videos. Some people found those videos and hired him directly. But the AI models also watched those videos. They know what he specializes in. They know what area he works in. So when someone in Tennessee asks ChatGPT or Gemini who should install their gutter guards, his name comes up. All those recommendations trace back to the videos.
+And here's the thing about Jonathan's videos - each one answers one question. One question per video. That's it. "Which gutter guard is best?" "How much does gutter installation cost?" "Can I install gutters myself?" One question, one answer, one video.
 
-You don't need a huge channel. You don't need viral videos. You need to answer the questions your customers ask - on camera - and the AI will find you.
+The AI reads each video and learns one specific thing about Jonathan. He specializes in gutters. He's in Tennessee. He handles installation. He knows pricing. Every video is another data point that makes the AI more confident in recommending him.
+
+You don't need a huge channel. You don't need viral videos. You need to answer one question per video - the questions your customers already ask - and the AI will find you from day one.
 
 ---
 

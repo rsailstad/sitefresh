@@ -79,9 +79,13 @@ When someone asks ChatGPT about this business, the AI reads this schema and can 
 
 Here's why this matters. Forty-three percent of people have used an AI assistant to research something they were about to buy. One in four people say AI is their main source for recommendations. That's ahead of going to a company's own website.
 
-Your customers are asking AI about you. And the AI is either finding you or finding your competitor.
-
 And it's not just ChatGPT. Google's own search results now show AI-generated answers at the top of the page. They call it AI Overviews. When someone Googles "roofing contractor near me" - Google generates an AI answer before it shows any blue links. And that AI answer pulls from structured data.
+
+But here's what's really interesting. After the AI gives someone a recommendation, they don't just take it. Eighty-five percent of people who use AI still go double-check what it told them somewhere else. They want to go deeper. They want to find an actual expert talking the whole thing through.
+
+And where do they go? YouTube. SimilarWeb tracked 1.3 billion clicks out of AI chatbots in a single month. The number one destination was YouTube. More than Facebook, Wikipedia, and Reddit combined.
+
+So your customer asks the AI. The AI recommends someone. Then that customer goes to YouTube to verify. If they find you there - talking through the exact problem they have - you win. If they find your competitor - you lose.
 
 If your competitor has structured data and you don't, the AI recommends them. Not you. Even if you're the better roofer.
 

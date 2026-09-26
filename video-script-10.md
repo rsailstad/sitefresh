@@ -110,9 +110,11 @@ Wright at Home scored 79 - the highest of the ten. Why? They had some basic sche
 
 But they still didn't have FAQ schema. They still didn't have pricing data. They still didn't have a chat widget. If they added those three things, they'd jump from 79 to 90+.
 
-And here's the thing - they'd be the only roofer in Minneapolis with that score. When someone asks ChatGPT "best roofer in Minneapolis" - the AI would cite them first. Not because they're the best roofer. Because they're the most readable.
+And they'd be the only roofer in Minneapolis with that score. When someone asks ChatGPT "best roofer in Minneapolis" - the AI would cite them first. Not because they're the best roofer. Because they're the most readable.
 
-That's the opportunity. You don't have to be the best. You have to be the most readable. And most of your competitors aren't readable at all.
+But here's the thing. Even Wright at Home, at 79 out of 100, is not safe. Because AI has made building a website so easy that every one of their competitors is months away from a level playing field. The ones who haven't updated their sites yet will be doing it within the next year. When everyone's site looks great - because AI can do that now - having a great-looking site stops being the differentiator. Being AI-search-readable is the new differentiator.
+
+That's the opportunity. You don't have to be the best. You have to be the most readable. And right now, most of your competitors aren't readable at all. But that window is closing. The move is to start today.
 
 ---
 

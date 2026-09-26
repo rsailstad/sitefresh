@@ -113,6 +113,10 @@ If they added FAQ schema and insurance data, they'd jump from 64 to 85+. And the
 
 That's the opportunity. You don't have to be the best. You have to be the most readable.
 
+But here's the other thing. Being readable gets you on the AI's short list. Being specific gets you to the top of it. When you're for everybody, there's no question you're the answer to. But when you're the dentist who specializes in same-day dentures and emergency care - that's a specific question the AI can answer with your name. "I need a dentist in Columbus who does same-day dentures" - that's not a generalist query. The AI picks the specialist.
+
+So fix your structured data. But also own your niche. Be the answer to a question only you can answer.
+
 ---
 
 ## CTA (8:00 - 8:30)
