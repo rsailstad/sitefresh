@@ -1065,11 +1065,15 @@
  border-radius: var(--radius);
  padding: 40px 32px;
  text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
   }
   .audit-form {
  display: flex;
  gap: 12px;
  max-width: 560px;
+ width: 100%;
  margin: 0 auto 20px;
  justify-content: center;
   }
@@ -1120,9 +1124,9 @@
   .audit-sample .grade-a { color: var(--accent); font-weight: 700; }
 
   @media (max-width: 600px) {
- .audit-form { flex-direction: column; align-items: center; }
- .audit-form input { width: 100%; max-width: 400px; }
- .audit-form button { width: 100%; max-width: 400px; }
+ .audit-form { flex-direction: column; align-items: stretch; width: 100%; }
+ .audit-form input { width: 100%; }
+ .audit-form button { width: 100%; }
  .audit-box { padding: 32px 16px; }
   }
 
