@@ -1456,7 +1456,7 @@
  <div class="hero-eyebrow">We don't design websites. We engineer them for AI search.</div>
  <h1>When customers ask AI who to hire, <span class="accent">does your business come up?</span></h1>
  <p class="sub">ChatGPT, Google AI Overviews and Perplexity now answer "who's a good roofer near me?" directly. We rebuild your website so those tools can read it, understand it, and recommend you. <strong>$299 one-time.</strong> You own the files. Full refund if you're not happy.</p>
- <form class="hero-audit" onsubmit="event.preventDefault();var u=this.url.value.trim();if(u){if(window.SITEFRESH_LEADS){SITEFRESH_LEADS.trackAudit(u.startsWith('http')?u:'https://'+u);}location.href='/audit.html?url='+encodeURIComponent(u.startsWith('http')?u:'https://'+u);}">
+ <form class="hero-audit" onsubmit="event.preventDefault();var u=this.url.value.trim();if(u)location.href='/audit.html?url='+encodeURIComponent(u.startsWith('http')?u:'https://'+u);">
   <input name="url" type="text" inputmode="url" placeholder="yourbusiness.com" aria-label="Your website address">
   <button type="submit" class="btn btn-primary">Get my free AI search score →</button>
  </form>
@@ -1813,10 +1813,6 @@
  // Normalize URL
  let auditUrl = url;
  if (!auditUrl.match(/^https?:\/\//)) auditUrl = 'https://' + auditUrl;
- // Track as a hot lead
- if (window.SITEFRESH_LEADS) {
-  SITEFRESH_LEADS.trackAudit(auditUrl);
- }
  window.open('https://sitefresh.co/audit.html?url=' + encodeURIComponent(auditUrl), '_blank');
   }
 
