@@ -163,6 +163,11 @@ async function runAudit() {
     // Run the audit
     const result = auditSite(html, url);
     renderResult(result, url);
+
+    // Track as a hot lead
+    if (window.SITEFRESH_LEADS) {
+      SITEFRESH_LEADS.trackAudit(url, result.score, result.grade);
+    }
   } catch(e) {
     area.innerHTML = '<div class="error-box">Could not audit ' + esc(url) + '. The site may be blocking automated access or is offline. Error: ' + esc(e.message) + '<br><br><a style="color:var(--green)" href="mailto:team@sitefresh.co?subject=' + encodeURIComponent('Manual audit request: ' + url) + '">Email us and we will run the audit manually →</a></div>';
   } finally {
@@ -307,5 +312,6 @@ if (presetUrl) {
   runAudit();
 }
 </script>
+<script src="/leads.js"></script>
 </body>
 </html>

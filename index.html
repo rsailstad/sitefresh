@@ -1317,6 +1317,21 @@
  max-width: 90%;
   }
   .widget-msg.bot.no-match span { background: #fff3cd; color: #856404; }
+  .widget-msg.bot.lead-capture span { background: rgba(0,217,126,0.08); border: 1px solid rgba(0,217,126,0.3); color: var(--w-fg); }
+  .widget-lead-form { margin-top: 8px; }
+  .widget-lead-form input {
+    width: 100%; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid var(--w-border); background: var(--w-bg2);
+    color: var(--w-fg); font: inherit; font-size: 0.9rem; margin-bottom: 8px;
+  }
+  .widget-lead-form input:focus { outline: none; border-color: var(--w-accent); }
+  .widget-lead-form button {
+    width: 100%; padding: 10px 16px; border: none; border-radius: 8px;
+    background: var(--w-accent); color: #0a0b0d; font-weight: 700;
+    font-size: 0.9rem; cursor: pointer;
+  }
+  .widget-lead-form button:hover { opacity: 0.9; }
+  .widget-lead-success { color: var(--w-accent); font-weight: 600; margin-top: 8px; }
   .widget-suggestions { padding: 0 18px 8px; display: flex; flex-wrap: wrap; gap: 6px; }
   .widget-suggestion {
  padding: 4px 10px;
@@ -1413,6 +1428,7 @@
   .footer-links a{color:var(--muted,#8a8780);margin:0 8px}
  </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/leads.js"></script>
 </head>
 <body>
 
@@ -1440,7 +1456,7 @@
  <div class="hero-eyebrow">We don't design websites. We engineer them for AI search.</div>
  <h1>When customers ask AI who to hire, <span class="accent">does your business come up?</span></h1>
  <p class="sub">ChatGPT, Google AI Overviews and Perplexity now answer "who's a good roofer near me?" directly. We rebuild your website so those tools can read it, understand it, and recommend you. <strong>$299 one-time.</strong> You own the files. Full refund if you're not happy.</p>
- <form class="hero-audit" onsubmit="event.preventDefault();var u=this.url.value.trim();if(u)location.href='/audit.html?url='+encodeURIComponent(u);">
+ <form class="hero-audit" onsubmit="event.preventDefault();var u=this.url.value.trim();if(u){if(window.SITEFRESH_LEADS){SITEFRESH_LEADS.trackAudit(u.startsWith('http')?u:'https://'+u);}location.href='/audit.html?url='+encodeURIComponent(u.startsWith('http')?u:'https://'+u);}">
   <input name="url" type="text" inputmode="url" placeholder="yourbusiness.com" aria-label="Your website address">
   <button type="submit" class="btn btn-primary">Get my free AI search score →</button>
  </form>
@@ -1797,6 +1813,10 @@
  // Normalize URL
  let auditUrl = url;
  if (!auditUrl.match(/^https?:\/\//)) auditUrl = 'https://' + auditUrl;
+ // Track as a hot lead
+ if (window.SITEFRESH_LEADS) {
+  SITEFRESH_LEADS.trackAudit(auditUrl);
+ }
  window.open('https://sitefresh.co/audit.html?url=' + encodeURIComponent(auditUrl), '_blank');
   }
 
@@ -1894,21 +1914,27 @@
  const match = searchFAQ(query);
 
  if (match) {
-  const botMsg = document.createElement('div');
-  botMsg.className = 'widget-msg bot';
-  botMsg.innerHTML = '<span><strong>' + escapeHtml(match.q) + '</strong><br><br>' + escapeHtml(match.a) + '</span>';
-  messages.appendChild(botMsg);
-  document.getElementById('llmHint').style.display = 'none';
+   const botMsg = document.createElement('div');
+   botMsg.className = 'widget-msg bot';
+   botMsg.innerHTML = '<span><strong>' + escapeHtml(match.q) + '</strong><br><br>' + escapeHtml(match.a) + '</span>';
+   messages.appendChild(botMsg);
+   document.getElementById('llmHint').style.display = 'none';
  } else {
-  const botMsg = document.createElement('div');
-  botMsg.className = 'widget-msg bot no-match';
-  botMsg.innerHTML = '<span>We don\'t have that in our FAQ database. Email us at team@sitefresh.co or paste this prompt into your AI assistant:</span>';
-  messages.appendChild(botMsg);
+   // Show lead capture form - "That's a great question, enter your email for a personalized answer"
+   const botMsg = document.createElement('div');
+   botMsg.className = 'widget-msg bot lead-capture';
+   const formId = 'lead-form-' + Date.now();
+   botMsg.innerHTML = '<span><strong>That\'s a great question.</strong><br><br>Enter your email and we\'ll send you a personalized answer within 24 hours.<div class="widget-lead-form" id="' + formId + '"><input type="email" placeholder="you@email.com" id="' + formId + '-email"><button onclick="submitChatLead(\'' + formId + '\', \'' + escapeHtml(query).replace(/'/g, "\\'") + '\')">Get my personalized answer →</button></div></span>';
+   messages.appendChild(botMsg);
 
-  // LLM-decoupled: generate a PII-free prompt for the visitor to paste
-  const llmPrompt = 'Answer this question about SiteFresh (AI-search-optimized website redesigns for small businesses, $299 one-time, no hosting lock-in, satisfaction guaranteed, US EST hours): "' + query + '". Use this context: We redesign small business websites with structured data (JSON-LD, FAQ schema, semantic HTML, Open Graph) for AI search engines like Google AI Overviews, ChatGPT search, and Perplexity. $299 includes 1 landing page, up to 6 services, up to 20 FAQ entries, local-first chat widget, AI Search Roadmap PDF, 1 revision round, 5 business day delivery. 50% deposit, 50% on delivery, full refund if not satisfied. No hosting lock-in - you own the files. Optional AI Search Care Plan is $29.99/month (quarterly re-audit, up to 3 FAQ/schema updates per quarter, monthly briefing). À la carte: FAQ refresh $99, new page $79, quarterly audit $199, chat widget tuning $49, schema migration $149. If you cannot answer, say so.';
-  document.getElementById('llmPrompt').textContent = llmPrompt;
-  document.getElementById('llmHint').style.display = 'block';
+   // Still show the LLM prompt option below
+   const llmHint2 = document.getElementById('llmHint');
+   if (llmHint2) {
+     const llmPrompt = 'Answer this question about SiteFresh (AI-search-optimized website redesigns for small businesses, $299 one-time, no hosting lock-in, satisfaction guaranteed, US EST hours): "' + query + '". Use this context: We redesign small business websites with structured data (JSON-LD, FAQ schema, semantic HTML, Open Graph) for AI search engines like Google AI Overviews, ChatGPT search, and Perplexity. $299 includes 1 landing page, up to 6 services, up to 20 FAQ entries, local-first chat widget, AI Search Roadmap PDF, 1 revision round, 5 business day delivery. 50% deposit, 50% on delivery, full refund if not satisfied. No hosting lock-in - you own the files. Optional AI Search Care Plan is $29.99/month. If you cannot answer, say so.';
+     const lp = document.getElementById('llmPrompt');
+     if (lp) lp.textContent = llmPrompt;
+     if (llmHint2) llmHint2.style.display = 'block';
+   }
  }
 
  input.value = '';
@@ -1919,6 +1945,22 @@
  const div = document.createElement('div');
  div.textContent = s;
  return div.innerHTML;
+  }
+
+  async function submitChatLead(formId, question) {
+ const emailInput = document.getElementById(formId + '-email');
+ const email = emailInput ? emailInput.value.trim() : '';
+ if (!email) {
+  alert('Please enter your email address.');
+  return;
+ }
+ const form = document.getElementById(formId);
+ if (form) {
+  form.innerHTML = '<div class="widget-lead-success">✓ Thank you! We\'ll send your personalized answer within 24 hours.</div>';
+ }
+ if (window.SITEFRESH_LEADS) {
+  await SITEFRESH_LEADS.trackChatQuestion(question, email);
+ }
   }
  </script>
 </body>
